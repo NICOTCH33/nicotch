@@ -19,7 +19,15 @@
     audio: '<path d="M4 15v-3a8 8 0 0116 0v3"/><rect x="2.5" y="14" width="4" height="7" rx="1.5"/><rect x="17.5" y="14" width="4" height="7" rx="1.5"/>',
     manettes: '<path d="M7 7h10a5 5 0 014.8 6.4l-1 3.5a2.5 2.5 0 01-4.2 1L14.5 16h-5l-2.1 1.9a2.5 2.5 0 01-4.2-1l-1-3.5A5 5 0 017 7z"/><path d="M7 10.5v3M5.5 12h3"/><circle cx="16" cy="11" r=".8"/><circle cx="18" cy="13" r=".8"/>'
   };
+  /* Illustration néon de la catégorie (assets/categories/<id>.webp),
+     avec l'icône au trait en secours si l'image n'existe pas */
+  var IMAGES = ["outils", "entretien", "gpu", "cpu", "cm", "ram", "stockage", "alim", "refroidissement",
+                "boitiers", "ecrans", "claviers", "souris", "audio", "manettes"];
   function icone(id, classe) {
+    if (IMAGES.indexOf(id) !== -1) {
+      return '<span class="cat-img ' + (classe || "") + '" aria-hidden="true"><img src="assets/categories/' + id +
+        '.webp" alt="" width="256" height="256" loading="lazy" decoding="async"></span>';
+    }
     return '<span class="cat-ico ' + (classe || "") + '" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" focusable="false">' +
       (ICONES[id] || ICONES.outils) + "</svg></span>";
   }
