@@ -12,7 +12,7 @@
      titre       nom du produit (court)
      categorie   une des catégories ci-dessous : "outils", "entretien",
                  "gpu", "cpu", "cm", "ram", "stockage", "alim", "refroidissement", "boitiers",
-                 "ecrans", "clavier-souris", "audio", "manettes"
+                 "ecrans", "claviers", "souris", "audio", "manettes"
      pourquoi    une ou deux phrases : pourquoi TU le conseilles
      lien        le lien Amazon complet (doit commencer par https://)
      icone       un emoji
@@ -55,7 +55,8 @@ window.ND_BONS_PLANS = {
     ]},
     { id: "peripheriques", nom: "Périphériques et jeu", icone: "🎮", categories: [
       { id: "ecrans", nom: "Écrans" },
-      { id: "clavier-souris", nom: "Claviers et souris" },
+      { id: "claviers", nom: "Claviers" },
+      { id: "souris", nom: "Souris" },
       { id: "audio", nom: "Casques et audio" },
       { id: "manettes", nom: "Manettes et accessoires console" }
     ]}
@@ -111,7 +112,7 @@ window.ND_BONS_PLANS = {
     },
     {
       titre: "Royal Kludge C68FR HE — clavier à switchs magnétiques, AZERTY",
-      categorie: "clavier-souris",
+      categorie: "claviers",
       pourquoi: "Switchs magnétiques à effet Hall : on règle la profondeur d'activation de chaque touche, idéal pour les jeux compétitifs. Format compact (65 %) qui garde les flèches, et surtout en AZERTY français.",
       lien: "https://link.amazon/B0aiv3lzy",
       icone: "⌨️",
@@ -119,7 +120,7 @@ window.ND_BONS_PLANS = {
     },
     {
       titre: "Geeky GK61 — clavier mécanique 60 %, hot-swap",
-      categorie: "clavier-souris",
+      categorie: "claviers",
       pourquoi: "Un clavier mécanique compact (60 %, sans pavé numérique ni flèches dédiées) qui laisse plein de place à la souris. Hot-swap : on change les switchs sans souder. Vérifiez la disposition (AZERTY ou QWERTY) avant de commander.",
       lien: "https://link.amazon/B01bQaCrp",
       icone: "⌨️",

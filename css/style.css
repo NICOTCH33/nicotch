@@ -690,3 +690,16 @@ kbd { background: var(--carte); border: 1px solid var(--bordure); border-bottom-
   .ligne select { border: 0; background: #fff; color: #000; appearance: none; padding: 0; font-weight: 600; }
   .ligne-pourquoi, .ligne-nom, .ligne-type, .verif, .verif strong, .config-bilan { color: #000 !important; background: #fff !important; }
 }
+
+/* Bons plans : icônes de catégories et sommaire */
+.cat-ico { width: 44px; height: 44px; flex: 0 0 44px; display: inline-grid; place-items: center; border-radius: 10px; background: var(--noir-2); border: 1px solid var(--bordure); }
+.ligne-rouge .ico, .ligne-bleue .ico { width: 26px; height: 26px; fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.plan-titre { display: flex; align-items: center; gap: 12px; }
+.plan-haut .cat-ico { width: 48px; height: 48px; flex-basis: 48px; }
+.cat-sommaire { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 28px; }
+.cat-puce { display: inline-flex; align-items: center; gap: 8px; padding: 4px 12px 4px 4px; border-radius: 999px; border: 1px solid var(--bordure); background: var(--carte); color: var(--texte); font-weight: 600; font-size: .9rem; text-decoration: none; min-height: 44px; }
+.cat-puce:hover { border-color: var(--bleu); }
+.cat-puce .cat-ico { width: 34px; height: 34px; flex-basis: 34px; border-radius: 999px; }
+.cat-puce .ico { width: 20px; height: 20px; }
+.cat-nb { color: var(--texte-doux); font-weight: 500; font-size: .8rem; }
+.plan-section { scroll-margin-top: 16px; }
