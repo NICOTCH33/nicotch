@@ -1,0 +1,80 @@
+NICOTCH — Diagnostic & Réparation · Nicotch Rétro Games
+==========================================
+Version 1 — site statique (HTML, CSS, JavaScript), sans serveur, sans base de données,
+sans compte, sans abonnement, sans clé API.
+
+------------------------------------------------------------
+1. RÔLE DE CHAQUE FICHIER
+------------------------------------------------------------
+index.html          Page d'accueil (présentation, boutons de diagnostic, fiches, sécurité)
+diagnostic.html     Page du diagnostic interactif (PC : ?type=pc / consoles : ?type=console)
+fiches.html         Bibliothèque des fiches de dépannage (recherche + filtres)
+historique.html     Rapports enregistrés dans le navigateur (consulter, imprimer, effacer)
+a-propos.html       Avertissement, règles de sécurité, confidentialité
+404.html            Page « introuvable » affichée par Netlify
+netlify.toml        Réglages Netlify (en-têtes de sécurité, cache des images)
+
+css/style.css       Toute l'apparence du site (couleurs de la charte en haut du fichier)
+
+js/common.js        En-tête (logo + menu), pied de page, fonctions partagées
+                    -> pour modifier le menu ou le pied de page : c'est ICI, une seule fois.
+js/data-pc.js       Questions, causes et contrôles des 10 pannes PC
+js/data-consoles.js Questions, causes et contrôles des 7 pannes consoles (adaptés au modèle)
+js/data-fiches.js   Contenu des 29 fiches de dépannage et des 9 catégories
+js/rapport.js       Fabrication du rapport (utilisé par le diagnostic et l'historique)
+js/diagnostic.js    Moteur du diagnostic (questions, Retour, Recommencer, impression, historique)
+js/fiches.js        Recherche et filtres de la bibliothèque
+js/historique.js    Page historique
+
+reparation.html     Accueil de la section Diagnostic & Réparation
+jeux.html           Section « Nicotch Rétro Games » (catalogue des jeux)
+jouer.html          Page qui affiche un jeu (jouer.html?jeu=nom-du-jeu)
+js/data-jeux.js     Catalogue des jeux (explications pour ajouter un jeu en haut du fichier)
+js/jeux.js          Affichage des jeux
+jeux/               Un dossier par jeu (jeux/nom-du-jeu/index.html)
+jeux/_moteur/       Moteur Godot 4.7 partagé par tous les jeux (chargé une seule fois).
+                    Pour ajouter un jeu Godot : exporter en Web (Thread Support décoché),
+                    garder index.html + jeu.pck + icônes ; Claude adapte le reste.
+
+assets/logos/       Les 3 logos (Nicotch, Répare console et PC, Rétro Games), en
+                    plusieurs tailles, fond transparent. Les animations sont dans
+                    css/style.css (partie « LOGOS ET ANIMATIONS ») et se coupent
+                    toutes seules si le visiteur a réduit les animations dans Windows.
+assets/favicon.png, assets/apple-touch-icon.png   Icônes d'onglet (le « N » rouge)
+
+------------------------------------------------------------
+2. TESTER LE SITE SUR WINDOWS 11
+------------------------------------------------------------
+Méthode simple (aucun outil à installer) :
+  1. Faites un clic droit sur le fichier ZIP téléchargé > « Extraire tout… » > Extraire.
+  2. Ouvrez le dossier « nicotch-diagnostic » obtenu.
+  3. Double-cliquez sur « index.html » : le site s'ouvre dans votre navigateur.
+  4. Testez : Diagnostiquer mon PC, Diagnostiquer ma console, Fiches, Historique,
+     bouton Retour, Recommencer, Imprimer (choisir « Microsoft Print to PDF »).
+
+Tester l'affichage mobile sur le PC :
+  5. Dans Edge ou Chrome, appuyez sur F12, puis Ctrl + Maj + M.
+  6. Choisissez un téléphone en haut de la page (ex. iPhone SE). F12 pour quitter.
+
+Méthode « comme sur Internet » (facultative, nécessite Python installé) :
+  7. Dans le dossier du site, cliquez dans la barre d'adresse de l'Explorateur,
+     tapez  cmd  puis Entrée.
+  8. Dans la fenêtre noire, tapez :  python -m http.server 8000   puis Entrée.
+  9. Dans le navigateur, ouvrez :  http://localhost:8000
+ 10. Pour arrêter : revenez dans la fenêtre noire et appuyez sur Ctrl + C.
+
+------------------------------------------------------------
+3. HISTORIQUE ET CONFIDENTIALITÉ
+------------------------------------------------------------
+Les rapports enregistrés restent uniquement dans le navigateur du visiteur
+(stockage local). Pour les effacer : page Historique > « Effacer tout l'historique »,
+ou effacer les données du site dans les paramètres du navigateur.
+Aucune police, aucun script ni aucun outil de statistiques n'est chargé depuis
+un autre site.
+
+------------------------------------------------------------
+4. POLICES
+------------------------------------------------------------
+La charte prévoit Rajdhani (titres) et Inter (texte). Le site les utilise si elles
+sont installées ; sinon il utilise Bahnschrift et Segoe UI (fournies avec Windows),
+puis Arial. Aucune police n'est téléchargée depuis Google.

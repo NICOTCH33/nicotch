@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+    <title>Nicotch RUN 82</title>
+    <link rel="icon" href="assets/icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="game-container">
+
+    <!-- Le jeu est dessiné ici -->
+    <canvas id="canvas"></canvas>
+    <div class="crt"></div>
+
+    <!-- ===== ÉCRAN TITRE ===== -->
+    <!-- ===== ÉCRAN D'ACCUEIL (l'affiche) ===== -->
+    <div id="splash-overlay">
+        <div class="splash-bg"></div>
+        <img src="assets/affiche.jpg" alt="Affiche Nicotch RUN 82" class="splash-poster">
+        <div class="splash-press">APPUIE SUR UNE TOUCHE</div>
+    </div>
+
+    <div id="menu-overlay" class="overlay menu">
+        <div class="title-block">
+            <h2 class="subtitle">ARCADE SYNTHWAVE RACER</h2>
+            <h1 class="title">NICOTCH RUN 82</h1>
+        </div>
+        <div class="menu-buttons">
+            <button id="btn-play" class="btn btn-primary">🏁 JOUER</button>
+            <button id="btn-leaderboard" class="btn btn-cyan">🏆 CLASSEMENTS</button>
+            <div class="btn-row">
+                <button id="btn-sfx" class="btn btn-small">🔊 SON : ON</button>
+                <button id="btn-music" class="btn btn-small">🎵 MUSIQUE : ON</button>
+            </div>
+        </div>
+        <div class="help">
+            <span><b>Flèches / ZQSD</b> conduire</span>
+            <span><b>Espace</b> freiner</span>
+            <span><b>Maj / E</b> turbo</span>
+            <span><b>P / Échap</b> pause</span>
+            <span>🎮 Manette compatible</span>
+        </div>
+    </div>
+
+    <!-- ===== CHOIX DU CIRCUIT ===== -->
+    <div id="difficulty-overlay" class="overlay hidden">
+        <h2 class="screen-title pink">CHOIX DU CIRCUIT</h2>
+        <div class="cards">
+            <button data-diff="easy" class="btn-difficulty card green">
+                <span class="icon">🌴</span><span class="name">PLAGE</span>
+                <span class="desc">Facile · bord de mer<br>Trafic calme · <span class="t">40</span> s</span>
+            </button>
+            <button data-diff="normal" class="btn-difficulty card cyan">
+                <span class="icon">🌾</span><span class="name">CAMPAGNE</span>
+                <span class="desc">Normal · collines<br>Trafic moyen · <span class="t">32</span> s</span>
+            </button>
+            <button data-diff="hard" class="btn-difficulty card pink">
+                <span class="icon">⛰️</span><span class="name">MONTAGNE</span>
+                <span class="desc">Difficile · virages serrés<br>Trafic dense · <span class="t">25</span> s</span>
+            </button>
+            <button data-diff="neon" class="btn-difficulty card purple">
+                <span class="icon">🌃</span><span class="name">NUIT NÉON</span>
+                <span class="desc">Expert · de nuit<br>Trafic rapide · <span class="t">28</span> s</span>
+            </button>
+        </div>
+        <button id="btn-back-diff" class="link" data-back>&lt; Retour au menu</button>
+    </div>
+
+    <!-- ===== HUD (affichage pendant la course) ===== -->
+    <div id="hud-overlay" class="overlay hud hidden">
+        <div class="hud-top">
+            <div class="hud-row">
+                <div class="hud-col">
+                    <span class="hud-label pink">SCORE</span>
+                    <span id="hud-score" class="hud-score">0000000</span>
+                    <span id="hud-combo" class="hud-combo"></span>
+                </div>
+                <div class="hud-col center">
+                    <span class="hud-label">TEMPS</span>
+                    <span id="hud-time" class="hud-time">32</span>
+                </div>
+                <div class="hud-col right">
+                    <span id="hud-track" class="hud-label yellow">CAMPAGNE</span>
+                    <span id="hud-lap" class="hud-small">TOUR 1</span>
+                    <span id="hud-best" class="hud-small dim">MEILLEUR --</span>
+                </div>
+            </div>
+            <div class="progress"><div id="hud-progress"></div></div>
+        </div>
+        <div class="hud-bottom">
+            <div id="hud-turbo" class="turbo">
+                <span class="hud-label">TURBO</span>
+                <div class="turbo-bar"><div id="hud-turbo-fill"></div></div>
+            </div>
+            <div class="speed"><span id="hud-speed">0</span><small>KM/H</small></div>
+            <div class="spacer"></div>
+        </div>
+
+        <!-- Commandes tactiles (téléphone / tablette) -->
+        <div class="touch-only touch-pad">
+            <div class="touch-group">
+                <button id="tc-left" class="tc-btn round cyan">◀</button>
+                <button id="tc-right" class="tc-btn round cyan">▶</button>
+            </div>
+            <div class="touch-group">
+                <button id="tc-turbo" class="tc-btn round small purple">TURBO</button>
+                <button id="tc-brake" class="tc-btn round small pink">FREIN</button>
+                <button id="tc-gas" class="tc-btn round big gas">GAZ</button>
+            </div>
+        </div>
+        <button id="tc-pause" class="tc-btn touch-only pause-btn">⏸</button>
+    </div>
+
+    <!-- ===== FIN DE PARTIE ===== -->
+    <div id="gameover-overlay" class="overlay hidden">
+        <h2 id="gameover-title" class="screen-title pink">TEMPS ÉCOULÉ !</h2>
+        <div class="panel">
+            <div class="big-score-label">SCORE FINAL</div>
+            <div id="end-score" class="big-score">0</div>
+            <div class="stats">
+                <div><span>Tours</span><b id="end-laps">0</b></div>
+                <div><span>Meilleur tour</span><b id="end-best">--</b></div>
+                <div><span>Record du circuit</span><b id="end-record">--</b></div>
+                <div><span>Frôlements</span><b id="end-near">0</b></div>
+                <div><span>Combo max</span><b id="end-combo">x1</b></div>
+            </div>
+            <div id="highscore-input-container" class="hidden highscore">
+                <span class="blink">🎉 TU ENTRES AU CLASSEMENT !</span>
+                <input type="text" id="player-name" maxlength="10" placeholder="TON PSEUDO" autocomplete="off">
+                <small>Appuie sur Entrée pour valider</small>
+            </div>
+            <div id="saved-msg" class="hidden saved">✔ SCORE ENREGISTRÉ</div>
+        </div>
+        <div class="btn-row">
+            <button id="btn-restart" class="btn btn-primary">REJOUER</button>
+            <button id="btn-end-menu" class="btn btn-small" data-back>MENU</button>
+        </div>
+    </div>
+
+    <!-- ===== CLASSEMENTS ===== -->
+    <div id="leaderboard-overlay" class="overlay hidden">
+        <h2 class="screen-title cyan">CLASSEMENTS</h2>
+        <div class="tabs">
+            <button data-tab="easy" class="tab-btn">PLAGE</button>
+            <button data-tab="normal" class="tab-btn">CAMPAGNE</button>
+            <button data-tab="hard" class="tab-btn">MONTAGNE</button>
+            <button data-tab="neon" class="tab-btn">NÉON</button>
+        </div>
+        <div class="panel table-panel">
+            <table>
+                <thead><tr><th>RANG</th><th>PILOTE</th><th class="score">SCORE</th></tr></thead>
+                <tbody id="leaderboard-rows"></tbody>
+            </table>
+            <div id="lb-record" class="lb-record"></div>
+        </div>
+        <div class="lb-footer">
+            <button id="btn-reset-scores" class="link danger">Effacer les scores</button>
+            <button id="btn-close-lb" class="btn btn-small" data-back>RETOUR</button>
+        </div>
+    </div>
+
+    <button id="btn-fs" class="fs-btn" aria-label="Plein écran">⛶</button>
+    <div id="fs-toast" class="toast hidden"></div>
+</div>
+
+<script src="js/audio.js"></script>
+<script src="js/graphics.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>

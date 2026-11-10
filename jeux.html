@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="google" content="notranslate">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://nicotch.goatcounter.com; style-src 'self' 'unsafe-inline'; script-src 'self' https://gc.zgo.at; connect-src 'self' https://nicotch.goatcounter.com; frame-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nicotch Rétro Games – Jeux rétro gratuits</title>
+  <meta name="description" content="Les petits jeux gratuits créés par Nicotch, à jouer directement dans le navigateur.">
+  <meta name="theme-color" content="#05070B">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/common.js" defer></script>
+  <script src="js/data-jeux.js" defer></script>
+  <script src="js/jeux.js" defer></script>
+  <!-- Compteur de visites GoatCounter (sans cookies) -->
+  <script data-goatcounter="https://nicotch.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</head>
+<body>
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+  <header id="entete"></header>
+
+  <main id="contenu">
+    <section class="titre-page titre-retro">
+      <div class="conteneur">
+        <div class="retro-entete">
+          <div class="logo-retro" role="img" aria-label="Nicotch Rétro Games">
+            <picture>
+              <source type="image/webp" srcset="assets/logos/retro-games-600.webp 600w, assets/logos/retro-games-1000.webp 1000w" sizes="(max-width: 599px) 200px, 260px">
+              <img src="assets/logos/retro-games-600.png" width="600" height="650" alt="">
+            </picture>
+          </div>
+          <div>
+            <h1>Nicotch Rétro Games</h1>
+            <p>Les jeux rétro créés par Nicotch. Gratuits, sans installation et sans compte : choisissez un jeu et cliquez sur « Jouer ».</p>
+            <p class="press-start" aria-hidden="true">▶ PRESS START</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:16px">
+      <div class="conteneur" id="bloc-trilogie"></div>
+    </section>
+
+    <section class="section" style="padding-top:8px">
+      <div class="conteneur">
+        <h2>Tous les jeux</h2>
+        <div class="outils-fiches">
+          <div>
+            <p class="champ-label" id="label-genres">Genres</p>
+            <div class="filtres" id="filtres-jeux" role="group" aria-labelledby="label-genres"></div>
+          </div>
+          <p class="compteur" id="compteur-jeux" role="status" aria-live="polite"></p>
+        </div>
+        <div class="grille grille-3" id="liste-jeux"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="pied"></footer>
+</body>
+</html>

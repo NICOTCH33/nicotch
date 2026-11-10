@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="google" content="notranslate">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://nicotch.goatcounter.com; style-src 'self' 'unsafe-inline'; script-src 'self' https://gc.zgo.at; connect-src 'self' https://nicotch.goatcounter.com; frame-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Config PC – Nicotch</title>
+  <meta name="description" content="4 configurations PC gamer conseillées par gamme de budget, avec vérification automatique de la compatibilité et de l'alimentation.">
+  <meta name="theme-color" content="#05070B">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/common.js" defer></script>
+  <script src="js/data-config.js" defer></script>
+  <script src="js/config.js" defer></script>
+  <!-- Compteur de visites GoatCounter (sans cookies) -->
+  <script data-goatcounter="https://nicotch.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</head>
+<body>
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+  <header id="entete"></header>
+
+  <main id="contenu">
+    <section class="titre-page">
+      <div class="conteneur outils-entete">
+        <div class="logo-outils logo-config" role="img" aria-label="Nicotch – Config PC">
+          <picture>
+            <source type="image/webp" srcset="assets/logos/config-pc-300.webp 300w, assets/logos/config-pc-600.webp 600w" sizes="(max-width: 599px) 220px, 280px">
+            <img src="assets/logos/config-pc-600.png" width="600" height="534" alt="">
+          </picture>
+          <span class="etincelle" aria-hidden="true"></span>
+        </div>
+        <div>
+          <p class="fil"><a href="outils.html">Boîte à outils</a> › Config PC</p>
+          <h1>Config PC</h1>
+          <p>4 PC gamer conseillés, du petit budget au haut de gamme. Changez une pièce si vous voulez : la compatibilité et l'alimentation sont vérifiées automatiquement.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:16px">
+      <div class="conteneur">
+        <h2 class="sr">Choisir une gamme</h2>
+        <p class="config-consigne">👇 Cliquez sur un PC pour voir sa configuration complète.</p>
+        <div class="pc-cartes" id="gammes" role="group" aria-label="Les 4 configurations"></div>
+        <p class="meta-rapport config-prix-note">💶 Budgets indicatifs (<span id="mise-a-jour"></span>). Depuis fin 2025, la demande des centres de données pour l'IA fait grimper le prix de la RAM, des SSD et des cartes graphiques : les prix réels changent d'une semaine à l'autre. 🎮 Les fps sont une moyenne indicative dans les gros jeux récents, sans FSR ni DLSS (source : tests de presse). Dans les jeux compétitifs (Valorant, Fortnite, LoL), même la config d'entrée dépasse souvent 144 fps.</p>
+
+        <div id="detail" class="config-detail" hidden>
+          <div class="config-grille">
+            <div>
+              <h2 id="gamme-titre" class="gamme-titre"></h2>
+              <p id="gamme-usage" class="texte-doux gamme-usage"></p>
+              <p id="auto-note" class="auto-note" role="status" hidden></p>
+              <ul id="composants" class="lignes"></ul>
+            </div>
+
+            <aside class="carte config-resume" aria-labelledby="titre-resume">
+              <h2 id="titre-resume">Vérifications</h2>
+              <p id="bilan" class="config-bilan" role="status"></p>
+              <ul id="verifs" class="verifs"></ul>
+              <div class="config-alim">
+                <p>Consommation estimée : <strong><span id="conso"></span> W</strong></p>
+                <p>Alimentation conseillée : <strong class="alim-conseil-petit"><span id="conseil"></span> W</strong></p>
+                <p class="meta-rapport">Même calcul que le <a href="alimentation.html">calculateur d'alimentation</a>.</p>
+              </div>
+              <div class="config-actions no-print">
+                <button type="button" class="btn btn-rouge" id="btn-imprimer">🖨️ Imprimer / PDF</button>
+                <button type="button" class="btn btn-contour" id="btn-reinit">↺ Revenir à la config conseillée</button>
+              </div>
+            </aside>
+          </div>
+        </div>
+
+        <p class="meta-rapport config-note">Les longueurs de cartes graphiques varient selon les marques : vérifiez toujours la longueur du modèle exact avant d'acheter. Vous montez le PC vous-même ? Débranchez tout et touchez une partie métallique du boîtier avant de manipuler les composants.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="pied"></footer>
+</body>
+</html>

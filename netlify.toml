@@ -1,0 +1,28 @@
+# Configuration Netlify pour Nicotch (site statique, aucun « build »)
+[build]
+  publish = "."
+
+# En-têtes de sécurité appliqués à toutes les pages.
+# SAMEORIGIN : autorise la page jouer.html à afficher les jeux du site dans un cadre,
+# mais interdit aux autres sites d'intégrer Nicotch.
+# La politique de sécurité du contenu (CSP) est placée dans chaque page du site
+# (balise <meta>), pour ne pas gêner les jeux du dossier jeux/.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+# Les images changent rarement : mise en cache d'une semaine
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# Moteur de jeu Godot (partagé par tous les jeux) : mis en cache pour charger plus vite
+[[headers]]
+  for = "/jeux/_moteur/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"

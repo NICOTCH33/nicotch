@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="google" content="notranslate">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://nicotch.goatcounter.com; style-src 'self' 'unsafe-inline'; script-src 'self' https://gc.zgo.at; connect-src 'self' https://nicotch.goatcounter.com; frame-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Diagnostic & Réparation – Nicotch</title>
+  <meta name="description" content="Outil gratuit pour identifier les causes possibles d'une panne de PC ou de console (PlayStation, Xbox, Nintendo Switch) et suivre des étapes de dépannage sûres.">
+  <meta name="theme-color" content="#05070B">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/common.js" defer></script>
+  <!-- Compteur de visites GoatCounter (sans cookies) -->
+  <script data-goatcounter="https://nicotch.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</head>
+<body>
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+  <header id="entete"></header>
+
+  <main id="contenu">
+    <!-- Présentation -->
+    <section class="heros">
+      <div class="conteneur">
+        <div>
+          <span class="surtitre">DIAGNOSTIC &amp; RÉPARATION</span>
+          <h1>Trouvez l'origine de la panne de votre <span class="r">PC</span> ou de votre <span class="b">console</span></h1>
+          <p class="intro">Le diagnostic Nicotch vous pose des questions simples, puis vous indique les causes possibles et les contrôles à faire, du plus simple au plus technique. Gratuit, sans inscription, sans collecte de données.</p>
+          <div class="heros-actions">
+            <a class="btn btn-rouge" href="diagnostic.html?type=pc">🖥️ Diagnostiquer mon PC</a>
+            <a class="btn btn-contour" href="diagnostic.html?type=console">🎮 Diagnostiquer ma console</a>
+          </div>
+        </div>
+        <div class="heros-logo">
+          <div class="logo-repare" role="img" aria-label="Nicotch – Répare console et PC">
+            <picture>
+              <source type="image/webp" srcset="assets/logos/repare-600.webp 600w, assets/logos/repare-1000.webp 1000w" sizes="(max-width: 599px) 260px, 380px">
+              <img src="assets/logos/repare-600.png" width="600" height="434" alt="">
+            </picture>
+            <span class="etincelle" aria-hidden="true"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Choix de l'appareil -->
+    <section class="section" id="choisir">
+      <div class="conteneur">
+        <h2>Que voulez-vous diagnostiquer ?</h2>
+        <p class="sous-titre">Choisissez votre appareil. Vous pourrez revenir en arrière ou recommencer à tout moment.</p>
+        <div class="grille grille-2">
+          <a class="carte carte-lien carte-rouge" href="diagnostic.html?type=pc">
+            <div class="icone" aria-hidden="true">🖥️</div>
+            <h3>Mon ordinateur (PC fixe ou portable)</h3>
+            <p>Ne démarre plus, écran noir, lenteurs, surchauffe, Internet, écran bleu, disque, redémarrages, son, USB.</p>
+            <p class="action">Diagnostiquer mon PC ›</p>
+          </a>
+          <a class="carte carte-lien carte-bleue" href="diagnostic.html?type=console">
+            <div class="icone" aria-hidden="true">🎮</div>
+            <h3>Ma console de jeux</h3>
+            <p>PS4, PS5, Xbox One, Xbox Series, Nintendo Switch : allumage, image, surchauffe, lecteur, Internet, plantages, manette.</p>
+            <p class="action">Diagnostiquer ma console ›</p>
+          </a>
+        </div>
+        <div class="grille grille-3" style="margin-top:16px">
+          <a class="carte carte-lien" href="diagnostic.html?type=console&amp;plateforme=playstation"><h3>🎮 PlayStation</h3><p>PS4 et PS5</p></a>
+          <a class="carte carte-lien" href="diagnostic.html?type=console&amp;plateforme=xbox"><h3>🟢 Xbox</h3><p>Xbox One et Xbox Series</p></a>
+          <a class="carte carte-lien" href="diagnostic.html?type=console&amp;plateforme=nintendo"><h3>🔴 Nintendo</h3><p>Nintendo Switch</p></a>
+        </div>
+        <a class="carte carte-lien carte-rouge" href="bips.html" style="margin-top:16px">
+          <div class="icone" aria-hidden="true">🔊</div>
+          <h3>Mon PC bipe au démarrage</h3>
+          <p>Choisissez votre BIOS, tapez le rythme entendu (courts, longs) et découvrez la panne probable. Avec les voyants CPU, DRAM, VGA et BOOT.</p>
+          <p class="action">Ouvrir le décodeur de bips ›</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Fonctionnement -->
+    <section class="section" id="fonctionnement">
+      <div class="conteneur">
+        <h2>Comment fonctionne le diagnostic ?</h2>
+        <p class="sous-titre">Quatre étapes, quelques minutes, aucune connaissance technique requise.</p>
+        <div class="grille grille-auto">
+          <div class="carte"><div class="etape-num">1</div><h3>Choisissez le symptôme</h3><p>Sélectionnez ce qui ressemble le plus à votre panne.</p></div>
+          <div class="carte"><div class="etape-num b">2</div><h3>Répondez aux questions</h3><p>Chaque question dépend de votre réponse précédente. Un bouton « Retour » permet de corriger.</p></div>
+          <div class="carte"><div class="etape-num">3</div><h3>Lisez les causes possibles</h3><p>Classées de la plus fréquente à la plus rare. Ce n'est jamais un verdict définitif.</p></div>
+          <div class="carte"><div class="etape-num b">4</div><h3>Suivez les contrôles</h3><p>Dans l'ordre, avec le niveau de difficulté, les outils et le résultat attendu. Imprimez ou enregistrez le rapport en PDF.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fiches -->
+    <section class="section" id="fiches">
+      <div class="conteneur">
+        <h2>Fiches de dépannage</h2>
+        <p class="sous-titre">Des procédures claires, classées par catégorie, avec une recherche par mot-clé.</p>
+        <div class="grille grille-auto">
+          <a class="carte carte-lien" href="fiches.html?categorie=alim"><h3>⚡ Démarrage et alimentation</h3></a>
+          <a class="carte carte-lien" href="fiches.html?categorie=ecran"><h3>🖥️ Écran et affichage</h3></a>
+          <a class="carte carte-lien" href="fiches.html?categorie=windows"><h3>🪟 Windows et logiciels</h3></a>
+          <a class="carte carte-lien" href="fiches.html?categorie=stockage"><h3>💾 Stockage et sauvegarde</h3></a>
+          <a class="carte carte-lien" href="fiches.html?categorie=reseau"><h3>🌐 Réseau et Internet</h3></a>
+          <a class="carte carte-lien" href="fiches.html?categorie=temp"><h3>🌡️ Température et ventilation</h3></a>
+          <a class="carte carte-lien" href="fiches.html?categorie=ps"><h3>🎮 PlayStation</h3></a>
+          <a class="carte carte-lien" href="fiches.html?categorie=xbox"><h3>🟢 Xbox</h3></a>
+          <a class="carte carte-lien" href="fiches.html?categorie=nintendo"><h3>🔴 Nintendo</h3></a>
+        </div>
+        <p style="margin-top:24px"><a class="btn btn-contour" href="fiches.html">Consulter toutes les fiches</a></p>
+      </div>
+    </section>
+
+    <!-- Sécurité -->
+    <section class="section">
+      <div class="conteneur">
+        <h2>Votre sécurité d'abord</h2>
+        <div class="bandeau-alerte bandeau-danger"><strong>Risque électrique :</strong> ne démontez jamais une alimentation, un écran ou une console sous tension. En cas de doute, d'odeur de brûlé ou de fumée, débranchez l'appareil et faites appel à un professionnel.</div>
+        <div class="bandeau-alerte"><strong>Vos données :</strong> avant toute manipulation sur un disque ou une réinitialisation, sauvegardez vos fichiers. Les étapes concernées sont signalées dans les rapports.</div>
+        <div class="bandeau-alerte bandeau-info"><strong>Confidentialité :</strong> le site ne vous demande jamais de mot de passe et ne collecte aucune donnée personnelle. <a href="a-propos.html#confidentialite">En savoir plus</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="pied"></footer>
+  <noscript><p class="conteneur">Le diagnostic interactif nécessite JavaScript. Activez-le dans votre navigateur pour l'utiliser.</p></noscript>
+</body>
+</html>

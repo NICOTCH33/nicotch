@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="google" content="notranslate">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://nicotch.goatcounter.com; style-src 'self' 'unsafe-inline'; script-src 'self' https://gc.zgo.at; connect-src 'self' https://nicotch.goatcounter.com; frame-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculateur d'alimentation PC – Nicotch</title>
+  <meta name="description" content="Estimez la consommation de votre PC et la puissance d'alimentation conseillée : processeur, carte graphique, RAM, disques, ventilateurs.">
+  <meta name="theme-color" content="#05070B">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/common.js" defer></script>
+  <script src="js/alimentation.js" defer></script>
+  <!-- Compteur de visites GoatCounter (sans cookies) -->
+  <script data-goatcounter="https://nicotch.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</head>
+<body>
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+  <header id="entete"></header>
+
+  <main id="contenu">
+    <section class="titre-page">
+      <div class="conteneur">
+        <p class="meta-rapport"><a href="outils.html">Boîte à outils</a> › Calculateur d'alimentation</p>
+        <h1>⚡ Calculateur d'alimentation</h1>
+        <p>Choisissez les composants de votre PC : le calcul se met à jour tout seul. Vous obtenez la consommation estimée en pleine charge et la puissance d'alimentation conseillée.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:16px">
+      <div class="conteneur alim-grille">
+        <form class="carte alim-form" id="alim-form" onsubmit="return false">
+          <div class="champ">
+            <label class="champ-label" for="cpu">🧠 Processeur</label>
+            <select id="cpu"></select>
+          </div>
+          <div class="champ">
+            <label class="champ-label" for="gpu">🎮 Carte graphique</label>
+            <select id="gpu"></select>
+          </div>
+          <div class="champ-ligne">
+            <div class="champ"><label class="champ-label" for="ram">Barrettes de RAM</label><input type="number" id="ram" min="0" max="8" value="2" inputmode="numeric"></div>
+            <div class="champ"><label class="champ-label" for="ssd">SSD</label><input type="number" id="ssd" min="0" max="8" value="1" inputmode="numeric"></div>
+            <div class="champ"><label class="champ-label" for="hdd">Disques durs (HDD)</label><input type="number" id="hdd" min="0" max="8" value="0" inputmode="numeric"></div>
+            <div class="champ"><label class="champ-label" for="ventilos">Ventilateurs boîtier</label><input type="number" id="ventilos" min="0" max="12" value="3" inputmode="numeric"></div>
+          </div>
+          <label class="case-fait"><input type="checkbox" id="watercooling"> Watercooling tout-en-un (pompe)</label>
+          <label class="case-fait"><input type="checkbox" id="rgb"> Beaucoup de LED RGB et d'accessoires USB</label>
+          <label class="case-fait"><input type="checkbox" id="overclock"> Overclocking (processeur ou carte graphique poussés)</label>
+        </form>
+
+        <div class="carte alim-resultat" aria-live="polite">
+          <p class="alim-etiquette">Consommation estimée en pleine charge</p>
+          <p class="alim-valeur"><span id="conso">0</span> W</p>
+          <p class="alim-etiquette">Alimentation conseillée</p>
+          <p class="alim-valeur alim-conseil"><span id="conseil">0</span> W</p>
+          <div class="alim-jauge" role="img" id="jauge-texte" aria-label="">
+            <span id="jauge"></span>
+          </div>
+          <p class="meta-rapport" id="jauge-legende"></p>
+          <p class="meta-rapport" id="fabricant"></p>
+          <ul class="alim-detail" id="detail"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="conteneur">
+        <h2>💡 Bien choisir son alimentation</h2>
+        <div class="grille grille-2">
+          <div class="carte"><h3>Pourquoi prendre de la marge ?</h3><p>Une alimentation est plus efficace, plus silencieuse et vieillit mieux quand elle ne tourne pas à fond : en pleine charge (en jeu), mieux vaut rester sous 80 % de sa puissance. Les cartes graphiques récentes ont aussi de courts pics de consommation bien au-dessus de leur valeur annoncée.</p></div>
+          <div class="carte"><h3>La certification 80 PLUS</h3><p>Bronze, Gold, Platinum… Elle indique le rendement : une alimentation Gold gaspille moins d'électricité en chaleur. Pour un PC de jeu, visez au minimum 80 PLUS Bronze, idéalement Gold.</p></div>
+          <div class="carte"><h3>Vérifiez les connecteurs</h3><p>Les cartes graphiques récentes haut de gamme utilisent le connecteur 12V-2x6 (ou 12VHPWR). Vérifiez que l'alimentation le propose, ou au moins assez de câbles PCIe 8 broches.</p></div>
+          <div class="carte"><h3>Évitez les alimentations sans marque</h3><p>L'alimentation protège tous les autres composants. Une alimentation bas de gamme peut lâcher et endommager la carte mère ou la carte graphique : c'est la dernière pièce sur laquelle économiser.</p></div>
+        </div>
+        <div class="bandeau-alerte bandeau-info"><strong>Estimation :</strong> les consommations sont des valeurs typiques en pleine charge ; un modèle de marque (carte « OC », version personnalisée) peut consommer un peu plus. Le calculateur ne conseille jamais moins que la puissance recommandée par le fabricant de la carte graphique. Votre alimentation montre des signes de faiblesse ? <a href="diagnostic.html?type=pc">Lancez le diagnostic PC</a>.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="pied"></footer>
+</body>
+</html>

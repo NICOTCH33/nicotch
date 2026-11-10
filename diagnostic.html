@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="google" content="notranslate">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://nicotch.goatcounter.com; style-src 'self' 'unsafe-inline'; script-src 'self' https://gc.zgo.at; connect-src 'self' https://nicotch.goatcounter.com; frame-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Diagnostic – Nicotch</title>
+  <meta name="description" content="Diagnostic interactif des pannes de PC et de consoles : questions simples, causes possibles et contrôles à effectuer dans l'ordre.">
+  <meta name="theme-color" content="#05070B">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- L'ordre des scripts compte : outils communs, données, rapport, puis moteur -->
+  <script src="js/common.js" defer></script>
+  <script src="js/data-pc.js" defer></script>
+  <script src="js/data-consoles.js" defer></script>
+  <script src="js/data-fiches.js" defer></script>
+  <script src="js/rapport.js" defer></script>
+  <script src="js/diagnostic.js" defer></script>
+  <!-- Compteur de visites GoatCounter (sans cookies) -->
+  <script data-goatcounter="https://nicotch.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</head>
+<body>
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+  <header id="entete"></header>
+
+  <main id="contenu">
+    <section class="titre-page">
+      <div class="conteneur">
+        <h1 id="titre-diag">Diagnostic</h1>
+        <p id="intro-diag">Répondez à quelques questions simples.</p>
+      </div>
+    </section>
+
+    <section class="diag" id="diagnostic">
+      <div class="conteneur">
+        <div class="diag-barre">
+          <p class="fil-ariane" id="fil-ariane"><strong>Diagnostic</strong></p>
+          <div class="groupe">
+            <button type="button" class="btn btn-contour btn-petit" id="btn-retour" disabled>← Retour</button>
+            <button type="button" class="btn btn-contour btn-petit" id="btn-recommencer">🔄 Recommencer</button>
+          </div>
+        </div>
+        <div class="progression" role="progressbar" aria-label="Avancement du diagnostic" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
+        <div id="zone-diagnostic" aria-live="polite">
+          <noscript><div class="carte"><p>Le diagnostic interactif nécessite JavaScript. Activez-le dans votre navigateur, ou consultez les <a href="fiches.html">fiches de dépannage</a>.</p></div></noscript>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="pied"></footer>
+</body>
+</html>

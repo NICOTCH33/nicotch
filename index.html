@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="google" content="notranslate">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://nicotch.goatcounter.com; style-src 'self' 'unsafe-inline'; script-src 'self' https://gc.zgo.at; connect-src 'self' https://nicotch.goatcounter.com; frame-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nicotch – Diagnostic, réparation et petits jeux</title>
+  <meta name="description" content="Nicotch : diagnostic gratuit des pannes de PC et de consoles (PlayStation, Xbox, Nintendo Switch) et petits jeux à jouer dans le navigateur.">
+  <meta name="theme-color" content="#05070B">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/common.js" defer></script>
+  <script src="js/data-jeux.js" defer></script>
+  <script src="js/jeux.js" defer></script>
+  <!-- Compteur de visites GoatCounter (sans cookies) -->
+  <script data-goatcounter="https://nicotch.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</head>
+<body>
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+  <header id="entete"></header>
+
+  <main id="contenu">
+    <!-- Présentation -->
+    <section class="heros heros-accueil">
+      <div class="conteneur">
+        <span class="surtitre">RÉPARATION CONSOLE ET PC · RÉTRO GAMES</span>
+        <h1 class="titre-logo"><span class="sr">Bienvenue chez Nicotch</span>
+          <picture>
+            <source type="image/webp" srcset="assets/logos/nicotch-800.webp 800w, assets/logos/nicotch-1400.webp 1400w" sizes="(max-width: 599px) 90vw, 640px">
+            <img class="logo-nicotch logo-allumage" src="assets/logos/nicotch-800.png" width="800" height="239" alt="">
+          </picture>
+        </h1>
+        <p class="intro">Ici, on répare et on joue. Trouvez l'origine d'une panne de PC ou de console grâce au diagnostic gratuit, ou faites une pause avec les jeux rétro créés par Nicotch.</p>
+      </div>
+    </section>
+
+    <!-- Les deux sections du site -->
+    <section class="section" style="padding-top:8px" aria-labelledby="titre-sections">
+      <div class="conteneur conteneur-large">
+        <h2 id="titre-sections" class="cache">Les cinq sections du site</h2>
+        <div class="grille grille-3 grille-espaces">
+          <div class="carte carte-lisere espace">
+            <div class="espace-logo">
+          <div class="logo-repare" role="img" aria-label="Nicotch – Répare console et PC">
+            <picture>
+              <source type="image/webp" srcset="assets/logos/repare-600.webp 600w, assets/logos/repare-1000.webp 1000w" sizes="(max-width: 599px) 260px, 380px">
+              <img src="assets/logos/repare-600.png" width="600" height="434" alt="">
+            </picture>
+            <span class="etincelle" aria-hidden="true"></span>
+          </div>
+            </div>
+            <h3>Diagnostic &amp; Réparation</h3>
+            <p>Quelques questions pour trouver les causes possibles d'une panne et les contrôles à faire. PC fixe ou portable, PlayStation, Xbox, Switch.</p>
+            <ul class="liste-points">
+              <li>Diagnostic interactif PC et consoles</li>
+              <li>29 fiches de dépannage avec recherche</li>
+              <li>Rapport à imprimer ou enregistrer en PDF</li>
+            </ul>
+            <div class="espace-actions">
+              <a class="btn btn-rouge" href="diagnostic.html?type=pc">🖥️ Diagnostic PC</a>
+              <a class="btn btn-contour" href="diagnostic.html?type=console">🎮 Diagnostic console</a>
+            </div>
+            <p style="margin-top:12px"><a href="reparation.html">Tout sur le diagnostic et les fiches ›</a></p>
+          </div>
+
+          <div class="carte carte-lisere espace">
+            <div class="espace-logo">
+          <div class="logo-retro" role="img" aria-label="Nicotch Rétro Games">
+            <picture>
+              <source type="image/webp" srcset="assets/logos/retro-games-600.webp 600w, assets/logos/retro-games-1000.webp 1000w" sizes="(max-width: 599px) 220px, 300px">
+              <img src="assets/logos/retro-games-600.png" width="600" height="650" alt="">
+            </picture>
+          </div>
+            </div>
+            <h3>Nicotch Rétro Games</h3>
+            <p>Des jeux rétro gratuits créés par Nicotch, à lancer directement dans le navigateur : rien à installer, aucun compte.</p>
+            <ul class="liste-points">
+              <li>Jouables sur ordinateur, et sur mobile quand c'est indiqué</li>
+              <li>Commandes expliquées avant de jouer</li>
+              <li>Mode plein écran</li>
+            </ul>
+            <div class="espace-actions">
+              <a class="btn btn-bleu" href="jeux.html">🕹️ Voir les jeux</a>
+            </div>
+          </div>
+          <div class="carte carte-lisere espace">
+            <div class="espace-logo">
+          <div class="logo-outils" role="img" aria-label="Nicotch – Boîte à outils">
+            <picture>
+              <source type="image/webp" srcset="assets/logos/outils-300.webp 300w, assets/logos/outils-600.webp 600w" sizes="(max-width: 599px) 240px, 280px">
+              <img src="assets/logos/outils-600.png" width="600" height="508" alt="">
+            </picture>
+            <span class="etincelle" aria-hidden="true"></span>
+          </div>
+            </div>
+            <h3>Boîte à outils</h3>
+            <p>Des outils gratuits et simples pour comprendre et entretenir votre PC, sans compte et sans rien installer.</p>
+            <ul class="liste-points">
+              <li>Décodeur de bips BIOS</li>
+              <li>Calculateur d'alimentation</li>
+              <li>Config PC par budget</li>
+            </ul>
+            <div class="espace-actions">
+              <a class="btn btn-contour" href="outils.html">🧰 Voir les outils</a>
+            </div>
+          </div>
+          <div class="carte carte-lisere espace">
+            <div class="espace-logo">
+          <div class="logo-outils logo-config" role="img" aria-label="Nicotch – Config PC">
+            <picture>
+              <source type="image/webp" srcset="assets/logos/config-pc-300.webp 300w, assets/logos/config-pc-600.webp 600w" sizes="(max-width: 599px) 240px, 280px">
+              <img src="assets/logos/config-pc-600.png" width="600" height="534" alt="">
+            </picture>
+            <span class="etincelle" aria-hidden="true"></span>
+          </div>
+            </div>
+            <h3>Config PC</h3>
+            <p>4 PC gamer conseillés, de ~800 € à ~2 800 €. Changez une pièce : tout est vérifié automatiquement.</p>
+            <ul class="liste-points">
+              <li>4 gammes de budget</li>
+              <li>Compatibilité vérifiée</li>
+              <li>Alimentation calculée</li>
+            </ul>
+            <div class="espace-actions">
+              <a class="btn btn-contour" href="config-pc.html">🖥️ Voir les configs</a>
+            </div>
+          </div>
+          <div class="carte carte-lisere espace">
+            <div class="espace-logo">
+          <div class="logo-outils logo-bons-plans" role="img" aria-label="Nicotch – Bons plans">
+            <picture>
+              <source type="image/webp" srcset="assets/logos/bons-plans-300.webp 300w, assets/logos/bons-plans-600.webp 600w" sizes="(max-width: 599px) 240px, 280px">
+              <img src="assets/logos/bons-plans-600.png" width="600" height="514" alt="">
+            </picture>
+            <span class="etincelle" aria-hidden="true"></span>
+          </div>
+            </div>
+            <h3>Bons plans</h3>
+            <p>Une sélection de produits utiles pour réparer, entretenir et améliorer un PC ou une console.</p>
+            <ul class="liste-points">
+              <li>Outils de réparation</li>
+              <li>Composants PC</li>
+              <li>Périphériques et jeu</li>
+            </ul>
+            <div class="espace-actions">
+              <a class="btn btn-contour" href="bons-plans.html">🛍️ Voir les bons plans</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Derniers jeux (rempli automatiquement à partir de js/data-jeux.js) -->
+    <section class="section" aria-labelledby="titre-derniers">
+      <div class="conteneur">
+        <h2 id="titre-derniers">Derniers jeux</h2>
+        <div class="grille grille-3" id="derniers-jeux" data-limite="3"></div>
+      </div>
+    </section>
+
+    <!-- Sécurité -->
+    <section class="section">
+      <div class="conteneur">
+        <div class="bandeau-alerte bandeau-info"><strong>Confidentialité :</strong> le site ne demande jamais de mot de passe et ne collecte aucune donnée personnelle. <a href="a-propos.html#confidentialite">En savoir plus</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="pied"></footer>
+</body>
+</html>
