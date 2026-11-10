@@ -11,7 +11,7 @@
    Champs :
      titre       nom du produit (court)
      categorie   une des catégories ci-dessous : "outils", "entretien",
-                 "gpu", "cpu", "ram", "stockage", "alim", "refroidissement",
+                 "gpu", "cpu", "cm", "ram", "stockage", "alim", "refroidissement", "boitiers",
                  "ecrans", "clavier-souris", "audio", "manettes"
      pourquoi    une ou deux phrases : pourquoi TU le conseilles
      lien        le lien Amazon complet (doit commencer par https://)
@@ -45,11 +45,13 @@ window.ND_BONS_PLANS = {
       { id: "gpu", nom: "Cartes graphiques",
         outil: { texte: "Votre alimentation va-t-elle suivre ? Vérifiez avec le calculateur", lien: "alimentation.html" } },
       { id: "cpu", nom: "Processeurs" },
+      { id: "cm", nom: "Cartes mères" },
       { id: "ram", nom: "Mémoire RAM" },
       { id: "stockage", nom: "Stockage (SSD et disques durs)" },
       { id: "alim", nom: "Alimentations",
         outil: { texte: "Pas sûr de la puissance ? Utilisez le calculateur d'alimentation", lien: "alimentation.html" } },
-      { id: "refroidissement", nom: "Refroidissement" }
+      { id: "refroidissement", nom: "Refroidissement" },
+      { id: "boitiers", nom: "Boîtiers" }
     ]},
     { id: "peripheriques", nom: "Périphériques et jeu", icone: "🎮", categories: [
       { id: "ecrans", nom: "Écrans" },
@@ -59,5 +61,197 @@ window.ND_BONS_PLANS = {
     ]}
   ],
   PRODUITS: [
+    {
+      titre: "D.RECT — bombe d'air sec 400 ml",
+      categorie: "entretien",
+      pourquoi: "La solution pas chère pour un dépoussiérage de temps en temps : clavier, ventilateurs, ports. Astuce : tenez la bombe bien droite et soufflez par petites pressions, sinon elle projette du gaz liquide glacé.",
+      lien: "https://link.amazon/B00GKg3V8",
+      icone: "💨",
+      date: "2026-11-10"
+    },
+    {
+      titre: "Souffleur électrique à air comprimé (100 000 tr/min)",
+      categorie: "entretien",
+      pourquoi: "Pour dépoussiérer PC et consoles sans racheter des bombes d'air sec : rechargeable et beaucoup plus puissant. Astuce de réparateur : bloquez les ventilateurs avec un doigt pendant le soufflage, sinon ils tournent trop vite et s'abîment.",
+      lien: "https://link.amazon/B04InSo4V",
+      icone: "💨",
+      date: "2026-11-10"
+    },
+    {
+      titre: "ARCTIC MX-7 (4 g) — pâte thermique",
+      categorie: "entretien",
+      pourquoi: "La pâte thermique sèche avec les années : PC qui chauffe, ventilateur qui hurle, console qui s'éteint. La changer fait souvent gagner 10 à 20 °C. Non conductrice, donc sans risque de court-circuit, et 4 g suffisent pour plusieurs applications.",
+      lien: "https://link.amazon/B09NQbdKf",
+      icone: "💉",
+      date: "2026-11-10"
+    },
+    {
+      titre: "STREBITO — kit de tournevis de précision électronique (PC, consoles)",
+      categorie: "outils",
+      pourquoi: "Le kit complet pour aller plus loin : un grand choix d'embouts et des outils d'ouverture pour démonter PC portables, consoles et manettes sans abîmer les plastiques.",
+      lien: "https://link.amazon/B0h253edX",
+      icone: "🧰",
+      date: "2026-11-10"
+    },
+    {
+      titre: "JOREST — kit de 40 tournevis de précision",
+      categorie: "outils",
+      pourquoi: "L'outil n°1 du réparateur : cruciformes, Torx, triangle et Pentalobe pour ouvrir PC portables, manettes, consoles et smartphones. C'est celui à avoir avant toute réparation.",
+      lien: "https://link.amazon/B0iQykIQS",
+      icone: "🪛",
+      date: "2026-11-10"
+    },
+    {
+      titre: "HyperX Cloud III — casque gaming filaire (PC, PS5, Xbox Series)",
+      categorie: "audio",
+      pourquoi: "Un casque réputé pour son confort sur de longues sessions, avec un micro clair et détachable. Il fonctionne sur PC et sur consoles : un seul casque pour tout.",
+      lien: "https://link.amazon/B0e9CfKKz",
+      icone: "🎧",
+      date: "2026-11-10"
+    },
+    {
+      titre: "Royal Kludge C68FR HE — clavier à switchs magnétiques, AZERTY",
+      categorie: "clavier-souris",
+      pourquoi: "Switchs magnétiques à effet Hall : on règle la profondeur d'activation de chaque touche, idéal pour les jeux compétitifs. Format compact (65 %) qui garde les flèches, et surtout en AZERTY français.",
+      lien: "https://link.amazon/B0aiv3lzy",
+      icone: "⌨️",
+      date: "2026-11-10"
+    },
+    {
+      titre: "Geeky GK61 — clavier mécanique 60 %, hot-swap",
+      categorie: "clavier-souris",
+      pourquoi: "Un clavier mécanique compact (60 %, sans pavé numérique ni flèches dédiées) qui laisse plein de place à la souris. Hot-swap : on change les switchs sans souder. Vérifiez la disposition (AZERTY ou QWERTY) avant de commander.",
+      lien: "https://link.amazon/B01bQaCrp",
+      icone: "⌨️",
+      date: "2026-11-10"
+    },
+    {
+      titre: "Samsung Odyssey OLED G8 (G81SF) — écran 27\" 4K OLED, 240 Hz",
+      categorie: "ecrans",
+      pourquoi: "Le très haut de gamme : dalle OLED aux noirs parfaits, 4K ultra fine et 240 Hz. À associer à une grosse carte graphique (RX 9070 XT, RTX 5080) avec FSR ou DLSS activé pour en profiter en jeu.",
+      lien: "https://link.amazon/B0amtkM2o",
+      icone: "🖥️",
+      date: "2026-11-10"
+    },
+    {
+      titre: "MSI PRO MP273Q E14 — écran 27\" WQHD (1440p), 144 Hz, IPS",
+      categorie: "ecrans",
+      pourquoi: "Le complément idéal des configs 1440p (Milieu haut et Haut de gamme) : 27 pouces, image bien plus fine que le Full HD, 144 Hz pour la fluidité et haut-parleurs intégrés. Aussi très confortable pour travailler.",
+      lien: "https://link.amazon/B06d878IK",
+      icone: "🖥️",
+      date: "2026-11-10"
+    },
+    {
+      titre: "Dell 24 SE2426H — écran 24\" Full HD, 144 Hz, IPS",
+      categorie: "ecrans",
+      pourquoi: "Le bon écran pour une config d'entrée ou milieu de gamme : Full HD, 144 Hz pour des jeux fluides, dalle IPS aux belles couleurs. Une marque fiable pour un prix raisonnable.",
+      lien: "https://link.amazon/B077oj3Tr",
+      icone: "🖥️",
+      date: "2026-11-10"
+    },
+    {
+      titre: "Ocypus Delta EH10 Pro — hub ventilateurs PWM + ARGB, 10 ports",
+      categorie: "refroidissement",
+      pourquoi: "Quand la carte mère n'a pas assez de prises pour les ventilateurs et l'éclairage : ce hub branche jusqu'à 10 ventilateurs (4 broches PWM) et LED ARGB (5 V, 3 broches) sur une seule prise, pilotés ensemble.",
+      lien: "https://link.amazon/B06ImOeIm",
+      icone: "🔌",
+      date: "2026-11-10"
+    },
+    {
+      titre: "Sudokoo ENERGLO 240 — watercooling AIO 240 mm blanc, écran LCD",
+      categorie: "refroidissement",
+      pourquoi: "Un watercooling 240 mm blanc avec un écran sur la pompe qui affiche la température du processeur : pratique pour surveiller son PC d'un coup d'œil.",
+      lien: "https://link.amazon/B00I9fHfn",
+      icone: "❄️",
+      date: "2026-11-10"
+    },
+    {
+      titre: "SAMA L50 — watercooling AIO 360 mm ARGB, miroir infini, blanc",
+      categorie: "refroidissement",
+      pourquoi: "La version 360 mm : 3 ventilateurs pour plus de marge et moins de bruit, idéale pour un processeur haut de gamme. En blanc, parfaite dans un boîtier blanc. Vérifiez que votre boîtier accepte un radiateur de 360 mm.",
+      lien: "https://link.amazon/B0icmso1j",
+      icone: "❄️",
+      date: "2026-11-10"
+    },
+    {
+      titre: "SAMA L50 — watercooling AIO 240 mm ARGB, miroir infini",
+      categorie: "refroidissement",
+      pourquoi: "Un watercooling tout-en-un 240 mm à petit prix, avec un effet miroir infini ARGB sur la pompe. Suffisant pour un processeur de milieu de gamme comme le Ryzen 5 9600X.",
+      lien: "https://link.amazon/B0dtHdwOP",
+      icone: "❄️",
+      date: "2026-11-10"
+    },
+    {
+      titre: "NZXT H7 Flow — boîtier moyen tour ATX Airflow, blanc",
+      categorie: "boitiers",
+      pourquoi: "Façade en grille pour un excellent flux d'air, de la place pour les cartes graphiques les plus longues et un vrai espace pour cacher les câbles : un montage propre, même pour un premier PC.",
+      lien: "https://link.amazon/B03TB1a9U",
+      icone: "📦",
+      date: "2026-11-10"
+    },
+    {
+      titre: "NOX Infinity Zeta ARGB — mini-tour micro-ATX / ITX",
+      categorie: "boitiers",
+      pourquoi: "Un boîtier compact et pas cher avec vitre et ventilateur ARGB, pour une carte mère micro-ATX. Cartes graphiques jusqu'à 310 mm. Un seul ventilateur fourni : ajoutez-en 2 en façade.",
+      lien: "https://link.amazon/B08hUiawA",
+      icone: "📦",
+      date: "2026-11-10"
+    },
+    {
+      titre: "NZXT C750 Bronze — 750 W, ATX 3.1, non modulaire",
+      categorie: "alim",
+      pourquoi: "750 W à la norme ATX 3.1 : la bonne puissance pour une RX 9070 ou une RTX 5070. Non modulaire, donc tous les câbles sont fixés : prévoir un peu de place pour les ranger derrière la carte mère.",
+      lien: "https://link.amazon/B02Pehwvv",
+      icone: "⚡",
+      date: "2026-11-10"
+    },
+    {
+      titre: "Seasonic CORE BC-650 — 650 W, ATX 3.1, 80 PLUS Bronze",
+      categorie: "alim",
+      pourquoi: "Seasonic est l'un des fabricants d'alimentations les plus réputés. 650 W, c'est la bonne puissance pour un PC gamer milieu de gamme (RTX 5060, RX 9060 XT), avec de la marge.",
+      lien: "https://link.amazon/B03KSdJwX",
+      icone: "⚡",
+      date: "2026-11-10"
+    },
+    {
+      titre: "PNY CS1030 500 Go — SSD M.2 NVMe PCIe Gen3",
+      categorie: "stockage",
+      pourquoi: "Un petit SSD NVMe à prix serré, environ 3 fois plus rapide qu'un SSD SATA : parfait pour un PC bureautique ou pour un disque dédié à Windows. Pour les jeux, visez plutôt 1 To.",
+      lien: "https://link.amazon/B0h3zegeE",
+      icone: "💾",
+      date: "2026-11-10"
+    },
+    {
+      titre: "Fanxiang S101Q 1 To — SSD 2,5\" SATA III",
+      categorie: "stockage",
+      pourquoi: "Le moyen le moins cher de redonner vie à un vieux PC ou portable : on remplace le disque dur par ce SSD, et Windows démarre en quelques secondes au lieu de plusieurs minutes.",
+      lien: "https://link.amazon/B09r6PFvu",
+      icone: "💾",
+      date: "2026-11-10"
+    },
+    {
+      titre: "Patriot Viper Venom DDR5 16 Go (2 × 8 Go) 5600 MHz CL40",
+      categorie: "ram",
+      pourquoi: "Un kit DDR5 abordable en 2 barrettes pour profiter du double canal : idéal pour démarrer sur un Ryzen AM5 sans exploser le budget.",
+      lien: "https://link.amazon/B08kjo04g",
+      icone: "📏",
+      date: "2026-11-10"
+    },
+    {
+      titre: "Gigabyte B550M DS3H AC R2",
+      categorie: "cm",
+      pourquoi: "Carte mère micro-ATX pour Ryzen 5000 avec Wi-Fi intégré et 2 ports M.2 : simple, fiable et parfaite pour un premier PC gamer.",
+      lien: "https://link.amazon/B0id2maR9",
+      icone: "🟩",
+      date: "2026-11-10"
+    },
+    {
+      titre: "Gigabyte GeForce RTX 5060 WINDFORCE MAX OC 8G",
+      categorie: "gpu",
+      pourquoi: "Double ventilateur WINDFORCE, compacte : elle rentre dans presque tous les boîtiers. DLSS 4 et faible consommation, idéale pour jouer en 1080p.",
+      lien: "https://link.amazon/B043xqeQd",
+      icone: "🎮",
+      date: "2026-11-10"
+    }
   ]
 };
