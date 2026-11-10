@@ -1,0 +1,5 @@
+# Nicotch – consignes pour les robots des moteurs de recherche
+User-agent: *
+Allow: /
+
+Sitemap: https://www.nicotch.fr/sitemap.xml
