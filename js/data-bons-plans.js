@@ -19,6 +19,14 @@
      date        date d'ajout "AAAA-MM-JJ" (la plus récente sert de
                  date « Sélection mise à jour le… » en haut de la page)
 
+     marchand    (facultatif) "AliExpress"… si ce n'est pas Amazon
+     affilie     (facultatif) false si le lien n'est PAS un lien affilié
+                 (pas de badge « Lien affilié »)
+     note        (facultatif) un conseil d'achat affiché sur la carte
+     promo       (facultatif) date de FIN de la promo "AAAA-MM-JJ" :
+                 le badge « 🔥 Promo » s'affiche jusqu'à cette date incluse,
+                 puis disparaît tout seul. Ex. promo: "2026-11-30"
+
    ⚠️ Ne pas écrire de prix : Amazon interdit les prix affichés à la
    main (ils doivent avoir moins de 24 h). Le bouton renvoie au prix réel.
 
@@ -247,12 +255,189 @@ window.ND_BONS_PLANS = {
       date: "2026-11-10"
     },
     {
+      titre: "ASUS B650E Max WiFi (AM5)",
+      categorie: "cm",
+      pourquoi: "Carte mère AM5 pour Ryzen 7000, 8000 et 9000, avec Wi-Fi intégré et puce B650E (PCIe 5.0 pour la carte graphique et le SSD). Une base solide pour un PC gamer milieu ou haut de gamme, qui pourra évoluer.",
+      lien: "https://link.amazon/B00f2noIs",
+      icone: "🟦",
+      date: "2026-11-11"
+    },
+    {
       titre: "Gigabyte GeForce RTX 5060 WINDFORCE MAX OC 8G",
       categorie: "gpu",
       pourquoi: "Double ventilateur WINDFORCE, compacte : elle rentre dans presque tous les boîtiers. DLSS 4 et faible consommation, idéale pour jouer en 1080p.",
       lien: "https://link.amazon/B043xqeQd",
       icone: "🎮",
       date: "2026-11-10"
+    },
+    {
+      titre: "Gigabyte GeForce RTX 5070 GAMING OC 12G",
+      categorie: "gpu",
+      pourquoi: "Triple ventilateur WINDFORCE, silencieuse et bien refroidie : parfaite pour jouer en 1440p avec DLSS 4. Elle mesure 32,7 cm : vérifiez la place dans le boîtier, et prévoyez une alimentation de 750 W (recommandation Gigabyte).",
+      lien: "https://link.amazon/B0bbzddju",
+      icone: "🎮",
+      date: "2026-11-11"
+    },
+    {
+      titre: "ASUS Prime Radeon RX 9070 XT OC 16 Go",
+      categorie: "gpu",
+      pourquoi: "16 Go de mémoire et de quoi jouer en 1440p ultra, voire en 4K avec FSR 4. Triple ventilateur, 31,2 cm de long, 3 prises PCIe 8 broches : prévoyez une alimentation de 750 W (recommandation ASUS).",
+      lien: "https://link.amazon/B0eUGTRtj",
+      icone: "🎮",
+      date: "2026-11-11"
+    },
+    {
+      titre: "NZXT H3 Flow — boîtier micro-ATX blanc",
+      categorie: "boitiers",
+      pourquoi: "Compact, façade en mesh pour une très bonne ventilation et un câble management soigné, typique de NZXT. Parfait pour un PC micro-ATX discret.",
+      lien: "https://link.amazon/B0132bRgX",
+      icone: "🗄️",
+      date: "2026-11-11"
+    },
+    {
+      titre: "MSI MAG PANO M110R — boîtier micro-ATX panoramique",
+      categorie: "boitiers",
+      pourquoi: "Vitre panoramique sans montant d'angle pour bien voir les composants, en noir ou blanc. Idéal pour un petit PC gamer « vitrine ».",
+      lien: "https://link.amazon/B0iKEgSqI",
+      icone: "🗄️",
+      date: "2026-11-11"
+    },
+    {
+      titre: "Ocypus Delta L24 ARGB V2 — watercooling AIO 240 mm",
+      categorie: "refroidissement",
+      pourquoi: "Un AIO 240 mm abordable avec éclairage ARGB, largement suffisant pour un Ryzen 5 ou un Ryzen 7 en jeu. Vérifiez que le boîtier accepte un radiateur de 240 mm.",
+      lien: "https://link.amazon/B0eXEKrFP",
+      icone: "❄️",
+      date: "2026-11-11"
+    },
+    {
+      titre: "Lenovo Legion 27Q-10 — 27 pouces QHD IPS 240 Hz",
+      categorie: "ecrans",
+      pourquoi: "Le combo idéal pour le jeu : 1440p net, dalle IPS aux belles couleurs et 240 Hz ultra-fluide. À associer à une carte graphique solide (RTX 5070, RX 9070).",
+      lien: "https://link.amazon/B02CEEqf6",
+      icone: "🖥️",
+      date: "2026-11-11"
+    },
+    {
+      titre: "AMD Ryzen 5 5600 (AM4)",
+      categorie: "cpu",
+      pourquoi: "6 cœurs, le roi du rapport qualité-prix pour un PC gamer sur AM4 avec de la DDR4. Parfait pour une config d'entrée de gamme.",
+      lien: "https://fr.aliexpress.com/item/1005012297111635.html",
+      marchand: "AliExpress",
+      affilie: false,
+      note: "Vendu sur AliExpress, souvent en version « tray » (sans boîte ni ventirad) : choisissez un vendeur bien noté et vérifiez la mention « neuf ».",
+      icone: "🧠",
+      date: "2026-11-11"
+    },
+    {
+      titre: "AMD Ryzen 5 5600XT (AM4)",
+      categorie: "cpu",
+      pourquoi: "Une version un peu plus rapide du Ryzen 5 5600 : 6 cœurs pour jouer sur AM4, idéal pour remplacer un vieux processeur sans changer de carte mère.",
+      lien: "https://fr.aliexpress.com/item/1005012527631728.html",
+      marchand: "AliExpress",
+      affilie: false,
+      note: "Vendu sur AliExpress, souvent en version « tray » (sans boîte ni ventirad) : choisissez un vendeur bien noté et vérifiez la mention « neuf ».",
+      icone: "🧠",
+      date: "2026-11-11"
+    },
+    {
+      titre: "AMD Ryzen 7 5700X (AM4)",
+      categorie: "cpu",
+      pourquoi: "8 cœurs pour seulement 65 W : le meilleur choix sur AM4 pour jouer et streamer ou faire du montage en même temps.",
+      lien: "https://fr.aliexpress.com/item/1005012736871363.html",
+      marchand: "AliExpress",
+      affilie: false,
+      note: "Vendu sur AliExpress, souvent en version « tray » (sans boîte ni ventirad) : choisissez un vendeur bien noté et vérifiez la mention « neuf ».",
+      icone: "🧠",
+      date: "2026-11-11"
+    },
+    {
+      titre: "AMD Ryzen 5 7500F (AM5)",
+      categorie: "cpu",
+      pourquoi: "6 cœurs sur la plateforme AM5 et la DDR5, au meilleur prix. Il n'a pas de partie graphique : une carte graphique est obligatoire.",
+      lien: "https://fr.aliexpress.com/item/1005012028251728.html",
+      marchand: "AliExpress",
+      affilie: false,
+      note: "Vendu sur AliExpress, souvent en version « tray » (sans boîte ni ventirad) : choisissez un vendeur bien noté et vérifiez la mention « neuf ».",
+      icone: "🧠",
+      date: "2026-11-11"
+    },
+    {
+      titre: "AMD Ryzen 5 9600X (AM5)",
+      categorie: "cpu",
+      pourquoi: "6 cœurs Zen 5, l'architecture la plus récente d'AMD : rapide en jeu et peu gourmand. Une base moderne pour un PC milieu de gamme.",
+      lien: "https://fr.aliexpress.com/item/1005010131425503.html",
+      marchand: "AliExpress",
+      affilie: false,
+      note: "Vendu sur AliExpress, souvent en version « tray » (sans boîte ni ventirad) : choisissez un vendeur bien noté et vérifiez la mention « neuf ».",
+      icone: "🧠",
+      date: "2026-11-11"
+    },
+    {
+      titre: "AMD Ryzen 7 7800X3D (AM5)",
+      categorie: "cpu",
+      pourquoi: "8 cœurs avec le cache 3D V-Cache : l'un des meilleurs processeurs pour le jeu, encore très performant face aux modèles plus récents.",
+      lien: "https://fr.aliexpress.com/item/1005011718202289.html",
+      marchand: "AliExpress",
+      affilie: false,
+      note: "Vendu sur AliExpress, souvent en version « tray » (sans boîte ni ventirad) : choisissez un vendeur bien noté et vérifiez la mention « neuf ».",
+      icone: "🧠",
+      date: "2026-11-11"
+    },
+    {
+      titre: "AMD Ryzen 7 9800X3D (AM5)",
+      categorie: "cpu",
+      pourquoi: "Le processeur de jeu le plus rapide du moment : 8 cœurs Zen 5 avec 3D V-Cache. Pour un PC haut de gamme sans compromis.",
+      lien: "https://fr.aliexpress.com/item/1005012304257514.html",
+      marchand: "AliExpress",
+      affilie: false,
+      note: "Vendu sur AliExpress, souvent en version « tray » (sans boîte ni ventirad) : choisissez un vendeur bien noté et vérifiez la mention « neuf ».",
+      icone: "🧠",
+      date: "2026-11-11"
+    },
+    {
+      titre: "CUSU DDR4 3200 MHz 16 Go (2 × 8 Go), 1,35 V",
+      categorie: "ram",
+      pourquoi: "Un kit DDR4 2 × 8 Go à petit prix pour un PC AM4 : le double canal fait gagner des fps par rapport à une seule barrette.",
+      lien: "https://fr.aliexpress.com/item/1005007871648778.html",
+      marchand: "AliExpress",
+      affilie: false,
+      note: "Vendu sur AliExpress : délais de livraison plus longs. Choisissez un vendeur bien noté, et l'entrepôt France ou Europe quand c'est proposé.",
+      icone: "🧩",
+      date: "2026-11-11"
+    },
+    {
+      titre: "Netac DDR4 3200 MHz 16 Go (2 × 8 Go)",
+      categorie: "ram",
+      pourquoi: "Kit DDR4 2 × 8 Go d'une marque de stockage reconnue, pour un PC AM4 ou pour redonner du souffle à un ancien PC.",
+      lien: "https://fr.aliexpress.com/item/1005012072371593.html",
+      marchand: "AliExpress",
+      affilie: false,
+      note: "Vendu sur AliExpress : délais de livraison plus longs. Choisissez un vendeur bien noté, et l'entrepôt France ou Europe quand c'est proposé.",
+      icone: "🧩",
+      date: "2026-11-11"
+    },
+    {
+      titre: "Netac SSD SATA 2,5 pouces — 512 Go / 1 To",
+      categorie: "stockage",
+      pourquoi: "Le moyen le plus simple de rajeunir un vieux PC ou un portable qui a encore un disque dur : il se branche à la place du disque, et Windows démarre en quelques secondes.",
+      lien: "https://fr.aliexpress.com/item/1005013053675228.html",
+      marchand: "AliExpress",
+      affilie: false,
+      note: "Vendu sur AliExpress : délais de livraison plus longs. Choisissez un vendeur bien noté, et l'entrepôt France ou Europe quand c'est proposé.",
+      icone: "💾",
+      date: "2026-11-11"
+    },
+    {
+      titre: "Netac SSD NVMe M.2 — 512 Go / 1 To",
+      categorie: "stockage",
+      pourquoi: "Un SSD NVMe abordable pour un PC récent : il se visse directement sur la carte mère et il est bien plus rapide qu'un SSD SATA.",
+      lien: "https://fr.aliexpress.com/item/1005013010664715.html",
+      marchand: "AliExpress",
+      affilie: false,
+      note: "Vendu sur AliExpress : délais de livraison plus longs. Choisissez un vendeur bien noté, et l'entrepôt France ou Europe quand c'est proposé.",
+      icone: "💾",
+      date: "2026-11-11"
     }
   ]
 };

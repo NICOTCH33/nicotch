@@ -38,6 +38,9 @@
     var data = window.ND_BONS_PLANS || { FAMILLES: [], PRODUITS: [] };
     var esc = window.ND.esc;
     var famille = "tout";
+    var jour = window.ND.aujourdhui();
+    // Un produit est « en promo » si son champ promo (date de fin) n'est pas dépassé
+    function enPromo(p) { return !!(p.promo && jour <= p.promo); }
     var zoneFiltres = document.getElementById("filtres");
     var liste = document.getElementById("liste-plans");
     var compteur = document.getElementById("compteur");
@@ -61,16 +64,20 @@
     function carte(p) {
       return '<article class="carte plan ' + couleur[p.categorie] + '">' +
         '<div class="plan-haut">' + icone(p.categorie) +
-        '<span class="badge-affilie">Lien affilié</span></div>' +
+        '<span class="plan-badges">' + (enPromo(p) ? '<span class="badge-promo">🔥 Promo</span>' : "") +
+        (p.affilie === false ? "" : '<span class="badge-affilie">Lien affilié</span>') + "</span></div>" +
         "<h3>" + esc(p.titre) + "</h3>" +
         "<p>" + esc(p.pourquoi || "") + "</p>" +
+        (p.note ? '<p class="logiciel-attention">⚠️ ' + esc(p.note) + "</p>" : "") +
         '<div class="plan-actions">' +
-        '<a class="btn btn-rouge" href="' + esc(p.lien) + '" target="_blank" rel="sponsored noopener noreferrer">🛒 Voir le prix sur Amazon</a>' +
+        '<a class="btn btn-rouge" href="' + esc(p.lien) + '" target="_blank" rel="' + (p.affilie === false ? "nofollow" : "sponsored") + ' noopener noreferrer">🛒 Voir le prix sur ' + esc(p.marchand || "Amazon") + "</a>" +
         "</div></article>";
     }
 
     function boutons() {
-      var tous = [{ id: "tout", nom: "Tout", icone: "" }].concat(data.FAMILLES);
+      var tous = [{ id: "tout", nom: "Tout", icone: "" }];
+      if (produits.some(enPromo)) tous.push({ id: "promos", nom: "Promos du moment", icone: "🔥" });
+      tous = tous.concat(data.FAMILLES);
       zoneFiltres.innerHTML = tous.map(function (f) {
         return '<button type="button" class="filtre" data-famille="' + esc(f.id) + '" aria-pressed="' + (f.id === famille) + '">' +
           esc((f.icone ? f.icone + " " : "") + f.nom) + "</button>";
@@ -86,6 +93,14 @@
         return;
       }
       var html = "", total = 0, sommaire = "";
+      if (famille === "promos") {
+        var promos = produits.filter(enPromo);
+        liste.innerHTML = '<section class="plan-section ligne-rouge"><h2 class="plan-titre"><span>🔥 Promos du moment</span></h2>' +
+          '<p class="plan-outil">Produits en promotion au moment où je les ai ajoutés. Le prix réel est toujours celui affiché sur Amazon.</p>' +
+          '<div class="grille grille-auto">' + promos.map(carte).join("") + "</div></section>";
+        compteur.textContent = promos.length + (promos.length > 1 ? " promos" : " promo");
+        return;
+      }
       data.FAMILLES.forEach(function (f) {
         if (famille !== "tout" && famille !== f.id) return;
         f.categories.forEach(function (c) {
@@ -112,6 +127,17 @@
       famille = b.getAttribute("data-famille");
       boutons(); afficher();
     });
+    // Bandeau de l'événement (Black Friday…), visible seulement pendant les dates
+    var bandeau = document.getElementById("bandeau-evenement");
+    if (bandeau && window.ND.evenementActif()) {
+      var ev = window.ND.EVENEMENT;
+      var nb = produits.filter(enPromo).length;
+      bandeau.innerHTML = "<strong>" + esc(ev.emoji + " " + ev.nom) + "</strong> sur Amazon, " + esc(ev.texte) + ". " +
+        (nb ? "Les produits marqués <strong>🔥 Promo</strong> étaient en promotion quand je les ai sélectionnés : vérifiez toujours le prix sur Amazon avant d'acheter."
+            : "Je sélectionne les meilleures promos utiles : revenez bientôt !");
+      bandeau.hidden = false;
+      if (nb) famille = "promos";
+    }
     boutons(); afficher();
   });
 })();

@@ -755,3 +755,16 @@ kbd { background: var(--carte); border: 1px solid var(--bordure); border-bottom-
 .contact-statut.ok { border-color: #2ECC71; color: #5BE08F; }
 .contact-statut.erreur { border-color: #FF3B4A; color: #FF8A93; }
 .contact-aside ul { padding-left: 0; list-style: none; display: grid; gap: 12px; }
+
+/* ---------- Promos / Black Friday ---------- */
+.plan-badges { display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; }
+.badge-promo { font-size: .8rem; font-weight: 700; padding: 2px 10px; border-radius: 999px; color: #fff;
+  background: linear-gradient(90deg, #FF2B3A, #FF7A1A); box-shadow: 0 0 12px rgba(255, 60, 40, .45); }
+.bandeau-promo { margin: 0 0 16px; padding: 14px 18px; border-radius: var(--rayon-btn); border: 1px solid #FF5A2A;
+  background: linear-gradient(90deg, rgba(255, 43, 58, .16), rgba(255, 122, 26, .10)); }
+.espace-promo { position: relative; }
+.ruban-promo { position: absolute; top: 14px; right: 14px; z-index: 2; font-size: .85rem; font-weight: 700; padding: 4px 12px;
+  border-radius: 999px; color: #fff; background: linear-gradient(90deg, #FF2B3A, #FF7A1A); box-shadow: 0 0 14px rgba(255, 60, 40, .5);
+  animation: ruban-pulse 2.4s ease-in-out infinite; }
+@keyframes ruban-pulse { 50% { box-shadow: 0 0 24px rgba(255, 90, 40, .8); } }
+@media (prefers-reduced-motion: reduce) { .ruban-promo { animation: none; } }

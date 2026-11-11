@@ -32,13 +32,13 @@ window.ND_CONFIG = {
 
   PIECES: {
     /* ---------- Processeurs ---------- */
-    "r5-5600":   { type: "cpu", nom: "AMD Ryzen 5 5600", socket: "AM4", w: 76, ventirad: true, lien: "",
+    "r5-5600":   { type: "cpu", nom: "AMD Ryzen 5 5600", socket: "AM4", w: 76, ventirad: true, lien: "https://fr.aliexpress.com/item/1005012297111635.html", marchand: "AliExpress", affilie: false,
                    pourquoi: "6 cœurs, très bon en jeu en 1080p et livré avec son ventirad. Le meilleur rapport qualité-prix du moment." },
-    "r5-7500f":  { type: "cpu", nom: "AMD Ryzen 5 7500F", socket: "AM5", w: 88, ventirad: false, lien: "",
+    "r5-7500f":  { type: "cpu", nom: "AMD Ryzen 5 7500F", socket: "AM5", w: 88, ventirad: false, lien: "https://fr.aliexpress.com/item/1005012028251728.html", marchand: "AliExpress", affilie: false,
                    pourquoi: "Plateforme AM5 récente, évolutive (DDR5). Plus cher à l'achat, mais on pourra changer de processeur plus tard." },
-    "r5-9600x":  { type: "cpu", nom: "AMD Ryzen 5 9600X", socket: "AM5", w: 88, ventirad: false, lien: "",
+    "r5-9600x":  { type: "cpu", nom: "AMD Ryzen 5 9600X", socket: "AM5", w: 88, ventirad: false, lien: "https://fr.aliexpress.com/item/1005010131425503.html", marchand: "AliExpress", affilie: false,
                    pourquoi: "Génération Ryzen 9000 : rapide en jeu, sobre en consommation, sur une plateforme AM5 évolutive." },
-    "r7-9800x3d":{ type: "cpu", nom: "AMD Ryzen 7 9800X3D", socket: "AM5", w: 162, ventirad: false, lien: "",
+    "r7-9800x3d":{ type: "cpu", nom: "AMD Ryzen 7 9800X3D", socket: "AM5", w: 162, ventirad: false, lien: "https://fr.aliexpress.com/item/1005012304257514.html", marchand: "AliExpress", affilie: false,
                    pourquoi: "Le processeur de référence pour le jeu grâce à son cache 3D V-Cache." },
 
     /* ---------- Cartes mères ---------- */
@@ -78,9 +78,9 @@ window.ND_CONFIG = {
                    pourquoi: "L'alternative NVIDIA : DLSS 4 et génération d'images." },
     "rx9070":    { type: "gpu", nom: "AMD Radeon RX 9070 16 Go", marque: "AMD", w: 220, fab: 650, longueur: 330, lien: "",
                    pourquoi: "16 Go de mémoire vidéo : parfaite pour le 1440p, sobre en consommation." },
-    "rtx5070":   { type: "gpu", nom: "NVIDIA GeForce RTX 5070 12 Go", marque: "NVIDIA", w: 250, fab: 650, longueur: 330, lien: "",
+    "rtx5070":   { type: "gpu", nom: "NVIDIA GeForce RTX 5070 12 Go — ex. Gigabyte GAMING OC", marque: "NVIDIA", w: 250, fab: 750, longueur: 330, lien: "https://link.amazon/B0bbzddju",
                    pourquoi: "Si vous tenez aux fonctions NVIDIA (DLSS 4, ray tracing, streaming NVENC)." },
-    "rx9070xt":  { type: "gpu", nom: "AMD Radeon RX 9070 XT 16 Go", marque: "AMD", w: 304, fab: 750, longueur: 340, lien: "",
+    "rx9070xt":  { type: "gpu", nom: "AMD Radeon RX 9070 XT 16 Go — ex. ASUS Prime OC", marque: "AMD", w: 304, fab: 750, longueur: 340, lien: "https://link.amazon/B0eUGTRtj",
                    pourquoi: "La plus rapide des Radeon actuelles : 1440p très élevé et 4K." },
     "rtx5070ti": { type: "gpu", nom: "NVIDIA GeForce RTX 5070 Ti 16 Go", marque: "NVIDIA", w: 300, fab: 750, longueur: 340, lien: "",
                    pourquoi: "L'alternative NVIDIA pour la 4K avec DLSS 4." },

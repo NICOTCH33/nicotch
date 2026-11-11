@@ -155,6 +155,21 @@
     }
   };
 
+  /* ---------- Événement promo (Black Friday…) ----------
+     S'affiche tout seul entre les dates debut et fin (incluses),
+     sur l'accueil (ruban sur la carte Bons plans) et sur la page Bons plans.
+     Pour le prochain événement : changer nom, emoji, debut et fin. */
+  ND.EVENEMENT = { nom: "Black Friday Week", emoji: "🔥", debut: "2026-11-19", fin: "2026-11-30",
+                   texte: "du 19 au 30 novembre" };
+  ND.aujourdhui = function () {
+    var d = new Date();
+    return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+  };
+  ND.evenementActif = function () {
+    var e = ND.EVENEMENT, j = ND.aujourdhui();
+    return !!(e && j >= e.debut && j <= e.fin);
+  };
+
   ND.NIVEAUX = { 1: "Facile", 2: "Intermédiaire", 3: "Avancé" };
   ND.CLE_HISTO = "nicotch-diag-historique";
 
@@ -172,5 +187,15 @@
   document.addEventListener("DOMContentLoaded", function () {
     construireEntete();
     construirePied();
+    // Ruban « Black Friday » sur la carte Bons plans de l'accueil
+    var carteBP = document.querySelector('.grille-espaces a[href="bons-plans.html"]');
+    if (carteBP && ND.evenementActif()) {
+      var carte = carteBP.closest(".espace");
+      var ruban = document.createElement("span");
+      ruban.className = "ruban-promo";
+      ruban.textContent = ND.EVENEMENT.emoji + " " + ND.EVENEMENT.nom;
+      carte.classList.add("espace-promo");
+      carte.insertBefore(ruban, carte.firstChild);
+    }
   });
 })();

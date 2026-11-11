@@ -215,7 +215,7 @@
 
   function lienAchat(p) {
     return p.lien && /^https:\/\//.test(p.lien)
-      ? '<a class="btn btn-contour btn-petit" href="' + esc(p.lien) + '" target="_blank" rel="sponsored noopener noreferrer">🛒 Voir le prix</a>'
+      ? '<a class="btn btn-contour btn-petit" href="' + esc(p.lien) + '" target="_blank" rel="' + (p.affilie === false ? "nofollow" : "sponsored") + ' noopener noreferrer">🛒 Voir le prix' + (p.marchand ? " (" + esc(p.marchand) + ")" : "") + "</a>"
       : "";
   }
 
