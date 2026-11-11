@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="google" content="notranslate">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://nicotch.goatcounter.com; style-src 'self' 'unsafe-inline'; script-src 'self' https://gc.zgo.at; connect-src 'self' https://nicotch.goatcounter.com https://api.web3forms.com; frame-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact – Nicotch</title>
+  <meta name="description" content="Une question, une suggestion ou un problème sur le site Nicotch ? Écrivez-moi avec le formulaire de contact.">
+  <meta name="theme-color" content="#05070B">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/common.js" defer></script>
+  <script src="js/contact.js" defer></script>
+  <!-- Compteur de visites GoatCounter (sans cookies) -->
+  <script data-goatcounter="https://nicotch.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</head>
+<body>
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+  <header id="entete"></header>
+
+  <main id="contenu">
+    <section class="titre-page">
+      <div class="conteneur">
+        <h1>Contact</h1>
+        <p>Une question sur une panne, une idée pour le site, un lien qui ne marche plus ? Écrivez-moi, je lis tous les messages.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:16px">
+      <div class="conteneur contact-grille">
+        <form class="carte contact-form" id="form-contact" action="https://api.web3forms.com/submit" method="POST" novalidate>
+          <input type="hidden" name="access_key" id="cle-formulaire" value="">
+          <input type="hidden" name="from_name" value="Site nicotch.fr">
+          <input type="checkbox" name="botcheck" class="piege" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <div class="contact-ligne">
+            <div>
+              <label class="champ-label" for="c-nom">Votre prénom ou pseudo</label>
+              <input id="c-nom" name="name" type="text" maxlength="80" autocomplete="nickname" required>
+            </div>
+            <div>
+              <label class="champ-label" for="c-mail">Votre e-mail <span class="texte-doux">(pour vous répondre)</span></label>
+              <input id="c-mail" name="email" type="email" maxlength="120" autocomplete="email" required>
+            </div>
+          </div>
+
+          <div>
+            <label class="champ-label" for="c-sujet">Sujet</label>
+            <select id="c-sujet" name="subject">
+              <option>Question sur une panne</option>
+              <option>Suggestion pour le site</option>
+              <option>Signaler un problème ou un lien cassé</option>
+              <option>Jeux Rétro Games</option>
+              <option>Partenariat</option>
+              <option>Autre</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="champ-label" for="c-message">Votre message</label>
+            <textarea id="c-message" name="message" rows="7" maxlength="3000" required></textarea>
+            <p class="meta-rapport"><span id="c-compte">0</span> / 3000 caractères</p>
+          </div>
+
+          <p class="meta-rapport">Vos nom, e-mail et message servent uniquement à vous répondre. Ils sont transmis par le service Web3Forms, puis effacés quand la conversation est terminée. Détails dans la page <a href="a-propos.html#confidentialite">Confidentialité</a>.</p>
+
+          <button class="btn btn-rouge" type="submit" id="c-envoyer">✉️ Envoyer le message</button>
+          <p class="contact-statut" id="c-statut" role="status" aria-live="polite" hidden></p>
+        </form>
+
+        <aside class="carte contact-aside">
+          <h2>Avant d'écrire</h2>
+          <ul>
+            <li>🔧 <strong>Une panne ?</strong> Le <a href="diagnostic.html?type=pc">diagnostic gratuit</a> et les <a href="fiches.html">fiches de dépannage</a> donnent souvent la réponse en quelques minutes.</li>
+            <li>📝 <strong>Décrivez bien</strong> : le modèle de l'appareil, ce qui se passe, ce que vous avez déjà essayé.</li>
+            <li>⏱️ <strong>Réponse</strong> en général sous quelques jours.</li>
+            <li>🔒 Ne mettez jamais de mot de passe ni de coordonnées bancaires dans un message.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer id="pied"></footer>
+</body>
+</html>

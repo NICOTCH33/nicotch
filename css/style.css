@@ -81,6 +81,11 @@ h3 { font-size: 1.2rem; }
 .nav a[aria-current="page"] { color: var(--blanc); font-weight: 600; box-shadow: inset 0 -3px 0 var(--rouge); }
 .nav a.nav-cta { background: var(--rouge); color: var(--blanc); font-weight: 600; margin-left: 6px; }
 .nav a.nav-cta:hover { background: var(--rouge-sombre); }
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .marque img { width: 180px; }
+  .nav a { padding: 12px 7px; font-size: .95rem; }
+  .nav a.nav-cta { margin-left: 4px; padding-left: 12px; padding-right: 12px; }
+}
 .nav-bouton {
   display: none; background: var(--carte); color: var(--texte);
   border: 1px solid var(--bleu); border-radius: var(--rayon-btn);
@@ -729,3 +734,24 @@ kbd { background: var(--carte); border: 1px solid var(--bordure); border-bottom-
 .logiciel-domaine { font-size: .8rem; color: var(--texte-doux); text-align: center; }
 .plan-titre .titre-ico { width: 52px; height: 52px; }
 .plan-titre .titre-ico .ico { width: 32px; height: 32px; }
+
+/* ---------- Page Contact ---------- */
+.contact-grille { display: grid; grid-template-columns: 1.6fr 1fr; gap: 20px; align-items: start; }
+@media (max-width: 899px) { .contact-grille { grid-template-columns: 1fr; } }
+.contact-form { display: grid; gap: 16px; }
+.contact-ligne { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 599px) { .contact-ligne { grid-template-columns: 1fr; } }
+.contact-form input[type=text], .contact-form input[type=email], .contact-form select, .contact-form textarea {
+  width: 100%; min-height: 48px; padding: 10px 12px; border-radius: var(--rayon-btn);
+  background: var(--noir-2); border: 1px solid var(--bordure); color: var(--texte); font-family: inherit; font-size: 1rem;
+}
+.contact-form textarea { resize: vertical; min-height: 160px; }
+.contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus { outline: 3px solid var(--bleu); outline-offset: 0; border-color: var(--bleu); }
+.contact-form [aria-invalid=true] { border-color: #FF3B4A; }
+.contact-form .meta-rapport { margin: 6px 0 0; }
+.contact-form .btn { justify-self: start; }
+.piege { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.contact-statut { margin: 0; padding: 12px 14px; border-radius: var(--rayon-btn); border: 1px solid var(--bordure); }
+.contact-statut.ok { border-color: #2ECC71; color: #5BE08F; }
+.contact-statut.erreur { border-color: #FF3B4A; color: #FF8A93; }
+.contact-aside ul { padding-left: 0; list-style: none; display: grid; gap: 12px; }

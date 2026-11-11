@@ -12,7 +12,8 @@
     { href: "reparation.html", label: "Diagnostic & Réparation", pages: ["reparation.html", "diagnostic.html"] },
     { href: "fiches.html", label: "Fiches de dépannage", pages: ["fiches.html"] },
     { href: "outils.html", label: "Boîte à outils", pages: ["outils.html", "alimentation.html", "bips.html", "config-pc.html", "telechargements.html"] },
-    { href: "jeux.html", label: "Rétro Games", pages: ["jeux.html", "jouer.html"] }
+    { href: "jeux.html", label: "Rétro Games", pages: ["jeux.html", "jouer.html"] },
+    { href: "contact.html", label: "Contact", pages: ["contact.html"] }
   ];
 
   function pageCourante() {
@@ -95,10 +96,11 @@
             '<li><a href="a-propos.html">À propos et sécurité</a></li>' +
             '<li><a href="a-propos.html#confidentialite">Confidentialité</a></li>' +
             '<li><a href="a-propos.html#avertissement">Avertissement</a></li>' +
+            '<li><a href="contact.html">Contact</a></li>' +
             '<li><a href="mentions-legales.html">Mentions légales</a></li>' +
           "</ul></div>" +
         "</div>" +
-        '<div class="pied-bas"><span>© <span id="annee"></span> Nicotch. Aucune donnée personnelle collectée.</span>' +
+        '<div class="pied-bas"><span>© <span id="annee"></span> Nicotch. Aucun compte, aucun cookie.</span>' +
         "<span>En cas de doute ou de risque électrique, faites appel à un professionnel.</span></div>" +
       "</div>";
     var annee = document.getElementById("annee");
