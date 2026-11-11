@@ -433,12 +433,18 @@ h3 { font-size: 1.2rem; }
 }
 @media (min-width: 1200px) {
   .grille-espaces { grid-template-columns: repeat(3, 1fr); }
-  .grille-espaces .espace-logo { min-height: 230px; }
-  .grille-espaces .espace-logo .logo-repare, .grille-espaces .espace-logo .logo-outils { max-width: 250px; }
-  .grille-espaces .espace-logo .logo-retro { max-width: 170px; }
-  .grille-espaces .espace h3 { font-size: 1.45rem; }
-  .grille-espaces .espace-actions .btn { flex: 1 1 100%; padding-left: 10px; padding-right: 10px; font-size: .95rem; }
 }
+/* Cartes de l'accueil plus compactes (presque carrées) */
+.grille-espaces .espace { display: flex; flex-direction: column; text-align: center; }
+.grille-espaces .espace-logo { min-height: 190px; margin-bottom: 4px; }
+.grille-espaces .espace-logo .logo-repare { max-width: 250px; }
+.grille-espaces .espace-logo .logo-outils { max-width: 230px; }
+.grille-espaces .espace-logo .logo-dl { max-width: 185px; }
+.grille-espaces .espace-logo .logo-retro { max-width: 150px; }
+.grille-espaces .espace h3 { font-size: 1.4rem; margin: 4px 0 6px; }
+.grille-espaces .espace > p { margin: 0 auto 14px; max-width: 34ch; }
+.grille-espaces .espace-actions { margin-top: auto; flex-direction: row; justify-content: center; }
+.grille-espaces .espace-actions .btn { flex: 1 1 0; padding-left: 10px; padding-right: 10px; font-size: .95rem; }
 @media (prefers-reduced-motion: reduce) { .carte-lisere { animation: none; } }
 
 /* En-tête de la page Rétro Games */
@@ -712,7 +718,7 @@ kbd { background: var(--carte); border: 1px solid var(--bordure); border-bottom-
 
 /* ---------- Page Téléchargements ---------- */
 .logo-dl .etincelle { left: 48.1%; top: 42.4%; }
-.espace-logo .logo-dl, .grille-espaces .espace-logo .logo-dl { max-width: 220px; }
+.espace-logo .logo-dl { max-width: 220px; }
 .logiciel { display: flex; flex-direction: column; }
 .logiciel-haut { display: flex; gap: 12px; align-items: center; margin-bottom: 10px; }
 .logiciel-haut h3 { margin: 0; }
