@@ -425,14 +425,14 @@ h3 { font-size: 1.2rem; }
 .grille-espaces > :nth-child(3) { animation-delay: -2.4s; }
 .grille-espaces > :nth-child(4) { animation-delay: -3.6s; }
 .grille-espaces > :nth-child(5) { animation-delay: -4.8s; }
+.grille-espaces > :nth-child(6) { animation-delay: -6s; }
 .conteneur-large { max-width: 1440px; }
 @keyframes lisere { from { background-position: 0% 0, 0 0; } to { background-position: 100% 0, 0 0; } }
 @media (min-width: 600px) and (max-width: 1199px) {
   .grille-espaces { grid-template-columns: repeat(2, 1fr); }
-  .grille-espaces > :nth-child(5):last-child { grid-column: 1 / -1; justify-self: center; width: calc(50% - 8px); }
 }
 @media (min-width: 1200px) {
-  .grille-espaces { grid-template-columns: repeat(5, 1fr); }
+  .grille-espaces { grid-template-columns: repeat(3, 1fr); }
   .grille-espaces .espace-logo { min-height: 230px; }
   .grille-espaces .espace-logo .logo-repare, .grille-espaces .espace-logo .logo-outils { max-width: 250px; }
   .grille-espaces .espace-logo .logo-retro { max-width: 170px; }
@@ -709,3 +709,17 @@ kbd { background: var(--carte); border: 1px solid var(--bordure); border-bottom-
 .plan-haut .cat-img { width: 72px; height: 72px; }
 .cat-puce .cat-img { width: 34px; height: 34px; }
 @media (max-width: 599px) { .plan-titre .cat-img { width: 72px; height: 72px; } }
+
+/* ---------- Page Téléchargements ---------- */
+.logo-dl .etincelle { left: 48.1%; top: 42.4%; }
+.espace-logo .logo-dl, .grille-espaces .espace-logo .logo-dl { max-width: 220px; }
+.logiciel { display: flex; flex-direction: column; }
+.logiciel-haut { display: flex; gap: 12px; align-items: center; margin-bottom: 10px; }
+.logiciel-haut h3 { margin: 0; }
+.logiciel-badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 0; }
+.badge-gratuit, .badge-os { font-size: .75rem; font-weight: 600; padding: 1px 9px; border-radius: 999px; border: 1px solid var(--bordure); color: var(--texte-doux); }
+.badge-gratuit { border-color: #2ECC71; color: #5BE08F; }
+.logiciel-attention { font-size: .9rem; color: #FFC857; margin-top: 0; }
+.logiciel-domaine { font-size: .8rem; color: var(--texte-doux); text-align: center; }
+.plan-titre .titre-ico { width: 52px; height: 52px; }
+.plan-titre .titre-ico .ico { width: 32px; height: 32px; }

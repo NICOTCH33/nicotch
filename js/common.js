@@ -11,7 +11,7 @@
     { href: "index.html", label: "Accueil", pages: ["index.html"] },
     { href: "reparation.html", label: "Diagnostic & Réparation", pages: ["reparation.html", "diagnostic.html"] },
     { href: "fiches.html", label: "Fiches de dépannage", pages: ["fiches.html"] },
-    { href: "outils.html", label: "Boîte à outils", pages: ["outils.html", "alimentation.html", "bips.html", "config-pc.html"] },
+    { href: "outils.html", label: "Boîte à outils", pages: ["outils.html", "alimentation.html", "bips.html", "config-pc.html", "telechargements.html"] },
     { href: "jeux.html", label: "Rétro Games", pages: ["jeux.html", "jouer.html"] }
   ];
 
@@ -89,6 +89,8 @@
             '<li><a href="outils.html">Boîte à outils</a></li>' +
             '<li><a href="alimentation.html">Calculateur d\'alimentation</a></li>' +
             '<li><a href="config-pc.html">Config PC</a></li>' +
+            '<li><a href="telechargements.html">Téléchargements</a></li>' +
+            '<li><a href="bons-plans.html">Bons plans</a></li>' +
             '<li><a href="jeux.html">Nicotch Rétro Games</a></li>' +
             '<li><a href="a-propos.html">À propos et sécurité</a></li>' +
             '<li><a href="a-propos.html#confidentialite">Confidentialité</a></li>' +

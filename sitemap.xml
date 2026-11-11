@@ -55,6 +55,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.nicotch.fr/telechargements.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.nicotch.fr/jeux.html</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="google" content="notranslate">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://nicotch.goatcounter.com; style-src 'self' 'unsafe-inline'; script-src 'self' https://gc.zgo.at; connect-src 'self' https://nicotch.goatcounter.com; frame-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Téléchargements – logiciels gratuits pour PC – Nicotch</title>
+  <meta name="description" content="Les logiciels gratuits indispensables pour surveiller, tester et dépanner un PC : CPU-Z, HWiNFO, CrystalDiskInfo, Rufus, Ventoy, DDU… avec les liens officiels.">
+  <meta name="theme-color" content="#05070B">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/common.js" defer></script>
+  <script src="js/data-telechargements.js" defer></script>
+  <script src="js/telechargements.js" defer></script>
+  <!-- Compteur de visites GoatCounter (sans cookies) -->
+  <script data-goatcounter="https://nicotch.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</head>
+<body>
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+  <header id="entete"></header>
+
+  <main id="contenu">
+    <section class="titre-page">
+      <div class="conteneur outils-entete">
+        <div class="logo-outils logo-dl" role="img" aria-label="Nicotch – Téléchargements">
+            <picture>
+              <source type="image/webp" srcset="assets/logos/telechargements-300.webp 300w, assets/logos/telechargements-600.webp 600w" sizes="(max-width: 599px) 240px, 280px">
+              <img src="assets/logos/telechargements-600.png" width="600" height="600" alt="">
+            </picture>
+            <span class="etincelle" aria-hidden="true"></span>
+          </div>
+        <div>
+          <h1>Téléchargements</h1>
+          <p>Les petits logiciels gratuits que j'utilise pour identifier les pièces d'un PC, surveiller les températures, tester la stabilité et dépanner Windows.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:16px">
+      <div class="conteneur">
+        <div class="bandeau-alerte bandeau-info"><strong>Sécurité :</strong> Nicotch n'héberge aucun fichier. Chaque bouton ouvre le <strong>site officiel</strong> de l'éditeur : vous téléchargez toujours la dernière version, sans virus ni installeur modifié. Vérifiez l'adresse affichée sous le bouton, et méfiez-vous des sites qui proposent ces logiciels avec un « gestionnaire de téléchargement ».</div>
+
+        <p class="plan-maj" id="mise-a-jour" hidden></p>
+        <div class="barre-filtres">
+          <div class="filtres" id="filtres" role="group" aria-label="Catégories de logiciels"></div>
+          <p class="compteur" id="compteur" role="status" aria-live="polite"></p>
+        </div>
+        <div id="liste-logiciels"></div>
+        <p class="meta-rapport plan-note">Ces logiciels appartiennent à leurs éditeurs respectifs. Nicotch n'a aucun lien commercial avec eux : ce sont simplement des outils utiles et gratuits.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="pied"></footer>
+</body>
+</html>
