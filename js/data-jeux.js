@@ -23,6 +23,8 @@
      format      "paysage" (16/9, par défaut) ou "portrait" (9/16) : forme de la zone de jeu
      date        date d'ajout au format "AAAA-MM-JJ" (sert à trier, le plus récent d'abord)
      affiche     (facultatif) affiche verticale ou carrée du jeu, affichée sur sa page
+     scores      true si le jeu envoie son score au tableau des scores en ligne
+     varianteScores (facultatif) classement affiché par défaut (ex. piste « normal »)
      manette     true si le jeu se joue aussi à la manette
      trilogie    1, 2 ou 3 : place du jeu dans la trilogie Last Track (bloc spécial)
      bientot     true = jeu annoncé mais pas encore jouable (carte « Bientôt disponible »,
@@ -90,6 +92,8 @@ window.ND_JEUX = [
   },
   {
     id: "run-82",
+    scores: true,
+    varianteScores: "normal",
     titre: "Nicotch Run 82",
     description: "Course arcade néon façon années 80 : file sur l'autoroute en sportive rouge, frôle les voitures pour remplir ton turbo, enchaîne les combos et bats ton meilleur tour sur chaque circuit, jusqu'à Nuit Néon.",
     genre: "Course",

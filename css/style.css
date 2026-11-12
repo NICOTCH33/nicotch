@@ -768,3 +768,19 @@ kbd { background: var(--carte); border: 1px solid var(--bordure); border-bottom-
   animation: ruban-pulse 2.4s ease-in-out infinite; }
 @keyframes ruban-pulse { 50% { box-shadow: 0 0 24px rgba(255, 90, 40, .8); } }
 @media (prefers-reduced-motion: reduce) { .ruban-promo { animation: none; } }
+
+/* ---------- Tableau des scores ---------- */
+.scores { margin: 0 0 20px; }
+.scores h2 { margin-top: 0; }
+.scores-envoi { display: grid; gap: 8px; margin: 8px 0 14px; padding: 14px; border: 1px solid #FFC857; border-radius: var(--rayon-btn); background: rgba(255, 200, 87, .06); }
+.scores-envoi[hidden] { display: none; }
+.scores-bravo { margin: 0; font-weight: 700; }
+.scores-ligne { display: flex; flex-wrap: wrap; gap: 10px; }
+.scores-ligne input { flex: 1 1 180px; min-height: 48px; padding: 10px 12px; border-radius: var(--rayon-btn); background: var(--noir-2); border: 1px solid var(--bordure); color: var(--texte); font: inherit; }
+.scores-ligne input:focus { outline: 3px solid var(--bleu); outline-offset: 0; }
+.scores-liste { list-style: none; padding: 0; margin: 10px 0 0; display: grid; gap: 6px; }
+.scores-liste li { display: grid; grid-template-columns: 44px 1fr auto; align-items: center; gap: 10px; padding: 8px 12px; border-radius: 10px; background: rgba(255, 255, 255, .03); }
+.scores-rang { font-size: 1.15rem; text-align: center; }
+.scores-pseudo { font-weight: 700; overflow-wrap: anywhere; }
+.scores-points { font-variant-numeric: tabular-nums; font-weight: 800; color: #FFD24A; }
+.scores-liste li.scores-moi { outline: 2px solid var(--bleu); }

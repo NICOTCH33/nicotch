@@ -797,6 +797,8 @@ function endGame() {
     $('saved-msg').classList.add('hidden');
     $('gameover-title').textContent = isHigh ? 'NOUVEAU RECORD !' : 'TEMPS ÉCOULÉ !';
     show('gameover-overlay');
+    // Envoie le score à la page nicotch.fr (tableau des scores en ligne)
+    try { if (score > 0 && window.parent !== window) window.parent.postMessage({ source: 'nicotch-jeu', type: 'score', score: score, variante: trackKey }, '*'); } catch (e) {}
     if (isHigh) setTimeout(() => $('player-name').focus(), 50);
     else setTimeout(() => $('btn-restart').focus(), 50);
 }
