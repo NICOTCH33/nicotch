@@ -322,9 +322,8 @@ window.ND_BONS_PLANS = {
       titre: "AMD Ryzen 5 5600 (AM4)",
       categorie: "cpu",
       pourquoi: "6 cœurs, le roi du rapport qualité-prix pour un PC gamer sur AM4 avec de la DDR4. Parfait pour une config d'entrée de gamme.",
-      lien: "https://fr.aliexpress.com/item/1005012297111635.html",
+      lien: "https://s.click.aliexpress.com/e/_c2u0P0CF",
       marchand: "AliExpress",
-      affilie: false,
       note: "Vendu sur AliExpress, souvent en version « tray » (sans boîte ni ventirad) : choisissez un vendeur bien noté et vérifiez la mention « neuf ».",
       icone: "🧠",
       date: "2026-11-11"
@@ -333,9 +332,8 @@ window.ND_BONS_PLANS = {
       titre: "AMD Ryzen 5 5600XT (AM4)",
       categorie: "cpu",
       pourquoi: "Une version un peu plus rapide du Ryzen 5 5600 : 6 cœurs pour jouer sur AM4, idéal pour remplacer un vieux processeur sans changer de carte mère.",
-      lien: "https://fr.aliexpress.com/item/1005012527631728.html",
+      lien: "https://s.click.aliexpress.com/e/_c3io2Hlt",
       marchand: "AliExpress",
-      affilie: false,
       note: "Vendu sur AliExpress, souvent en version « tray » (sans boîte ni ventirad) : choisissez un vendeur bien noté et vérifiez la mention « neuf ».",
       icone: "🧠",
       date: "2026-11-11"
@@ -344,9 +342,8 @@ window.ND_BONS_PLANS = {
       titre: "AMD Ryzen 7 5700X (AM4)",
       categorie: "cpu",
       pourquoi: "8 cœurs pour seulement 65 W : le meilleur choix sur AM4 pour jouer et streamer ou faire du montage en même temps.",
-      lien: "https://fr.aliexpress.com/item/1005012736871363.html",
+      lien: "https://s.click.aliexpress.com/e/_c31GvvFN",
       marchand: "AliExpress",
-      affilie: false,
       note: "Vendu sur AliExpress, souvent en version « tray » (sans boîte ni ventirad) : choisissez un vendeur bien noté et vérifiez la mention « neuf ».",
       icone: "🧠",
       date: "2026-11-11"
@@ -355,9 +352,8 @@ window.ND_BONS_PLANS = {
       titre: "AMD Ryzen 5 7500F (AM5)",
       categorie: "cpu",
       pourquoi: "6 cœurs sur la plateforme AM5 et la DDR5, au meilleur prix. Il n'a pas de partie graphique : une carte graphique est obligatoire.",
-      lien: "https://fr.aliexpress.com/item/1005012028251728.html",
+      lien: "https://s.click.aliexpress.com/e/_c37RwN0n",
       marchand: "AliExpress",
-      affilie: false,
       note: "Vendu sur AliExpress, souvent en version « tray » (sans boîte ni ventirad) : choisissez un vendeur bien noté et vérifiez la mention « neuf ».",
       icone: "🧠",
       date: "2026-11-11"
@@ -366,9 +362,8 @@ window.ND_BONS_PLANS = {
       titre: "AMD Ryzen 5 9600X (AM5)",
       categorie: "cpu",
       pourquoi: "6 cœurs Zen 5, l'architecture la plus récente d'AMD : rapide en jeu et peu gourmand. Une base moderne pour un PC milieu de gamme.",
-      lien: "https://fr.aliexpress.com/item/1005010131425503.html",
+      lien: "https://s.click.aliexpress.com/e/_c37AKDhh",
       marchand: "AliExpress",
-      affilie: false,
       note: "Vendu sur AliExpress, souvent en version « tray » (sans boîte ni ventirad) : choisissez un vendeur bien noté et vérifiez la mention « neuf ».",
       icone: "🧠",
       date: "2026-11-11"
@@ -377,9 +372,8 @@ window.ND_BONS_PLANS = {
       titre: "AMD Ryzen 7 7800X3D (AM5)",
       categorie: "cpu",
       pourquoi: "8 cœurs avec le cache 3D V-Cache : l'un des meilleurs processeurs pour le jeu, encore très performant face aux modèles plus récents.",
-      lien: "https://fr.aliexpress.com/item/1005011718202289.html",
+      lien: "https://s.click.aliexpress.com/e/_c4FadOp5",
       marchand: "AliExpress",
-      affilie: false,
       note: "Vendu sur AliExpress, souvent en version « tray » (sans boîte ni ventirad) : choisissez un vendeur bien noté et vérifiez la mention « neuf ».",
       icone: "🧠",
       date: "2026-11-11"
@@ -388,9 +382,8 @@ window.ND_BONS_PLANS = {
       titre: "AMD Ryzen 7 9800X3D (AM5)",
       categorie: "cpu",
       pourquoi: "Le processeur de jeu le plus rapide du moment : 8 cœurs Zen 5 avec 3D V-Cache. Pour un PC haut de gamme sans compromis.",
-      lien: "https://fr.aliexpress.com/item/1005012304257514.html",
+      lien: "https://s.click.aliexpress.com/e/_c3BCvyt9",
       marchand: "AliExpress",
-      affilie: false,
       note: "Vendu sur AliExpress, souvent en version « tray » (sans boîte ni ventirad) : choisissez un vendeur bien noté et vérifiez la mention « neuf ».",
       icone: "🧠",
       date: "2026-11-11"
@@ -399,45 +392,232 @@ window.ND_BONS_PLANS = {
       titre: "CUSU DDR4 3200 MHz 16 Go (2 × 8 Go), 1,35 V",
       categorie: "ram",
       pourquoi: "Un kit DDR4 2 × 8 Go à petit prix pour un PC AM4 : le double canal fait gagner des fps par rapport à une seule barrette.",
-      lien: "https://fr.aliexpress.com/item/1005007871648778.html",
+      lien: "https://s.click.aliexpress.com/e/_c4r5AKEn",
       marchand: "AliExpress",
-      affilie: false,
       note: "Vendu sur AliExpress : délais de livraison plus longs. Choisissez un vendeur bien noté, et l'entrepôt France ou Europe quand c'est proposé.",
       icone: "🧩",
       date: "2026-11-11"
     },
     {
-      titre: "Netac DDR4 3200 MHz 16 Go (2 × 8 Go)",
+      titre: "Netac DDR4 3200 MHz CL16 16 Go (2 × 8 Go), noir ou blanc",
       categorie: "ram",
       pourquoi: "Kit DDR4 2 × 8 Go d'une marque de stockage reconnue, pour un PC AM4 ou pour redonner du souffle à un ancien PC.",
-      lien: "https://fr.aliexpress.com/item/1005012072371593.html",
+      lien: "https://s.click.aliexpress.com/e/_c3bLqmlV",
       marchand: "AliExpress",
-      affilie: false,
       note: "Vendu sur AliExpress : délais de livraison plus longs. Choisissez un vendeur bien noté, et l'entrepôt France ou Europe quand c'est proposé.",
       icone: "🧩",
       date: "2026-11-11"
     },
     {
-      titre: "Netac SSD SATA 2,5 pouces — 512 Go / 1 To",
-      categorie: "stockage",
-      pourquoi: "Le moyen le plus simple de rajeunir un vieux PC ou un portable qui a encore un disque dur : il se branche à la place du disque, et Windows démarre en quelques secondes.",
-      lien: "https://fr.aliexpress.com/item/1005013053675228.html",
+      titre: "Rapoo VT7 Max — souris gaming sans fil",
+      categorie: "souris",
+      pourquoi: "Une souris gaming sans fil très légère, avec un capteur haut de gamme et plusieurs modes de connexion (sans fil 2,4 GHz, Bluetooth, câble). Un excellent rapport qualité-prix pour jouer.",
+      lien: "https://s.click.aliexpress.com/e/_c3jVBhPd",
       marchand: "AliExpress",
-      affilie: false,
       note: "Vendu sur AliExpress : délais de livraison plus longs. Choisissez un vendeur bien noté, et l'entrepôt France ou Europe quand c'est proposé.",
-      icone: "💾",
-      date: "2026-11-11"
+      icone: "🖱️",
+      date: "2026-11-12"
     },
     {
-      titre: "Netac SSD NVMe M.2 — 512 Go / 1 To",
-      categorie: "stockage",
-      pourquoi: "Un SSD NVMe abordable pour un PC récent : il se visse directement sur la carte mère et il est bien plus rapide qu'un SSD SATA.",
-      lien: "https://fr.aliexpress.com/item/1005013010664715.html",
+      titre: "Rapoo VT3 Max — souris gaming sans fil",
+      categorie: "souris",
+      pourquoi: "La petite sœur de la VT7 Max : sans fil, légère et précise, à un prix encore plus doux. Idéale pour débuter dans le jeu PC.",
+      lien: "https://s.click.aliexpress.com/e/_c4tCUaAr",
       marchand: "AliExpress",
-      affilie: false,
+      note: "Vendu sur AliExpress : délais de livraison plus longs. Choisissez un vendeur bien noté, et l'entrepôt France ou Europe quand c'est proposé.",
+      icone: "🖱️",
+      date: "2026-11-12"
+    },
+    {
+      titre: "inphic A9 — souris sans fil rechargeable",
+      categorie: "souris",
+      pourquoi: "Une souris sans fil rechargeable et silencieuse, à tout petit prix. Parfaite pour le bureau, un portable ou un PC de dépannage.",
+      lien: "https://link.amazon/B0eRIoZtJ",
+      icone: "🖱️",
+      date: "2026-11-12"
+    },
+    {
+      titre: "EasySMX X05 Pro — manette sans fil",
+      categorie: "manettes",
+      pourquoi: "Une manette sans fil qui fonctionne sur PC, Switch et téléphone, avec vibrations et bonne prise en main. Parfaite pour les jeux Nicotch Rétro Games 😉",
+      lien: "https://link.amazon/B0aOciWgA",
+      icone: "🎮",
+      date: "2026-11-12"
+    },
+    {
+      titre: "EasySMX D10 — manette PC",
+      categorie: "manettes",
+      pourquoi: "Une manette PC à petit prix, reconnue directement par Windows (il suffit de la brancher). Idéale pour jouer sur PC ou dans le navigateur.",
+      lien: "https://link.amazon/A03yIbtTq",
+      icone: "🎮",
+      date: "2026-11-12"
+    },
+    {
+      titre: "HyperX Cloud III S Wireless — casque gaming sans fil",
+      categorie: "audio",
+      pourquoi: "La version sans fil du Cloud III : le même confort et un bon son, avec une grosse autonomie et le Bluetooth. Pour jouer sans fil qui traîne.",
+      lien: "https://link.amazon/B0d5cGYkn",
+      icone: "🎧",
+      date: "2026-11-12"
+    },
+    {
+      titre: "SteelSeries Apex 3 — clavier gaming",
+      categorie: "claviers",
+      pourquoi: "Un clavier gaming silencieux, rétroéclairé et résistant aux éclaboussures, avec repose-poignets. Solide et fiable, idéal pour un premier PC gamer.",
+      lien: "https://link.amazon/B034oUCTQ",
+      icone: "⌨️",
+      date: "2026-11-12"
+    },
+    {
+      titre: "The G-Lab Keyz Hydrogen — clavier gaming",
+      categorie: "claviers",
+      pourquoi: "Un clavier gaming rétroéclairé à tout petit prix, parfait pour débuter ou équiper un PC de dépannage.",
+      lien: "https://link.amazon/B0gGnrHBy",
+      icone: "⌨️",
+      date: "2026-11-12"
+    },
+    {
+      titre: "ASUS Dual Radeon RX 7600 EVO OC 8 Go",
+      categorie: "gpu",
+      pourquoi: "Pour jouer en 1080p à petit prix. Compacte (22,9 cm), elle rentre dans presque tous les boîtiers ; ASUS conseille une alimentation de 550 W.",
+      lien: "https://link.amazon/B07qMbb0p",
+      icone: "🎮",
+      date: "2026-11-12"
+    },
+    {
+      titre: "Gigabyte Radeon RX 9060 XT GAMING OC 8 Go",
+      categorie: "gpu",
+      pourquoi: "Très bon choix pour le 1080p élevé avec le FSR 4, et sobre : une seule prise 8 broches et 450 W conseillés par Gigabyte. Elle mesure 28,1 cm : vérifiez la place dans le boîtier.",
+      lien: "https://link.amazon/B0dEeEfxO",
+      icone: "🎮",
+      date: "2026-11-12"
+    },
+    {
+      titre: "SOYO B550M — carte mère AM4 micro-ATX",
+      categorie: "cm",
+      pourquoi: "Une carte mère B550 micro-ATX à prix cassé pour les Ryzen 5000 et la DDR4. Une marque moins connue, mais suffisante pour un PC gamer d'entrée de gamme.",
+      lien: "https://s.click.aliexpress.com/e/_c4OxXzzp",
+      marchand: "AliExpress",
+      note: "Vendu sur AliExpress : vérifiez dans la fiche que le BIOS est à jour pour votre processeur (Ryzen 5000), et choisissez un vendeur bien noté.",
+      icone: "🟩",
+      date: "2026-11-12"
+    },
+    {
+      titre: "AMD Ryzen 5 9600X (AM5) — version boîte",
+      categorie: "cpu",
+      pourquoi: "Le même Ryzen 5 9600X, en version boîte vendue en France : la garantie constructeur et les retours sont plus simples qu'en import. Le bon choix si vous préférez la tranquillité.",
+      lien: "https://link.amazon/B03LGArrU",
+      icone: "🧠",
+      date: "2026-11-12"
+    },
+    {
+      titre: "Juhor DDR4 3200 MHz 16 Go (2 × 8 Go), blanc",
+      categorie: "ram",
+      pourquoi: "Un kit DDR4 2 × 8 Go blanc à petit prix, parfait pour un PC AM4 au look tout blanc.",
+      lien: "https://s.click.aliexpress.com/e/_c36BFdH1",
+      marchand: "AliExpress",
+      note: "Vendu sur AliExpress : délais de livraison plus longs. Choisissez un vendeur bien noté, et l'entrepôt France ou Europe quand c'est proposé.",
+      icone: "🧩",
+      date: "2026-11-12"
+    },
+    {
+      titre: "Patriot Viper Venom DDR5 6000 MHz CL30 16 Go (1 × 16 Go)",
+      categorie: "ram",
+      pourquoi: "De la DDR5 rapide (6000 MHz CL30), la vitesse idéale pour les Ryzen 7000 et 9000.",
+      lien: "https://link.amazon/B06QVP4sw",
+      note: "Une seule barrette : pour profiter du double canal (plus de fps), prenez-en deux identiques.",
+      icone: "🧩",
+      date: "2026-11-12"
+    },
+    {
+      titre: "Patriot Viper Venom RGB DDR5 6000 MHz CL30 16 Go (1 × 16 Go)",
+      categorie: "ram",
+      pourquoi: "La même DDR5 rapide (6000 MHz CL30), avec un éclairage RGB pour un PC qui brille.",
+      lien: "https://link.amazon/B0hEfMPLS",
+      note: "Une seule barrette : pour profiter du double canal (plus de fps), prenez-en deux identiques.",
+      icone: "🧩",
+      date: "2026-11-12"
+    },
+    {
+      titre: "Lexar DDR5 6000 MHz CL38 16 Go (1 × 16 Go)",
+      categorie: "ram",
+      pourquoi: "Une DDR5 6000 MHz à prix doux pour un PC AM5. Un peu moins réactive que la CL30, mais très bon rapport qualité-prix.",
+      lien: "https://link.amazon/B01Fi6GvU",
+      note: "Une seule barrette : pour profiter du double canal (plus de fps), prenez-en deux identiques.",
+      icone: "🧩",
+      date: "2026-11-12"
+    },
+    {
+      titre: "Netac SSD SATA 2,5 pouces — 512 Go",
+      categorie: "stockage",
+      pourquoi: "Le moyen le plus simple de rajeunir un vieux PC ou un portable qui a encore un disque dur : il se branche à la place du disque, et Windows démarre en quelques secondes.",
+      lien: "https://s.click.aliexpress.com/e/_c3zKX3S3",
+      marchand: "AliExpress",
       note: "Vendu sur AliExpress : délais de livraison plus longs. Choisissez un vendeur bien noté, et l'entrepôt France ou Europe quand c'est proposé.",
       icone: "💾",
-      date: "2026-11-11"
+      date: "2026-11-12"
+    },
+    {
+      titre: "Netac SSD SATA 2,5 pouces — 1 To",
+      categorie: "stockage",
+      pourquoi: "La même chose avec plus de place : 1 To pour Windows, les logiciels et quelques jeux.",
+      lien: "https://s.click.aliexpress.com/e/_c2wwtGj1",
+      marchand: "AliExpress",
+      note: "Vendu sur AliExpress : délais de livraison plus longs. Choisissez un vendeur bien noté, et l'entrepôt France ou Europe quand c'est proposé.",
+      icone: "💾",
+      date: "2026-11-12"
+    },
+    {
+      titre: "Netac SSD NVMe M.2 — 500 Go",
+      categorie: "stockage",
+      pourquoi: "Un SSD NVMe abordable pour un PC récent : il se visse directement sur la carte mère et il est bien plus rapide qu'un SSD SATA.",
+      lien: "https://s.click.aliexpress.com/e/_c30o4uwr",
+      marchand: "AliExpress",
+      note: "Vendu sur AliExpress : délais de livraison plus longs. Choisissez un vendeur bien noté, et l'entrepôt France ou Europe quand c'est proposé.",
+      icone: "💾",
+      date: "2026-11-12"
+    },
+    {
+      titre: "Netac SSD NVMe M.2 — 1 To",
+      categorie: "stockage",
+      pourquoi: "Le bon compromis pour un PC gamer : 1 To en NVMe pour Windows et vos jeux.",
+      lien: "https://s.click.aliexpress.com/e/_c4MbDxND",
+      marchand: "AliExpress",
+      note: "Vendu sur AliExpress : délais de livraison plus longs. Choisissez un vendeur bien noté, et l'entrepôt France ou Europe quand c'est proposé.",
+      icone: "💾",
+      date: "2026-11-12"
+    },
+    {
+      titre: "Logitech G502 HERO — souris gaming filaire",
+      categorie: "souris",
+      pourquoi: "Un grand classique des souris gaming : capteur HERO très précis, 11 boutons programmables et poids réglable. Solide et confortable pour les grandes mains.",
+      lien: "https://link.amazon/B0gf1E9A2",
+      icone: "🖱️",
+      date: "2026-11-12"
+    },
+    {
+      titre: "Troisième main de soudure — loupe et 4 bras flexibles",
+      categorie: "outils",
+      pourquoi: "Indispensable pour souder : les 4 bras et leurs pinces tiennent la carte et les fils, la loupe aide pour les petits composants. Parfait pour réparer une prise, un câble ou une manette.",
+      lien: "https://link.amazon/B044tkLtq",
+      icone: "🔧",
+      date: "2026-11-12"
+    },
+    {
+      titre: "Cooler Master Elite Gold 850 — alimentation 850 W, 80 PLUS Gold",
+      categorie: "alim",
+      pourquoi: "850 W certifiés Gold, de quoi alimenter sereinement un PC haut de gamme (RTX 5070 Ti, RX 9070 XT) avec de la marge. Câbles modulaires pour un montage plus propre.",
+      lien: "https://link.amazon/B0izG685R",
+      icone: "⚡",
+      date: "2026-11-12"
+    },
+    {
+      titre: "8BitDo Ultimate 2C Wireless — manette sans fil",
+      categorie: "manettes",
+      pourquoi: "Une manette sans fil très appréciée sur PC, avec des joysticks à effet Hall qui ne dérivent pas avec le temps. Parfaite pour les jeux rétro de Nicotch 🕹️",
+      lien: "https://link.amazon/B0bsVJ5PE",
+      icone: "🎮",
+      date: "2026-11-12"
     }
   ]
 };

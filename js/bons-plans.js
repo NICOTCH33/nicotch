@@ -22,7 +22,7 @@
   /* Illustration néon de la catégorie (assets/categories/<id>.webp),
      avec l'icône au trait en secours si l'image n'existe pas */
   var IMAGES = ["outils", "entretien", "gpu", "cpu", "cm", "ram", "stockage", "alim", "refroidissement",
-                "boitiers", "ecrans", "claviers", "souris", "audio", "manettes"];
+                "boitiers", "ecrans", "claviers", "souris", "audio"];  // pas "manettes" : l'illustration a des symboles de marque
   function icone(id, classe) {
     if (IMAGES.indexOf(id) !== -1) {
       return '<span class="cat-img ' + (classe || "") + '" aria-hidden="true"><img src="assets/categories/' + id +

@@ -32,13 +32,13 @@ window.ND_CONFIG = {
 
   PIECES: {
     /* ---------- Processeurs ---------- */
-    "r5-5600":   { type: "cpu", nom: "AMD Ryzen 5 5600", socket: "AM4", w: 76, ventirad: true, lien: "https://fr.aliexpress.com/item/1005012297111635.html", marchand: "AliExpress", affilie: false,
+    "r5-5600":   { type: "cpu", nom: "AMD Ryzen 5 5600", socket: "AM4", w: 76, ventirad: true, lien: "https://s.click.aliexpress.com/e/_c2u0P0CF", marchand: "AliExpress",
                    pourquoi: "6 cœurs, très bon en jeu en 1080p et livré avec son ventirad. Le meilleur rapport qualité-prix du moment." },
-    "r5-7500f":  { type: "cpu", nom: "AMD Ryzen 5 7500F", socket: "AM5", w: 88, ventirad: false, lien: "https://fr.aliexpress.com/item/1005012028251728.html", marchand: "AliExpress", affilie: false,
+    "r5-7500f":  { type: "cpu", nom: "AMD Ryzen 5 7500F", socket: "AM5", w: 88, ventirad: false, lien: "https://s.click.aliexpress.com/e/_c37RwN0n", marchand: "AliExpress",
                    pourquoi: "Plateforme AM5 récente, évolutive (DDR5). Plus cher à l'achat, mais on pourra changer de processeur plus tard." },
-    "r5-9600x":  { type: "cpu", nom: "AMD Ryzen 5 9600X", socket: "AM5", w: 88, ventirad: false, lien: "https://fr.aliexpress.com/item/1005010131425503.html", marchand: "AliExpress", affilie: false,
+    "r5-9600x":  { type: "cpu", nom: "AMD Ryzen 5 9600X", socket: "AM5", w: 88, ventirad: false, lien: "https://s.click.aliexpress.com/e/_c37AKDhh", marchand: "AliExpress",
                    pourquoi: "Génération Ryzen 9000 : rapide en jeu, sobre en consommation, sur une plateforme AM5 évolutive." },
-    "r7-9800x3d":{ type: "cpu", nom: "AMD Ryzen 7 9800X3D", socket: "AM5", w: 162, ventirad: false, lien: "https://fr.aliexpress.com/item/1005012304257514.html", marchand: "AliExpress", affilie: false,
+    "r7-9800x3d":{ type: "cpu", nom: "AMD Ryzen 7 9800X3D", socket: "AM5", w: 162, ventirad: false, lien: "https://s.click.aliexpress.com/e/_c3BCvyt9", marchand: "AliExpress",
                    pourquoi: "Le processeur de référence pour le jeu grâce à son cache 3D V-Cache." },
 
     /* ---------- Cartes mères ---------- */
@@ -56,7 +56,7 @@ window.ND_CONFIG = {
                    pourquoi: "Étage d'alimentation robuste et bien refroidi, à la hauteur d'un 9800X3D." },
 
     /* ---------- Mémoire ---------- */
-    "ddr4-16":   { type: "ram", nom: "16 Go DDR4-3200 (2 × 8 Go) — ex. Corsair Vengeance LPX", ddr: "DDR4", go: 16, barrettes: 2, lien: "",
+    "ddr4-16":   { type: "ram", nom: "16 Go DDR4-3200 (2 × 8 Go) — ex. Netac CL16", ddr: "DDR4", go: 16, barrettes: 2, lien: "https://s.click.aliexpress.com/e/_c3bLqmlV", marchand: "AliExpress",
                    pourquoi: "2 barrettes pour le double canal. 16 Go suffisent pour la plupart des jeux en 1080p." },
     "ddr4-32":   { type: "ram", nom: "32 Go DDR4-3200 (2 × 16 Go) — ex. Corsair Vengeance LPX", ddr: "DDR4", go: 32, barrettes: 2, lien: "",
                    pourquoi: "Plus confortable pour les gros jeux récents et le multitâche (Discord, navigateur…)." },
@@ -68,11 +68,11 @@ window.ND_CONFIG = {
                    pourquoi: "La quantité et la vitesse idéales pour un PC de jeu AM5." },
 
     /* ---------- Cartes graphiques ---------- */
-    "rx7600":    { type: "gpu", nom: "AMD Radeon RX 7600 8 Go", marque: "AMD", w: 165, fab: 550, longueur: 270, lien: "",
+    "rx7600":    { type: "gpu", nom: "AMD Radeon RX 7600 8 Go — ex. ASUS Dual EVO OC", marque: "AMD", w: 165, fab: 550, longueur: 270, lien: "https://link.amazon/B07qMbb0p",
                    pourquoi: "Très bonne carte pour le 1080p en réglages moyens à élevés." },
     "rtx5050":   { type: "gpu", nom: "NVIDIA GeForce RTX 5050 8 Go", marque: "NVIDIA", w: 130, fab: 550, longueur: 250, lien: "",
                    pourquoi: "L'alternative NVIDIA : DLSS 4 et faible consommation." },
-    "rx9060xt8": { type: "gpu", nom: "AMD Radeon RX 9060 XT 8 Go", marque: "AMD", w: 150, fab: 450, longueur: 280, lien: "",
+    "rx9060xt8": { type: "gpu", nom: "AMD Radeon RX 9060 XT 8 Go — ex. Gigabyte GAMING OC", marque: "AMD", w: 150, fab: 450, longueur: 281, lien: "https://link.amazon/B0dEeEfxO",
                    pourquoi: "Architecture RDNA 4 récente, FSR 4 : excellente en 1080p réglages élevés." },
     "rtx5060":   { type: "gpu", nom: "NVIDIA GeForce RTX 5060 8 Go — ex. Gigabyte WINDFORCE MAX OC", marque: "NVIDIA", w: 145, fab: 550, longueur: 250, lien: "https://link.amazon/B043xqeQd",
                    pourquoi: "L'alternative NVIDIA : DLSS 4 et génération d'images." },
@@ -88,7 +88,7 @@ window.ND_CONFIG = {
                    pourquoi: "Pour viser la 4K sans compromis (beaucoup plus chère)." },
 
     /* ---------- Stockage ---------- */
-    "ssd-1to":   { type: "ssd", nom: "SSD NVMe 1 To — ex. Crucial P3 Plus", lien: "",
+    "ssd-1to":   { type: "ssd", nom: "SSD NVMe 1 To — ex. Netac", lien: "https://s.click.aliexpress.com/e/_c4MbDxND", marchand: "AliExpress",
                    pourquoi: "NVMe PCIe 4.0 : Windows et les jeux se lancent en quelques secondes." },
     "ssd-2to":   { type: "ssd", nom: "SSD NVMe 2 To — ex. Samsung 990 EVO Plus", lien: "",
                    pourquoi: "2 To, car les jeux récents dépassent souvent 100 Go chacun." },
@@ -106,8 +106,8 @@ window.ND_CONFIG = {
                    pourquoi: "Gold, modulaire, avec connecteur 12V-2x6 pour les cartes graphiques récentes." },
     "alim-750-nzxt": { type: "alim", nom: "NZXT C750 Bronze — 750 W, ATX 3.1, non modulaire", w: 750, lien: "https://link.amazon/B02Pehwvv",
                    pourquoi: "750 W à la norme ATX 3.1 récente : de quoi alimenter une RX 9070 ou une RTX 5070 avec de la marge. Non modulaire : prévoir un peu de rangement des câbles." },
-    "alim-850":  { type: "alim", nom: "Alimentation 850 W 80 PLUS Gold — ex. Corsair RM850e", w: 850, lien: "",
-                   pourquoi: "Assez de puissance même pour une RTX 5080, avec connecteur 12V-2x6." },
+    "alim-850":  { type: "alim", nom: "Alimentation 850 W 80 PLUS Gold — ex. Cooler Master Elite Gold 850", w: 850, lien: "https://link.amazon/B0izG685R",
+                   pourquoi: "Assez de puissance même pour une RTX 5080. Idéalement en ATX 3.1 avec un câble 12V-2x6 ; sinon, on utilise l'adaptateur fourni avec la carte graphique." },
 
     /* ---------- Refroidissement ---------- */
     "ventirad-origine": { type: "refroid", nom: "Ventirad d'origine (livré avec le processeur)", type2: "origine", ventilos: 0, lien: "",
