@@ -772,6 +772,7 @@ kbd { background: var(--carte); border: 1px solid var(--bordure); border-bottom-
 /* ---------- Tableau des scores ---------- */
 .scores { margin: 0 0 20px; }
 .scores h2 { margin-top: 0; }
+.scores-onglets { display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 10px; }
 .scores-envoi { display: grid; gap: 8px; margin: 8px 0 14px; padding: 14px; border: 1px solid #FFC857; border-radius: var(--rayon-btn); background: rgba(255, 200, 87, .06); }
 .scores-envoi[hidden] { display: none; }
 .scores-bravo { margin: 0; font-weight: 700; }
@@ -784,3 +785,4 @@ kbd { background: var(--carte); border: 1px solid var(--bordure); border-bottom-
 .scores-pseudo { font-weight: 700; overflow-wrap: anywhere; }
 .scores-points { font-variant-numeric: tabular-nums; font-weight: 800; color: #FFD24A; }
 .scores-liste li.scores-moi { outline: 2px solid var(--bleu); }
+.scores-liste li.texte-doux { display: block; }

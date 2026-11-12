@@ -23,7 +23,6 @@ var ND_SCORES = {
 (function () {
   "use strict";
   var MOTS = /(connard|connasse|encul|salope|pute|putain|merde|batard|bite|couille|nique|ntm|fdp|pd|nazi|hitler|fuck|shit|bitch|dick|cunt|nigg)/i;
-  var NOMS_VARIANTES = { easy: "Plage", normal: "Campagne", hard: "Montagne" };
 
   function lire(cle) { try { return localStorage.getItem(cle); } catch (e) { return null; } }
   function ecrire(cle, v) { try { localStorage.setItem(cle, v); } catch (e) { /* stockage indisponible */ } }
@@ -42,7 +41,9 @@ var ND_SCORES = {
     if (!zone || !jeu || !jeu.scores) return;
     var esc = window.ND.esc;
     var base = ND_SCORES.URL.replace(/\/$/, "") + "/rest/v1/";
-    var variante = jeu.varianteScores || null;   // piste ou mode (ex. Run 82 : easy, normal, hard)
+    var variante = jeu.varianteScores || null;   // piste ou mode (ex. Run 82 : easy, normal, hard, neon)
+    var VARIANTES = jeu.variantesScores || [];    // [[id, nom], …] → onglets au-dessus du classement
+    function nomVariante(v) { var t = VARIANTES.filter(function (x) { return x[0] === v; })[0]; return t ? t[1] : v; }
     var dernier = null;           // dernier score reçu, en attente de pseudo
 
     var bloc = document.createElement("section");
@@ -50,7 +51,7 @@ var ND_SCORES = {
     bloc.setAttribute("aria-labelledby", "titre-scores");
     bloc.innerHTML =
       '<h2 id="titre-scores">🏆 Tableau des scores</h2>' +
-      '<p class="meta-rapport" id="scores-variante" hidden></p>' +
+      '<div class="scores-onglets" id="scores-onglets" role="group" aria-label="Choisir le classement" hidden></div>' +
       '<form class="scores-envoi" id="scores-envoi" hidden novalidate>' +
         '<p class="scores-bravo" id="scores-bravo"></p>' +
         '<label class="champ-label" for="scores-pseudo">Ton pseudo (2 à 12 lettres, chiffres, - ou _)</label>' +
@@ -69,7 +70,21 @@ var ND_SCORES = {
     var statut = bloc.querySelector("#scores-statut");
     var liste = bloc.querySelector("#scores-liste");
     champ.value = lire("nicotch_pseudo") || "";
-    if (variante) { var pv = bloc.querySelector("#scores-variante"); pv.textContent = "Classement : " + (NOMS_VARIANTES[variante] || variante); pv.hidden = false; }
+    var onglets = bloc.querySelector("#scores-onglets");
+    function dessinerOnglets() {
+      if (!VARIANTES.length) return;
+      onglets.innerHTML = VARIANTES.map(function (x) {
+        return '<button type="button" class="filtre" data-v="' + esc(x[0]) + '" aria-pressed="' + (x[0] === variante) + '">' + esc(x[1]) + "</button>";
+      }).join("");
+      onglets.hidden = false;
+    }
+    onglets.addEventListener("click", function (e) {
+      var b = e.target.closest("button[data-v]");
+      if (!b || b.getAttribute("data-v") === variante) return;
+      variante = b.getAttribute("data-v");
+      dessinerOnglets(); charger();
+    });
+    dessinerOnglets();
 
     function message(t, type) { statut.textContent = t; statut.className = "contact-statut " + (type || ""); statut.hidden = !t; }
 
@@ -100,13 +115,11 @@ var ND_SCORES = {
       var v = typeof d.variante === "string" && /^[a-z0-9-]{1,20}$/.test(d.variante) ? d.variante : null;
       if (v !== variante) {
         variante = v;
-        var p = bloc.querySelector("#scores-variante");
-        p.textContent = v ? "Classement : " + (NOMS_VARIANTES[v] || v) : "";
-        p.hidden = !v;
+        dessinerOnglets();
         charger();
       }
       dernier = s;
-      bloc.querySelector("#scores-bravo").textContent = "🎉 Bravo ! " + s.toLocaleString("fr-FR") + " points. Tu veux l'inscrire au classement ?";
+      bloc.querySelector("#scores-bravo").textContent = "🎉 Bravo ! " + s.toLocaleString("fr-FR") + " points" + (variante && VARIANTES.length ? " (" + nomVariante(variante) + ")" : "") + ". Tu veux l'inscrire au classement ?";
       form.hidden = false; message("");
     });
 
