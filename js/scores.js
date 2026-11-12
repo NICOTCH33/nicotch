@@ -58,7 +58,7 @@ var ND_SCORES = {
         '<div class="scores-ligne"><input id="scores-pseudo" maxlength="12" autocomplete="nickname" pattern="[A-Za-z0-9_-]{2,12}" required>' +
         '<button class="btn btn-rouge" type="submit" id="scores-ok">Enregistrer</button>' +
         '<button class="btn btn-contour" type="button" id="scores-non">Non merci</button></div>' +
-        '<p class="meta-rapport">Seul le pseudo et le score sont publiés, rien d\'autre.</p>' +
+        '<p class="meta-rapport">Seuls le pseudo et le score sont publiés, rien d\'autre. <a href="a-propos.html#regles-scores">Règles du classement</a>.</p>' +
       "</form>" +
       '<p class="contact-statut" id="scores-statut" role="status" aria-live="polite" hidden></p>' +
       '<ol class="scores-liste" id="scores-liste"><li class="texte-doux">Chargement…</li></ol>';
