@@ -89,7 +89,8 @@ var ND_SCORES = {
     function message(t, type) { statut.textContent = t; statut.className = "contact-statut " + (type || ""); statut.hidden = !t; }
 
     function charger() {
-      var url = base + "meilleurs_scores?select=pseudo,score,cree_le&order=score.desc&limit=10&jeu=eq." + encodeURIComponent(jeu.id) +
+      var url = base + (jeu.scoreInverse ? "meilleurs_scores_min" : "meilleurs_scores") +
+        "?select=pseudo,score,cree_le&order=score." + (jeu.scoreInverse ? "asc" : "desc") + "&limit=10&jeu=eq." + encodeURIComponent(jeu.id) +
         (variante ? "&variante=eq." + encodeURIComponent(variante) : "");
       fetch(url, { headers: entetes() })
         .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
@@ -98,7 +99,7 @@ var ND_SCORES = {
           liste.innerHTML = lignes.length ? lignes.map(function (l, i) {
             var rang = ["🥇", "🥈", "🥉"][i] || (i + 1) + ".";
             return '<li class="' + (l.pseudo.toLowerCase() === moi ? "scores-moi" : "") + '"><span class="scores-rang">' + rang + "</span>" +
-              '<span class="scores-pseudo">' + esc(l.pseudo) + '</span><span class="scores-points">' + Number(l.score).toLocaleString("fr-FR") + "</span></li>";
+              '<span class="scores-pseudo">' + esc(l.pseudo) + '</span><span class="scores-points">' + Number(l.score).toLocaleString("fr-FR") + (jeu.uniteScore ? " " + esc(jeu.uniteScore) : "") + "</span></li>";
           }).join("") : '<li class="texte-doux">Aucun score pour l\'instant : sois le premier ! 🚀</li>';
         })
         .catch(function () { liste.innerHTML = '<li class="texte-doux">Le classement est indisponible pour le moment.</li>'; });
@@ -119,7 +120,7 @@ var ND_SCORES = {
         charger();
       }
       dernier = s;
-      bloc.querySelector("#scores-bravo").textContent = "🎉 Bravo ! " + s.toLocaleString("fr-FR") + " points" + (variante && VARIANTES.length ? " (" + nomVariante(variante) + ")" : "") + ". Tu veux l'inscrire au classement ?";
+      bloc.querySelector("#scores-bravo").textContent = "🎉 Bravo ! " + s.toLocaleString("fr-FR") + " " + (jeu.uniteScore || "points") + (variante && VARIANTES.length ? " (" + nomVariante(variante) + ")" : "") + ". Tu veux l'inscrire au classement ?";
       form.hidden = false; message("");
     });
 

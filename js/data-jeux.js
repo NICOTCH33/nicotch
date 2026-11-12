@@ -26,6 +26,8 @@
      scores      true si le jeu envoie son score au tableau des scores en ligne
      varianteScores (facultatif) classement affiché par défaut (ex. piste « normal »)
      variantesScores (facultatif) onglets du classement : [[id, nom], …]
+     scoreInverse   (facultatif) true si le plus PETIT score gagne (ex. nombre de coups)
+     uniteScore     (facultatif) unité affichée après le score (ex. « coups »)
      manette     true si le jeu se joue aussi à la manette
      trilogie    1, 2 ou 3 : place du jeu dans la trilogie Last Track (bloc spécial)
      bientot     true = jeu annoncé mais pas encore jouable (carte « Bientôt disponible »,
@@ -113,6 +115,11 @@ window.ND_JEUX = [
   },
   {
     id: "sauve-la-princesse",
+    scores: true,
+    scoreInverse: true,
+    uniteScore: "coups",
+    varianteScores: "normal",
+    variantesScores: [["facile", "Facile"], ["normal", "Normal"], ["difficile", "Difficile"]],
     titre: "Sauve la Princesse !",
     description: "Un chevalier, une grotte, un dragon… Choisis ton chemin, trouve l'armure, l'épée et le bouclier, réussis les épreuves, combats au tour par tour les voleurs, spectres et trolls, et affronte le dragon pour sauver la princesse.",
     genre: "Aventure",
