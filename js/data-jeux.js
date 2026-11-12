@@ -48,6 +48,7 @@
 window.ND_JEUX = [
   {
     id: "last-track",
+    scores: true,
     titre: "Last Track",
     description: "Un dernier titre maudit transforme la ville en zombies. Choisis ton perso dans la bande, balance vinyles, CD et K7, et déclenche ta Fury pour nettoyer les rues.",
     genre: "Action / Plateformes",
@@ -63,6 +64,7 @@ window.ND_JEUX = [
   },
   {
     id: "space-run-86",
+    scores: true,
     titre: "Space Run 86",
     description: "La bande décolle ! Pilote le vaisseau de ton perso (la guitare volante de Cédric…), affronte les vagues d'ennemis en mode Aventure ou Infini, et bats ton record sur 86.0 FM.",
     genre: "Shoot'em up",
@@ -78,6 +80,7 @@ window.ND_JEUX = [
   },
   {
     id: "cover-track",
+    scores: true,
     titre: "Cover Track",
     description: "Infiltre le label Tricatel zone par zone, du Hall jusqu'au Bureau du Patron. Choisis ton perso, vise et tire vinyles, CD et K7, et bats les 5 boss.",
     genre: "Action / Tir",
