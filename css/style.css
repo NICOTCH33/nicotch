@@ -803,3 +803,9 @@ kbd { background: var(--carte); border: 1px solid var(--bordure); border-bottom-
 @media (max-width: 999px) { .vitrine { grid-template-columns: 1fr; } }
 @media (max-width: 559px) { .vitrine-liste { grid-template-columns: repeat(2, 1fr); } .vitrine-trilogie .vitrine-liste li:last-child { grid-column: 1 / -1; max-width: 50%; justify-self: center; } }
 .vitrine .b { color: var(--bleu-clair); }
+
+/* ---------- Partenaire (pied de page) ---------- */
+.pied-partenaire { display: flex; align-items: center; justify-content: center; gap: 14px; padding: 18px 0 6px; margin-top: 18px; border-top: 1px solid var(--bordure); }
+.pied-partenaire span { font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; color: var(--texte-doux); }
+.pied-partenaire img { width: 120px; height: auto; opacity: .85; transition: opacity .2s; }
+.pied-partenaire a:hover img, .pied-partenaire img:hover { opacity: 1; }

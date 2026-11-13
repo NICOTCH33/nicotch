@@ -100,6 +100,9 @@
             '<li><a href="mentions-legales.html">Mentions légales</a></li>' +
           "</ul></div>" +
         "</div>" +
+        '<div class="pied-partenaire"><span>Partenaire</span>' +
+          '<img src="assets/logos/alarian-blanc-400.webp" width="150" height="78" alt="Alarian Solutions – Responsable Administratif Opérationnel" loading="lazy">' +
+        "</div>" +
         '<div class="pied-bas"><span>© <span id="annee"></span> Nicotch. Aucun compte, aucun cookie.</span>' +
         "<span>En cas de doute ou de risque électrique, faites appel à un professionnel.</span></div>" +
       "</div>";
