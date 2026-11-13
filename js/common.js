@@ -8,7 +8,7 @@
 
   // pages : liste des pages sur lesquelles ce lien apparaît comme « actif »
   var MENU = [
-    { href: "index.html", label: "Accueil", pages: ["index.html"] },
+    { href: "./", label: "Accueil", pages: ["index.html"] },
     { href: "reparation.html", label: "Diagnostic & Réparation", pages: ["reparation.html", "diagnostic.html"] },
     { href: "fiches.html", label: "Fiches de dépannage", pages: ["fiches.html"] },
     { href: "outils.html", label: "Boîte à outils", pages: ["outils.html", "alimentation.html", "bips.html", "config-pc.html", "telechargements.html"] },
@@ -36,7 +36,7 @@
     // Logo « Nicotch » (fond transparent, proportions conservées : 3,35 pour 1)
     cible.innerHTML =
       '<div class="conteneur">' +
-        '<a class="marque" href="index.html" title="Accueil Nicotch">' +
+        '<a class="marque" href="./" title="Accueil Nicotch">' +
           '<picture><source type="image/webp" srcset="assets/logos/nicotch-400.webp 400w, assets/logos/nicotch-800.webp 800w" sizes="(max-width: 1199px) 170px, 230px">' +
           '<img class="logo-nicotch" src="assets/logos/nicotch-400.png" srcset="assets/logos/nicotch-400.png 400w, assets/logos/nicotch-800.png 800w" sizes="(max-width: 1199px) 170px, 230px" width="230" height="69" alt="Nicotch – accueil"></picture>' +
         "</a>" +
@@ -78,6 +78,12 @@
           "<div>" +
             '<div class="pied-marque"><img src="assets/logos/nicotch-400.webp" width="180" height="54" alt="Nicotch" loading="lazy"></div>' +
             "<p>Diagnostic gratuit des pannes de PC et de consoles, et petits jeux rétro à découvrir. Les diagnostics indiquent des <strong>causes possibles</strong>, jamais un résultat certain.</p>" +
+            '<div class="pied-reseaux"><span>Suivre Nicotch :</span>' +
+              '<a href="https://www.instagram.com/nicotch.fr" target="_blank" rel="me noopener" aria-label="Nicotch sur Instagram">' +
+                '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1" class="plein"/></svg>Instagram</a>' +
+              '<a href="https://www.facebook.com/nicotch.fr" target="_blank" rel="me noopener" aria-label="Nicotch sur Facebook">' +
+                '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 21v-7.5h2.6l.4-3H14V8.6c0-.9.3-1.5 1.6-1.5H17V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H8.3v3H11V21" class="plein"/></svg>Facebook</a>' +
+            "</div>" +
           "</div>" +
           "<div><h2>Diagnostic & Réparation</h2><ul>" +
             '<li><a href="diagnostic.html?type=pc">Diagnostic PC</a></li>' +

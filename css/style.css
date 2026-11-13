@@ -809,3 +809,13 @@ kbd { background: var(--carte); border: 1px solid var(--bordure); border-bottom-
 .pied-partenaire span { font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; color: var(--texte-doux); }
 .pied-partenaire img { width: 120px; height: auto; opacity: .85; transition: opacity .2s; }
 .pied-partenaire a:hover img, .pied-partenaire img:hover { opacity: 1; }
+
+/* ---------- Réseaux sociaux (pied de page) ---------- */
+.pied-reseaux { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; margin-top: 14px; }
+.pied-reseaux span { color: var(--texte-doux); font-size: .9rem; }
+.pied-reseaux a { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 6px 14px; border: 1px solid var(--bordure);
+  border-radius: 999px; color: var(--texte); font-weight: 600; transition: border-color .2s, box-shadow .2s; }
+.pied-reseaux a:hover { text-decoration: none; border-color: #FF3EA5; box-shadow: 0 0 14px rgba(255, 62, 165, .3); }
+.pied-reseaux a + a:hover { border-color: #48A9FF; box-shadow: 0 0 14px rgba(72, 169, 255, .3); }
+.pied-reseaux svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.8; }
+.pied-reseaux svg .plein { fill: currentColor; stroke: none; }
