@@ -810,12 +810,22 @@ kbd { background: var(--carte); border: 1px solid var(--bordure); border-bottom-
 .pied-partenaire img { width: 120px; height: auto; opacity: .85; transition: opacity .2s; }
 .pied-partenaire a:hover img, .pied-partenaire img:hover { opacity: 1; }
 
-/* ---------- Réseaux sociaux (pied de page) ---------- */
-.pied-reseaux { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; margin-top: 14px; }
-.pied-reseaux span { color: var(--texte-doux); font-size: .9rem; }
-.pied-reseaux a { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 6px 14px; border: 1px solid var(--bordure);
-  border-radius: 999px; color: var(--texte); font-weight: 600; transition: border-color .2s, box-shadow .2s; }
-.pied-reseaux a:hover { text-decoration: none; border-color: #FF3EA5; box-shadow: 0 0 14px rgba(255, 62, 165, .3); }
-.pied-reseaux a + a:hover { border-color: #48A9FF; box-shadow: 0 0 14px rgba(72, 169, 255, .3); }
-.pied-reseaux svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.8; }
-.pied-reseaux svg .plein { fill: currentColor; stroke: none; }
+/* ---------- Réseaux sociaux ---------- */
+.btn-reseau { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; padding: 10px 22px; border-radius: 999px;
+  color: #fff; font-weight: 700; font-size: 1.05rem; transition: transform .15s, box-shadow .2s, filter .2s; }
+.btn-reseau:hover { text-decoration: none; color: #fff; transform: translateY(-2px); filter: brightness(1.1); }
+.btn-reseau svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.8; flex: none; }
+.btn-reseau svg .plein { fill: currentColor; stroke: none; }
+.btn-instagram { background: linear-gradient(45deg, #F58529, #DD2A7B 45%, #8134AF 75%, #515BD4); box-shadow: 0 0 18px rgba(221, 42, 123, .35); }
+.btn-instagram:hover { box-shadow: 0 0 26px rgba(221, 42, 123, .6); }
+.btn-facebook { background: #1877F2; box-shadow: 0 0 18px rgba(24, 119, 242, .35); }
+.btn-facebook:hover { box-shadow: 0 0 26px rgba(24, 119, 242, .6); }
+.pied-reseaux { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px; margin-top: 16px; }
+.pied-reseaux span { color: var(--texte); font-weight: 600; }
+.pied-reseaux .btn-reseau { min-height: 44px; padding: 8px 18px; font-size: 1rem; }
+.bandeau-reseaux { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px 28px; padding: 24px 28px;
+  border-radius: var(--rayon); border: 1px solid var(--bordure);
+  background: linear-gradient(90deg, rgba(221, 42, 123, .14), rgba(24, 119, 242, .14)); }
+.bandeau-reseaux h2 { margin: 0 0 6px; font-size: 1.5rem; }
+.bandeau-reseaux p { margin: 0; color: var(--texte-doux); max-width: 56ch; }
+.reseaux-boutons { display: flex; flex-wrap: wrap; gap: 12px; }
