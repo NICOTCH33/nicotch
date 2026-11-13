@@ -62,23 +62,33 @@
     "<h3>Les jeux arrivent bientôt</h3><p>Nicotch prépare ses premiers jeux. Revenez très vite !</p>" +
     '<p><a class="btn btn-rouge" href="reparation.html">En attendant, diagnostiquer un appareil</a></p></div>';
 
-  /* ---------- Bloc « Trilogie » (jeux.html) ---------- */
+  /* ---------- Vitrine (jeux.html) : la trilogie + les autres jeux, côte à côte ---------- */
+  function carteVitrine(j) {
+    var img = j.affiche
+      ? '<span class="vitrine-cadre"><img class="vitrine-fond" src="' + esc(j.affiche) + '" alt="" loading="lazy">' +
+        '<img class="vitrine-affiche" src="' + esc(j.affiche) + '" alt="Affiche de ' + esc(j.titre) + '" loading="lazy"></span>'
+      : '<span class="vitrine-cadre trilogie-sans-affiche"><img src="' + esc(j.apercu) + '" alt="" loading="lazy"><span>' + esc(j.titre) + "</span></span>";
+    return '<li><a class="trilogie-lien vitrine-lien" href="jouer.html?jeu=' + encodeURIComponent(j.id) + '">' +
+      (j.trilogie ? '<span class="trilogie-num">' + j.trilogie + "</span>" : "") + img +
+      '<span class="trilogie-titre">' + esc(j.titre) + '</span><span class="trilogie-genre">' + esc(j.genre || "") + "</span>" +
+      '<span class="btn btn-bleu btn-petit">▶ Jouer</span></a></li>';
+  }
   function trilogie() {
     var zone = document.getElementById("bloc-trilogie");
-    var l = jeuxTries().filter(function (j) { return j.trilogie && !j.bientot; })
-      .sort(function (a, b) { return a.trilogie - b.trilogie; });
-    if (l.length < 2) { zone.classList.add("cache"); return; }
-    zone.innerHTML = '<h2>La trilogie <span class="r">Last Track</span></h2>' +
-      '<p class="sous-titre">La bande contre les zombies, en trois épisodes et trois styles de jeu. À jouer dans l\'ordre… ou pas !</p>' +
-      '<ol class="trilogie">' + l.map(function (j) {
-        var img = j.affiche
-          ? '<img class="trilogie-affiche" src="' + esc(j.affiche) + '" alt="Affiche de ' + esc(j.titre) + '" loading="lazy">'
-          : '<div class="trilogie-affiche trilogie-sans-affiche"><img src="' + esc(j.apercu) + '" alt="" loading="lazy"><span>' + esc(j.titre) + "</span></div>";
-        return '<li><a class="trilogie-lien" href="jouer.html?jeu=' + encodeURIComponent(j.id) + '">' +
-          '<span class="trilogie-num">' + j.trilogie + "</span>" + img +
-          '<span class="trilogie-titre">' + esc(j.titre) + '</span><span class="trilogie-genre">' + esc(j.genre || "") + "</span>" +
-          '<span class="btn btn-bleu btn-petit">▶ Jouer</span></a></li>';
-      }).join("") + "</ol>";
+    var dispo = jeuxTries().filter(function (j) { return !j.bientot && (j.affiche || j.apercu); });
+    var tri = dispo.filter(function (j) { return j.trilogie; }).sort(function (a, b) { return a.trilogie - b.trilogie; });
+    var autres = dispo.filter(function (j) { return !j.trilogie; });
+    if (!dispo.length) { zone.classList.add("cache"); return; }
+    function groupe(titre, sous, liste, classe) {
+      if (!liste.length) return "";
+      return '<div class="vitrine-groupe ' + classe + '" style="--n:' + liste.length + '"><h2>' + titre + "</h2>" +
+        '<p class="sous-titre">' + sous + "</p>" +
+        '<ol class="vitrine-liste">' + liste.map(carteVitrine).join("") + "</ol></div>";
+    }
+    zone.innerHTML = '<div class="vitrine">' +
+      groupe('La trilogie <span class="r">Last Track</span>', "La bande contre les zombies, en trois épisodes et trois styles de jeu.", tri, "vitrine-trilogie") +
+      groupe('Les autres <span class="b">aventures</span>', "Une course néon et une quête de chevalier.", autres, "vitrine-solo") +
+      "</div>";
   }
 
   /* ---------- Catalogue (jeux.html) ---------- */
