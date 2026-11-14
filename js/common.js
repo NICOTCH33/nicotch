@@ -83,6 +83,8 @@
                 '<svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1" class="plein"/></svg>Instagram</a>' +
               '<a class="btn-reseau btn-facebook" href="https://www.facebook.com/nicotch.fr" target="_blank" rel="me noopener" aria-label="Nicotch sur Facebook">' +
                 '<svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 21v-7.5h2.6l.4-3H14V8.6c0-.9.3-1.5 1.6-1.5H17V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H8.3v3H11V21" class="plein"/></svg>Facebook</a>' +
+              '<a class="btn-reseau btn-youtube" href="https://www.youtube.com/@nicotch_fr" target="_blank" rel="me noopener" aria-label="Nicotch sur YouTube">' +
+                '<svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="4"/><path d="M10 9v6l5-3z" class="plein"/></svg>YouTube</a>' +
             "</div>" +
           "</div>" +
           "<div><h2>Diagnostic & Réparation</h2><ul>" +
