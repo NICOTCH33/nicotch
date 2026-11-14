@@ -829,3 +829,62 @@ kbd { background: var(--carte); border: 1px solid var(--bordure); border-bottom-
 .bandeau-reseaux h2 { margin: 0 0 6px; font-size: 1.5rem; }
 .bandeau-reseaux p { margin: 0; color: var(--texte-doux); max-width: 56ch; }
 .reseaux-boutons { display: flex; flex-wrap: wrap; gap: 12px; }
+
+/* =========================================================
+   ERGONOMIE MOBILE (≤ 599 px) : une info par bloc, bien séparée
+   ========================================================= */
+@media (max-width: 599px) {
+  /* Respiration générale entre les cartes et les sections */
+  .grille { gap: 18px; }
+  .plan-section { margin-bottom: 44px; }
+  .plan-titre { font-size: 1.2rem; padding: 10px 12px; margin: 0 0 6px; border: 1px solid var(--bordure); border-radius: var(--rayon); background: var(--carte); }
+  .plan-outil { font-size: .95rem; }
+
+  /* Filtres et sommaire : une bande qui défile au doigt au lieu d'un gros pavé de boutons */
+  .filtres, .cat-sommaire { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: 2px 2px 8px; margin-right: calc(-1 * var(--marge)); padding-right: var(--marge); scroll-snap-type: x proximity; }
+  .filtres::-webkit-scrollbar, .cat-sommaire::-webkit-scrollbar { display: none; }
+  .filtre, .cat-puce { flex: 0 0 auto; white-space: nowrap; scroll-snap-align: start; }
+
+  /* Fiches produit / logiciel : titre, texte et bouton séparés par un filet */
+  .plan > h3, .logiciel-haut { padding-bottom: 10px; border-bottom: 1px solid var(--bordure); }
+  .plan-actions { border-top: 1px solid var(--bordure); padding-top: 14px; margin-top: 12px; }
+  .logiciel-haut { align-items: flex-start; }
+  .logiciel-badges .badge-os, .logiciel-badges .badge-gratuit { font-size: .72rem; }
+
+  /* Config PC : une carte par ligne, dessin à gauche et infos à droite */
+  .pc-cartes { grid-template-columns: 1fr; gap: 12px; }
+  .pc-carte { display: grid; grid-template-columns: 92px 1fr; grid-template-areas: "img nom" "img prix" "img perf" "img specs" "img voir"; column-gap: 14px; text-align: left; align-items: start; padding: 14px; }
+  .pc-dessin { grid-area: img; align-self: center; max-width: 92px; }
+  .pc-nom { grid-area: nom; } .pc-prix { grid-area: prix; } .pc-perf { grid-area: perf; }
+  .pc-specs { grid-area: specs; } .pc-voir { grid-area: voir; }
+  /* Pièces : l'icône passe au-dessus pour laisser toute la largeur au texte et au menu */
+  .ligne { grid-template-columns: 1fr; gap: 8px; padding: 14px; }
+  .ligne .ligne-ico { display: none; }
+  .jeu-affiche + *, .jeu-infos p { margin-top: 14px; }
+  .ligne-achat { grid-column: 1; }
+  .ligne-achat .btn { width: 100%; justify-content: center; }
+  .ligne-pourquoi { font-size: .9rem; }
+
+  /* Tableau des scores : onglets en 2 × 2 */
+  .scores-onglets { display: grid; grid-template-columns: 1fr 1fr; }
+  .scores-onglets .filtre { justify-content: center; text-align: center; }
+
+  /* Pied de page : blocs séparés, liens sur 2 colonnes, réseaux côte à côte */
+  .pied .grille-pied { gap: 0; }
+  .pied .grille-pied > * { padding: 20px 0; border-top: 1px solid var(--bordure); }
+  .pied .grille-pied > *:first-child { border-top: 0; padding-top: 0; }
+  .pied ul { display: grid; grid-template-columns: 1fr 1fr; column-gap: 12px; }
+  .pied li a { font-size: .95rem; }
+  .pied-reseaux { display: grid; grid-template-columns: 1fr 1fr; }
+  .pied-reseaux span { grid-column: 1 / -1; }
+  .pied-reseaux .btn-reseau { justify-content: center; padding: 8px 10px; }
+  .pied-partenaire { flex-direction: column; gap: 10px; }
+  .pied-bas { flex-direction: column; }
+
+  /* Bandeau réseaux de l'accueil : boutons pleine largeur côte à côte */
+  .reseaux-boutons { width: 100%; }
+  .bandeau-reseaux { padding: 20px; }
+  .bandeau-reseaux .btn-reseau { flex: 1 1 0; justify-content: center; padding: 10px 12px; }
+  .plan-haut .cat-img { width: 56px; height: 56px; }
+  .plan > h3 { font-size: 1.1rem; }
+}
