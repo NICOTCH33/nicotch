@@ -618,6 +618,62 @@ window.ND_BONS_PLANS = {
       lien: "https://link.amazon/B0bsVJ5PE",
       icone: "🎮",
       date: "2026-11-12"
+    },
+    {
+      titre: "Intel Core Ultra 7 270K Plus — 24 cœurs, jusqu'à 5,5 GHz (LGA 1851)",
+      categorie: "cpu",
+      pourquoi: "Le nouveau processeur Intel pour le jeu et le multitâche : 24 cœurs (8 performants + 16 efficaces), jusqu'à 5,5 GHz. Débloqué pour l'overclocking, il demande une carte mère LGA 1851 (Z890 ou B860) et un bon refroidissement (pas de ventirad fourni).",
+      lien: "https://link.amazon/B0635NJFJ",
+      icone: "🧠",
+      date: "2026-11-15"
+    },
+    {
+      titre: "Thermaltake Toughpower GT 750 W — 80 PLUS Gold, ATX 3.1, modulaire",
+      categorie: "alim",
+      pourquoi: "750 W certifiés Gold à la norme ATX 3.1, avec le câble 12V-2x6 pour les cartes graphiques récentes. Entièrement modulaire : on ne branche que les câbles utiles, pour un montage propre. Idéal pour une RTX 5070 ou une RX 9070.",
+      lien: "https://link.amazon/B0dkt1MpN",
+      icone: "⚡",
+      date: "2026-11-15"
+    },
+    {
+      titre: "NZXT H5 Flow — boîtier moyen tour ATX compact, noir",
+      categorie: "boitiers",
+      pourquoi: "Le petit frère du H7 Flow : plus compact, mais avec une façade en grille pour un très bon flux d'air et un rangement des câbles soigné. Un excellent choix pour un premier montage ATX.",
+      lien: "https://link.amazon/B0fgV2dgf",
+      icone: "📦",
+      date: "2026-11-15"
+    },
+    {
+      titre: "NZXT H7 Flow — boîtier moyen tour ATX Airflow, noir",
+      categorie: "boitiers",
+      pourquoi: "La version noire du H7 Flow : beaucoup de place pour les grandes cartes graphiques et les radiateurs de watercooling, un flux d'air excellent et un vrai espace pour cacher les câbles.",
+      lien: "https://link.amazon/B0cBELwIB",
+      icone: "📦",
+      date: "2026-11-15"
+    },
+    {
+      titre: "AOC 24G4ZRE — 24 pouces Full HD Fast IPS 260 Hz",
+      categorie: "ecrans",
+      pourquoi: "Un écran rapide pour les jeux compétitifs : 260 Hz, 1 ms et dalle Fast IPS, compatible FreeSync et G-Sync. En 1080p, même une carte graphique de milieu de gamme (RTX 5060, RX 9060 XT) peut viser des FPS très élevés.",
+      lien: "https://link.amazon/B0fkywAZi",
+      icone: "🖥️",
+      date: "2026-11-15"
+    },
+    {
+      titre: "Acer Nitro 27 pouces — QHD IPS 240 Hz, 1 ms",
+      categorie: "ecrans",
+      pourquoi: "Le 1440p à 240 Hz pour un jeu net et très fluide, avec une dalle IPS aux belles couleurs, compatible FreeSync et G-Sync. À associer à une carte graphique solide (RTX 5070, RX 9070).",
+      lien: "https://link.amazon/B0ezrEEzc",
+      icone: "🖥️",
+      date: "2026-11-15"
+    },
+    {
+      titre: "MSI MAG 272QP — 27 pouces QD-OLED QHD 240 Hz",
+      categorie: "ecrans",
+      pourquoi: "Une dalle QD-OLED aux noirs parfaits et aux couleurs éclatantes, en 1440p à 240 Hz avec un temps de réponse de 0,03 ms. Le grand saut visuel pour un PC gamer, à un prix plus accessible que les OLED 4K.",
+      lien: "https://link.amazon/B04IgV7j1",
+      icone: "🖥️",
+      date: "2026-11-15"
     }
   ]
 };
