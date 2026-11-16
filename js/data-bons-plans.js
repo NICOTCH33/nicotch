@@ -674,6 +674,238 @@ window.ND_BONS_PLANS = {
       lien: "https://link.amazon/B04IgV7j1",
       icone: "🖥️",
       date: "2026-11-15"
+    },
+    {
+      titre: "ASUS Prime B550M-A WiFi II — carte mère AM4 micro-ATX",
+      categorie: "cm",
+      pourquoi: "Une carte mère AM4 fiable et abordable pour un Ryzen 5000 (5600, 5700X), avec le Wi-Fi intégré et la RAM DDR4. Format micro-ATX : elle rentre dans les petits boîtiers.",
+      lien: "https://link.amazon/B01LgPu1Q",
+      icone: "🧩",
+      date: "2026-11-16"
+    },
+    {
+      titre: "ASUS ROG Strix B550-A Gaming — carte mère AM4 ATX",
+      categorie: "cm",
+      pourquoi: "Une carte AM4 haut de gamme au format ATX : étage d'alimentation solide, bon refroidissement et un look blanc et argent. Idéale pour un Ryzen 7 5700X ou un 5800X3D en DDR4.",
+      lien: "https://link.amazon/B04HGrv6h",
+      icone: "🧩",
+      date: "2026-11-16"
+    },
+    {
+      titre: "Gigabyte B650M D3HP WiFi — carte mère AM5 micro-ATX",
+      categorie: "cm",
+      pourquoi: "L'entrée sur la plateforme AM5 (Ryzen 7000 et 9000) à petit prix : DDR5, Wi-Fi intégré, format micro-ATX. Parfaite pour un Ryzen 5 7500F ou 9600X.",
+      lien: "https://link.amazon/B0hWObA0t",
+      icone: "🧩",
+      date: "2026-11-16"
+    },
+    {
+      titre: "ASUS TUF Gaming B850-E WiFi — carte mère AM5 ATX",
+      categorie: "cm",
+      pourquoi: "Chipset B850 récent, construction robuste typique de la gamme TUF et Wi-Fi intégré. Un excellent choix pour un Ryzen 5 9600X ou un Ryzen 7 9800X3D.",
+      lien: "https://link.amazon/B0fJ2Kf8D",
+      icone: "🧩",
+      date: "2026-11-16"
+    },
+    {
+      titre: "ASUS Prime X870-P — carte mère AM5 ATX",
+      categorie: "cm",
+      pourquoi: "Le chipset X870 : PCIe 5.0 pour la carte graphique et le SSD, et USB4 ultra-rapide. Une base très complète pour un PC haut de gamme sous Ryzen 9000.",
+      lien: "https://link.amazon/B07FK9Rr7",
+      icone: "🧩",
+      date: "2026-11-16"
+    },
+    {
+      titre: "ASUS TUF Gaming B850M — carte mère AM5 micro-ATX, blanche",
+      categorie: "cm",
+      pourquoi: "Une carte AM5 compacte et entièrement blanche, pour un montage tout blanc réussi (boîtier NZXT H3 Flow ou MSI PANO). Chipset B850 récent et DDR5.",
+      lien: "https://link.amazon/B04aaTIYS",
+      icone: "🧩",
+      date: "2026-11-16"
+    },
+    {
+      titre: "Fikwot SSD SATA 2,5 pouces — 1 To",
+      categorie: "stockage",
+      pourquoi: "Un SSD SATA 1 To pour redonner vie à un vieux PC ou un portable : démarrage de Windows en quelques secondes au lieu de plusieurs minutes avec un disque dur.",
+      lien: "https://link.amazon/B01K0Gsai",
+      icone: "💾",
+      date: "2026-11-16"
+    },
+    {
+      titre: "Corsair CX — 550, 650 ou 750 W, 80 PLUS Bronze",
+      categorie: "alim",
+      pourquoi: "Une alimentation de marque fiable pour un PC de jeu d'entrée ou de milieu de gamme. Choisissez la puissance sur la page : 550 W pour une RX 7600 ou une RTX 5060, 650 à 750 W pour une carte plus puissante.",
+      lien: "https://link.amazon/B0iHazrtn",
+      icone: "⚡",
+      date: "2026-11-16"
+    },
+    {
+      titre: "Corsair RM850e — 850 W, 80 PLUS Gold, modulaire",
+      categorie: "alim",
+      pourquoi: "850 W certifiés Gold, entièrement modulaire, avec le câble 12V-2x6 pour les cartes graphiques récentes. Silencieuse et fiable, pour un PC haut de gamme (RTX 5070 Ti, RX 9070 XT).",
+      lien: "https://link.amazon/B030BxrGi",
+      icone: "⚡",
+      date: "2026-11-16"
+    },
+    {
+      titre: "Corsair RM1000x — 1000 W, 80 PLUS Gold, modulaire",
+      categorie: "alim",
+      pourquoi: "Une alimentation très haut de gamme, garantie longue durée, pour les configs les plus gourmandes (RTX 5080, RTX 5090) ou pour garder une énorme marge d'évolution.",
+      lien: "https://link.amazon/B02uJW8KN",
+      icone: "⚡",
+      date: "2026-11-16"
+    },
+    {
+      titre: "Corsair 3500X — boîtier moyen tour ATX, blanc",
+      categorie: "boitiers",
+      pourquoi: "Un boîtier vitré panoramique (façade et côté en verre) pour bien montrer les composants. Spacieux et facile à monter : idéal pour un PC blanc avec des ventilateurs RGB.",
+      lien: "https://link.amazon/B0emQqFRW",
+      icone: "📦",
+      date: "2026-11-16"
+    },
+    {
+      titre: "Corsair 4500X — boîtier double chambre ATX, blanc",
+      categorie: "boitiers",
+      pourquoi: "Double chambre : l'alimentation et les câbles sont cachés derrière, la vitrine panoramique ne montre que le beau. Pour un montage très propre.",
+      lien: "https://link.amazon/B03a7sx15",
+      icone: "📦",
+      date: "2026-11-16"
+    },
+    {
+      titre: "Corsair Frame 4000X — boîtier modulaire ATX, blanc",
+      categorie: "boitiers",
+      pourquoi: "Un boîtier modulaire : on peut déplacer les panneaux et les supports de ventilateurs selon son matériel. Excellent flux d'air et beaucoup de place pour les grandes cartes graphiques.",
+      lien: "https://link.amazon/B0eYUXoJp",
+      icone: "📦",
+      date: "2026-11-16"
+    },
+    {
+      titre: "Corsair Warthog — boîtier style militaire, noir ou vert",
+      categorie: "boitiers",
+      pourquoi: "Un look « matériel militaire » unique, héritier du mythique Vengeance C70, pensé pour un flux d'air maximal. Pour un PC qui ne ressemble à aucun autre.",
+      lien: "https://link.amazon/B03rBfBYn",
+      icone: "📦",
+      date: "2026-11-16"
+    },
+    {
+      titre: "Mars Gaming MC-REV — boîtier ATX double vitre, blanc",
+      categorie: "boitiers",
+      pourquoi: "Double vitre trempée et 3 ventilateurs ARGB inclus : un boîtier blanc lumineux à petit prix pour un premier montage.",
+      lien: "https://link.amazon/B0aNddref",
+      icone: "📦",
+      date: "2026-11-16"
+    },
+    {
+      titre: "ARCTIC Xtender — boîtier E-ATX vitré",
+      categorie: "boitiers",
+      pourquoi: "Un grand boîtier vitré qui accepte les cartes mères E-ATX, avec un support vertical pour la carte graphique et son câble riser inclus : de quoi mettre la carte graphique en vitrine.",
+      lien: "https://link.amazon/B08UhQfV5",
+      icone: "📦",
+      date: "2026-11-16"
+    },
+    {
+      titre: "Thermalright Assassin King 120 SE — ventirad tour",
+      categorie: "refroidissement",
+      pourquoi: "Un ventirad tour à 4 caloducs très efficace pour son petit prix : bien plus silencieux que le ventirad d'origine. Suffisant pour un Ryzen 5 en jeu.",
+      lien: "https://link.amazon/B0cu4l6wK",
+      icone: "❄️",
+      date: "2026-11-16"
+    },
+    {
+      titre: "Corsair Nautilus 360 LCD — watercooling AIO 360 mm avec écran",
+      categorie: "refroidissement",
+      pourquoi: "Radiateur 360 mm pour refroidir les processeurs les plus puissants en silence, et un écran LCD sur la pompe (température, image, GIF). Vérifiez que le boîtier accepte un radiateur 360 mm.",
+      lien: "https://link.amazon/B0h8Yulk3",
+      icone: "❄️",
+      date: "2026-11-16"
+    },
+    {
+      titre: "Gigabyte — écran 24 pouces IPS 175 Hz",
+      categorie: "ecrans",
+      pourquoi: "Un premier écran gaming abordable : dalle IPS aux couleurs fidèles et 175 Hz pour une image bien plus fluide qu'un écran classique à 60 Hz.",
+      lien: "https://link.amazon/B0fTEGVnU",
+      icone: "🖥️",
+      date: "2026-11-16"
+    },
+    {
+      titre: "Samsung — écran 27 pouces IPS 300 Hz",
+      categorie: "ecrans",
+      pourquoi: "Un écran très rapide pour les jeux compétitifs (FPS, Valorant, CS2) : 300 Hz sur une dalle IPS de 27 pouces.",
+      lien: "https://link.amazon/B06FCJXTt",
+      icone: "🖥️",
+      date: "2026-11-16"
+    },
+    {
+      titre: "AOC — écran 27 pouces QHD 260 Hz VA incurvé",
+      categorie: "ecrans",
+      pourquoi: "Une dalle VA incurvée avec un bon contraste et des noirs profonds, en 1440p à 260 Hz. Un écran immersif pour les jeux de course et d'aventure.",
+      lien: "https://link.amazon/B0hA8tpbV",
+      icone: "🖥️",
+      date: "2026-11-16"
+    },
+    {
+      titre: "Gigabyte — écran 27 pouces QHD OLED 280 Hz, blanc (ICE)",
+      categorie: "ecrans",
+      pourquoi: "Noirs parfaits et couleurs éclatantes grâce à l'OLED, en 1440p à 280 Hz. La version ICE blanche s'accorde avec un setup tout blanc.",
+      lien: "https://link.amazon/B0ah63cBg",
+      icone: "🖥️",
+      date: "2026-11-16"
+    },
+    {
+      titre: "LG — écran 34 pouces ultra-large 21:9, 160 Hz",
+      categorie: "ecrans",
+      pourquoi: "Le format 21:9 élargit le champ de vision dans les jeux de course et de simulation, et donne beaucoup de place pour travailler avec plusieurs fenêtres côte à côte.",
+      lien: "https://link.amazon/B072Eci1M",
+      icone: "🖥️",
+      date: "2026-11-16"
+    },
+    {
+      titre: "Gigabyte — écran 49 pouces OLED 32:9, 144 Hz",
+      categorie: "ecrans",
+      pourquoi: "L'équivalent de deux écrans 27 pouces en un seul, en OLED : immersion totale en simulation de course ou de vol. Demande une carte graphique puissante.",
+      lien: "https://link.amazon/B0a7KfEFz",
+      icone: "🖥️",
+      date: "2026-11-16"
+    },
+    {
+      titre: "Cherry Xtrfy M64 Wireless — souris gaming sans fil, bleue",
+      categorie: "souris",
+      pourquoi: "Une souris sans fil légère et ergonomique, au capteur précis, signée Cherry Xtrfy, une marque reconnue chez les joueurs compétitifs.",
+      lien: "https://link.amazon/B0enyPU0K",
+      icone: "🖱️",
+      date: "2026-11-16"
+    },
+    {
+      titre: "Logitech G413 TKL — clavier mécanique sans pavé numérique",
+      categorie: "claviers",
+      pourquoi: "Un clavier mécanique solide et sobre, au format TKL (sans pavé numérique) pour laisser plus de place à la souris.",
+      lien: "https://link.amazon/B06welh0j",
+      icone: "⌨️",
+      date: "2026-11-16"
+    },
+    {
+      titre: "Corsair Clipper Pro Mini 60 — clavier à switchs magnétiques (Hall)",
+      categorie: "claviers",
+      pourquoi: "Un clavier compact 60 % à switchs magnétiques : on règle la profondeur d'appui de chaque touche, ultra-réactif pour les jeux compétitifs.",
+      lien: "https://link.amazon/B0iePffOt",
+      icone: "⌨️",
+      date: "2026-11-16"
+    },
+    {
+      titre: "Logitech G Pro X SE — casque gaming",
+      categorie: "audio",
+      pourquoi: "Le casque de la gamme Pro de Logitech, pensé pour l'esport : confortable sur de longues sessions, avec un son clair pour repérer les pas de l'adversaire.",
+      lien: "https://link.amazon/B05GF6ait",
+      icone: "🎧",
+      date: "2026-11-16"
+    },
+    {
+      titre: "Philips Fidelio X2 — casque hi-fi ouvert",
+      categorie: "audio",
+      pourquoi: "Un casque hi-fi ouvert réputé pour son son ample et naturel, parfait pour la musique et les jeux solo. Il n'a pas de micro : prévoir un micro séparé pour jouer en ligne.",
+      lien: "https://link.amazon/B0jggSo2D",
+      icone: "🎧",
+      date: "2026-11-16"
     }
   ]
 };

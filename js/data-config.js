@@ -55,6 +55,19 @@ window.ND_CONFIG = {
     "b850-tom":  { type: "cm", nom: "MSI MAG B850 TOMAHAWK WIFI", socket: "AM5", ddr: "DDR5", format: "ATX", lien: "",
                    pourquoi: "Étage d'alimentation robuste et bien refroidi, à la hauteur d'un 9800X3D." },
 
+    "b550m-a-asus": { type: "cm", nom: "ASUS Prime B550M-A WiFi II", socket: "AM4", ddr: "DDR4", format: "mATX", lien: "https://link.amazon/B01LgPu1Q",
+                   pourquoi: "Micro-ATX fiable avec Wi-Fi intégré : parfaite pour un Ryzen 5 5600 dans un boîtier compact." },
+    "b550-a-rog": { type: "cm", nom: "ASUS ROG Strix B550-A Gaming", socket: "AM4", ddr: "DDR4", format: "ATX", lien: "https://link.amazon/B04HGrv6h",
+                   pourquoi: "Carte AM4 haut de gamme : étage d'alimentation solide, bien refroidi, et un look blanc et argent." },
+    "b650m-d3hp": { type: "cm", nom: "Gigabyte B650M D3HP WiFi", socket: "AM5", ddr: "DDR5", format: "mATX", lien: "https://link.amazon/B0hWObA0t",
+                   pourquoi: "L'entrée sur AM5 à petit prix : DDR5 et Wi-Fi, idéale pour un Ryzen 5 7500F." },
+    "b850m-tuf-w": { type: "cm", nom: "ASUS TUF Gaming B850M (blanche)", socket: "AM5", ddr: "DDR5", format: "mATX", lien: "https://link.amazon/B04aaTIYS",
+                   pourquoi: "Chipset B850 récent en micro-ATX, entièrement blanche pour un montage tout blanc." },
+    "b850-tuf-e": { type: "cm", nom: "ASUS TUF Gaming B850-E WiFi", socket: "AM5", ddr: "DDR5", format: "ATX", lien: "https://link.amazon/B0fJ2Kf8D",
+                   pourquoi: "Construction robuste TUF, chipset B850 et Wi-Fi : une base solide pour Ryzen 9000." },
+    "x870-p":    { type: "cm", nom: "ASUS Prime X870-P", socket: "AM5", ddr: "DDR5", format: "ATX", lien: "https://link.amazon/B07FK9Rr7",
+                   pourquoi: "Chipset X870 : PCIe 5.0 pour la carte graphique et le SSD, USB4. À la hauteur d'un 9800X3D." },
+
     /* ---------- Mémoire ---------- */
     "ddr4-16":   { type: "ram", nom: "16 Go DDR4-3200 (2 × 8 Go) — ex. Netac CL16", ddr: "DDR4", go: 16, barrettes: 2, lien: "https://s.click.aliexpress.com/e/_c3bLqmlV", marchand: "AliExpress",
                    pourquoi: "2 barrettes pour le double canal. 16 Go suffisent pour la plupart des jeux en 1080p." },
@@ -96,7 +109,7 @@ window.ND_CONFIG = {
                    pourquoi: "Un SSD haut de gamme, rapide et endurant." },
 
     /* ---------- Alimentations ---------- */
-    "alim-550":  { type: "alim", nom: "Alimentation 550 W 80 PLUS Bronze — ex. Corsair CX550", w: 550, lien: "",
+    "alim-550":  { type: "alim", nom: "Alimentation 550 W 80 PLUS Bronze — ex. Corsair CX550", w: 550, lien: "https://link.amazon/B0iHazrtn",
                    pourquoi: "Une alimentation de marque : c'est elle qui protège tous les autres composants." },
     "alim-650":  { type: "alim", nom: "Alimentation 650 W 80 PLUS Gold — ex. Corsair RM650e", w: 650, lien: "",
                    pourquoi: "Certifiée Gold (meilleur rendement), modulaire, avec de la marge pour une future carte graphique." },
@@ -108,6 +121,11 @@ window.ND_CONFIG = {
                    pourquoi: "750 W à la norme ATX 3.1 récente : de quoi alimenter une RX 9070 ou une RTX 5070 avec de la marge. Non modulaire : prévoir un peu de rangement des câbles." },
     "alim-850":  { type: "alim", nom: "Alimentation 850 W 80 PLUS Gold — ex. Cooler Master Elite Gold 850", w: 850, lien: "https://link.amazon/B0izG685R",
                    pourquoi: "Assez de puissance même pour une RTX 5080. Idéalement en ATX 3.1 avec un câble 12V-2x6 ; sinon, on utilise l'adaptateur fourni avec la carte graphique." },
+
+    "alim-850-rme": { type: "alim", nom: "Corsair RM850e — 850 W 80 PLUS Gold, modulaire", w: 850, lien: "https://link.amazon/B030BxrGi",
+                   pourquoi: "Gold, entièrement modulaire, avec le câble 12V-2x6 des cartes graphiques récentes." },
+    "alim-1000": { type: "alim", nom: "Corsair RM1000x — 1000 W 80 PLUS Gold, modulaire", w: 1000, lien: "https://link.amazon/B02uJW8KN",
+                   pourquoi: "Une énorme marge pour une RTX 5080 et les futures évolutions du PC." },
 
     /* ---------- Refroidissement ---------- */
     "ventirad-origine": { type: "refroid", nom: "Ventirad d'origine (livré avec le processeur)", type2: "origine", ventilos: 0, lien: "",
@@ -127,6 +145,11 @@ window.ND_CONFIG = {
 
     "aio-240-sudokoo": { type: "refroid", nom: "Watercooling AIO 240 mm — Sudokoo ENERGLO 240 blanc (écran de température)", type2: "aio", radiateur: 240, ventilos: 2, lien: "https://link.amazon/B00I9fHfn",
                    pourquoi: "AIO 240 mm blanc avec un petit écran qui affiche la température du processeur directement sur la pompe." },
+
+    "ventirad-ak120": { type: "refroid", nom: "Ventirad tour — Thermalright Assassin King 120 SE", type2: "tour", hauteur: 148, ventilos: 1, lien: "https://link.amazon/B0cu4l6wK",
+                   pourquoi: "4 caloducs, efficace et silencieux pour un petit prix : bien mieux que le ventirad d'origine." },
+    "aio-360-nautilus": { type: "refroid", nom: "Watercooling AIO 360 mm — Corsair Nautilus 360 LCD", type2: "aio", radiateur: 360, ventilos: 3, lien: "https://link.amazon/B0h8Yulk3",
+                   pourquoi: "Radiateur 360 mm silencieux et un écran LCD sur la pompe pour afficher la température." },
 
     /* ---------- Boîtiers ---------- */
     "air100lite": { type: "boitier", nom: "Montech AIR 100 Lite (micro-ATX)", formats: ["mATX"], gpuMax: 330, ventiradMax: 161, radiateurs: [240, 280], ventilos: 2, lien: "",
@@ -153,26 +176,26 @@ window.ND_CONFIG = {
     { id: "entree", emoji: "🟢", nom: "Entrée de gamme", budget: "~800 €", prix: "800 €", perf: "1080p élevé ~60 fps",
       usage: "Bureautique, études, jeux légers (Fortnite, LoL, Minecraft), 1080p en réglages moyens.",
       composants: {
-        cpu: ["r5-5600"], cm: ["b550m-ds3h", "b550m-vdh"], ram: ["ddr4-16"], gpu: ["rx7600", "rtx5050"],
+        cpu: ["r5-5600"], cm: ["b550m-ds3h", "b550m-a-asus", "b550m-vdh"], ram: ["ddr4-16"], gpu: ["rx7600", "rtx5050"],
         ssd: ["ssd-1to"], alim: ["alim-550"], refroid: ["ventirad-origine"], boitier: ["nox-zeta", "air100lite", "cc560"]
       } },
     { id: "milieu-bas", emoji: "🔵", nom: "Milieu bas", budget: "~1 100 €", prix: "1 100 €", perf: "1080p élevé ~85 fps",
       usage: "Jeu en 1080p en réglages élevés.",
       composants: {
-        cpu: ["r5-5600", "r5-7500f"], cm: ["b550-gx", "b650-gp"], ram: ["ddr4-16", "ddr4-32", "ddr5-16-viper", "ddr5-32"],
-        gpu: ["rx9060xt8", "rtx5060"], ssd: ["ssd-1to"], alim: ["alim-650-seasonic", "alim-650"], refroid: ["ventirad-tour"], boitier: ["air903base", "nn8"]
+        cpu: ["r5-5600", "r5-7500f"], cm: ["b550-a-rog", "b650m-d3hp", "b550-gx", "b650-gp"], ram: ["ddr4-16", "ddr4-32", "ddr5-16-viper", "ddr5-32"],
+        gpu: ["rx9060xt8", "rtx5060"], ssd: ["ssd-1to"], alim: ["alim-650-seasonic", "alim-650"], refroid: ["ventirad-ak120", "ventirad-tour"], boitier: ["air903base", "nn8"]
       } },
     { id: "milieu-haut", emoji: "🟣", nom: "Milieu haut", budget: "~1 700 €", prix: "1 700 €", perf: "1440p élevé ~100 fps",
       usage: "Jeu en 1440p, streaming.",
       composants: {
-        cpu: ["r5-9600x"], cm: ["b850-gp"], ram: ["ddr5-32"], gpu: ["rx9070", "rtx5070"],
+        cpu: ["r5-9600x"], cm: ["b850-tuf-e", "b850m-tuf-w", "b850-gp"], ram: ["ddr5-32"], gpu: ["rx9070", "rtx5070"],
         ssd: ["ssd-2to"], alim: ["alim-750-nzxt", "alim-750"], refroid: ["aio-240-sama", "aio-240-sudokoo", "aio-240-v3"], boitier: ["pop2air", "4000d"]
       } },
     { id: "haut", emoji: "🔴", nom: "Haut de gamme", budget: "~2 800 € et plus", prix: "2 800 €", perf: "1440p ultra ~120 fps",
       usage: "Jeu en 1440p très élevé et en 4K, création vidéo.",
       composants: {
-        cpu: ["r7-9800x3d"], cm: ["b850-tom"], ram: ["ddr5-32"], gpu: ["rx9070xt", "rtx5070ti", "rtx5080"],
-        ssd: ["ssd-2to-p"], alim: ["alim-850"], refroid: ["aio-240-fw", "aio-360-sama", "aio-240-sama"], boitier: ["h7flow", "y6", "4000d"]
+        cpu: ["r7-9800x3d"], cm: ["x870-p", "b850-tuf-e", "b850-tom"], ram: ["ddr5-32"], gpu: ["rx9070xt", "rtx5070ti", "rtx5080"],
+        ssd: ["ssd-2to-p"], alim: ["alim-850", "alim-850-rme", "alim-1000"], refroid: ["aio-360-nautilus", "aio-360-sama", "aio-240-fw", "aio-240-sama"], boitier: ["h7flow", "y6", "4000d"]
       } }
   ]
 };
