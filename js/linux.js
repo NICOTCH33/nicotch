@@ -16,7 +16,7 @@
 
   function choisir(pc, usage, style) {
     if (pc === "vieux") return { id: "mint-xfce", note: usage === "jeu" ? "Pour jouer, un PC aussi ancien sera limité : privilégie les jeux légers ou rétro." : "" };
-    if (usage === "jeu") return { id: pc === "recent" ? "bazzite" : "mint", note: pc === "recent" ? "" : "Sur un PC de 4 à 8 ans, Linux Mint + Steam est plus sûr que Bazzite." };
+    if (usage === "jeu") return { id: pc === "recent" ? "bazzite" : "mint", note: pc === "recent" ? "Tu préfères une distribution 100 % en français ? Regarde aussi GLF OS, juste en dessous de Bazzite 🇫🇷" : "Sur un PC de 4 à 8 ans, Linux Mint + Steam est plus sûr que Bazzite." };
     if (usage === "apprendre") return { id: style === "windows" ? "mint" : "fedora", note: "" };
     return { id: style === "windows" ? "mint" : "ubuntu", note: "" };
   }
