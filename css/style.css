@@ -899,7 +899,8 @@ kbd { background: var(--carte); border: 1px solid var(--bordure); border-bottom-
 @media (min-width: 600px) { .grille-4 { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 1100px) { .grille-4 { grid-template-columns: repeat(4, 1fr); } }
 .grille-4 .espace-logo .logo-outils { max-width: 210px; }
-.grille-4 .espace-logo .logo-dl, .grille-4 .espace-logo .logo-linux, .grille-4 .espace-logo .logo-bips { max-width: 175px; }
+.grille-4 .espace-logo .logo-dl, .grille-4 .espace-logo .logo-bips { max-width: 175px; }
+.grille-4 .espace-logo .logo-linux { max-width: 215px; }
 .grille-4 .espace-logo .logo-repare { max-width: 230px; }
 .grille-4 .espace-logo .logo-retro { max-width: 140px; }
 .grille-4 .espace-actions .btn { font-size: .9rem; padding-left: 12px; padding-right: 12px; }
