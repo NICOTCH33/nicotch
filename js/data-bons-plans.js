@@ -906,6 +906,30 @@ window.ND_BONS_PLANS = {
       lien: "https://link.amazon/B0jggSo2D",
       icone: "🎧",
       date: "2026-11-16"
+    },
+    {
+      titre: "ASUS Prime B660M-A D4-CSM — carte mère Intel LGA 1700 micro-ATX",
+      categorie: "cm",
+      pourquoi: "Pour un processeur Intel de 12e, 13e ou 14e génération (Core i3, i5, i7) avec de la RAM DDR4 : idéal pour monter un PC économique ou réutiliser sa RAM DDR4. Format micro-ATX.",
+      lien: "https://link.amazon/B0hUCyCi3",
+      icone: "🧩",
+      date: "2026-11-18"
+    },
+    {
+      titre: "Corsair 3200D RS ARGB — boîtier moyen tour ATX, 3 ventilateurs ARGB",
+      categorie: "boitiers",
+      pourquoi: "Un boîtier aéré avec 3 ventilateurs RS120 ARGB déjà installés en façade. Il accepte les cartes graphiques jusqu'à 400 mm et un radiateur de 360 mm : une base facile et lumineuse pour un premier montage.",
+      lien: "https://link.amazon/B02Wfa3wY",
+      icone: "📦",
+      date: "2026-11-18"
+    },
+    {
+      titre: "NZXT Kraken Plus 240 RGB — watercooling AIO 240 mm avec écran",
+      categorie: "refroidissement",
+      pourquoi: "Un watercooling 240 mm avec 2 ventilateurs RGB et un petit écran LCD de 1,54 pouce sur la pompe (température, image). Compatible AM5, AM4, LGA 1851 et LGA 1700, kit de montage inclus.",
+      lien: "https://link.amazon/B0frogBnk",
+      icone: "❄️",
+      date: "2026-11-18"
     }
   ]
 };
