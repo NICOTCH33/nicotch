@@ -940,3 +940,9 @@ kbd { padding: 1px 6px; border-radius: 5px; border: 1px solid var(--bordure); ba
 .linux-commandes .cmd, .linux-commandes { min-width: 0; } .linux-commandes { grid-template-columns: minmax(0,1fr); } @media (min-width: 800px) { .linux-commandes { grid-template-columns: minmax(0,1fr) minmax(0,1fr); } }
 .logo-linux .etincelle { left: 50.2%; top: 47.2%; width: 14%; }
 .logo-bips .etincelle { left: 50.3%; top: 47.4%; width: 14%; }
+/* Accueil 4 + 4 : même hauteur de zone logo partout, pour aligner les titres */
+@media (min-width: 600px) {
+  .grille-4 .espace-logo { height: 215px; min-height: 0; overflow: visible; }
+  .grille-4 .espace-logo > div { max-height: 215px; }
+  .grille-4 .espace-logo img { max-height: 215px; width: auto; max-width: 100%; margin: 0 auto; }
+}
