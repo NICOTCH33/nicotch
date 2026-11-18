@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="google" content="notranslate">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://nicotch.goatcounter.com; style-src 'self' 'unsafe-inline'; script-src 'self' https://gc.zgo.at; connect-src 'self' https://nicotch.goatcounter.com; frame-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Linux : une 2e vie pour ton PC (Mint, Bazzite…) – Nicotch</title>
+  <link rel="canonical" href="https://www.nicotch.fr/linux.html">
+  <meta name="description" content="Ton PC ne passe pas à Windows 11 ? Passe à Linux : quel Linux choisir (Linux Mint, Bazzite…), installation pas à pas avec une clé USB, jouer sous Linux, dépannage et commandes utiles.">
+  <meta name="theme-color" content="#05070B">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css?v=20261118">
+  <script src="js/common.js?v=20261118" defer></script>
+  <script src="js/linux.js?v=20261118" defer></script>
+  <!-- Compteur de visites GoatCounter (sans cookies) -->
+  <script data-goatcounter="https://nicotch.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</head>
+<body>
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+  <header id="entete"></header>
+
+  <main id="contenu">
+    <section class="titre-page">
+      <div class="conteneur outils-entete">
+        <div class="logo-outils logo-linux" role="img" aria-label="Nicotch – Linux">
+          <picture>
+            <source type="image/webp" srcset="assets/logos/linux-300.webp 300w, assets/logos/linux-600.webp 600w" sizes="(max-width: 599px) 240px, 280px">
+            <img src="assets/logos/linux-600.png" width="600" height="600" alt="">
+          </picture>
+        </div>
+        <div>
+          <h1>Linux : une 2<sup>e</sup> vie pour ton PC 🐧</h1>
+          <p>Depuis la fin du support de Windows 10 (octobre 2025), beaucoup de PC encore en bon état ne peuvent pas passer à Windows 11. Plutôt que de les jeter, installe Linux : c'est gratuit, rapide, sans virus… et on peut même y jouer.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sommaire -->
+    <section class="section" style="padding-top:8px">
+      <div class="conteneur">
+        <nav class="linux-sommaire" aria-label="Sommaire de la page">
+          <a href="#quel-linux">🧭 Quel Linux ?</a>
+          <a href="#distributions">💿 Les distributions</a>
+          <a href="#installer">🔧 Installer</a>
+          <a href="#jouer">🎮 Jouer</a>
+          <a href="#depannage">🩺 Dépannage</a>
+          <a href="#commandes">⌨️ Commandes</a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Questionnaire -->
+    <section class="section" id="quel-linux" aria-labelledby="t-quel">
+      <div class="conteneur">
+        <h2 id="t-quel">🧭 Quel Linux pour moi ?</h2>
+        <p class="texte-doux">Réponds à 3 questions, je te conseille une distribution.</p>
+        <form class="carte linux-quiz" id="linux-quiz" novalidate>
+          <fieldset>
+            <legend>1. Ton PC a quel âge ?</legend>
+            <label><input type="radio" name="pc" value="vieux"> Plus de 8 ans, ou moins de 4 Go de RAM</label>
+            <label><input type="radio" name="pc" value="moyen"> Entre 4 et 8 ans</label>
+            <label><input type="radio" name="pc" value="recent"> Récent (moins de 4 ans)</label>
+          </fieldset>
+          <fieldset>
+            <legend>2. Tu veux surtout…</legend>
+            <label><input type="radio" name="usage" value="bureau"> Internet, mails, vidéos, bureautique</label>
+            <label><input type="radio" name="usage" value="jeu"> Jouer (Steam, Epic, GOG…)</label>
+            <label><input type="radio" name="usage" value="apprendre"> Découvrir et apprendre Linux</label>
+          </fieldset>
+          <fieldset>
+            <legend>3. Tu viens de Windows et tu veux…</legend>
+            <label><input type="radio" name="style" value="windows"> Retrouver un bureau qui ressemble à Windows</label>
+            <label><input type="radio" name="style" value="peu-importe"> Peu importe, du moment que ça marche</label>
+          </fieldset>
+          <button class="btn btn-rouge" type="submit">🐧 Voir mon Linux</button>
+          <p class="contact-statut erreur" id="quiz-erreur" role="alert" hidden>Réponds aux 3 questions 🙂</p>
+        </form>
+        <div class="carte linux-resultat" id="quiz-resultat" role="status" aria-live="polite" hidden></div>
+      </div>
+    </section>
+
+    <!-- Distributions -->
+    <section class="section" id="distributions" aria-labelledby="t-distrib">
+      <div class="conteneur">
+        <h2 id="t-distrib">💿 Les distributions que je conseille</h2>
+        <p class="texte-doux">Une « distribution », c'est une version de Linux prête à l'emploi. Toutes celles-ci sont gratuites. Les liens vont vers les sites officiels.</p>
+        <div class="grille grille-2 linux-distribs">
+          <article class="carte distrib" id="d-mint">
+            <p class="distrib-badges"><span class="badge-teste">✅ Testé par Nicotch</span><span class="badge-os">Débutant</span></p>
+            <h3>Linux Mint</h3>
+            <p>Le meilleur choix pour quitter Windows : menu Démarrer, barre des tâches, tout est à sa place. Stable, simple, avec un gestionnaire de pilotes et de logiciels en quelques clics.</p>
+            <ul class="distrib-points">
+              <li><b>Édition Cinnamon</b> : la plus complète, pour un PC de moins de 10 ans.</li>
+              <li><b>Édition Xfce</b> : plus légère, pour un vieux PC (2 Go de RAM minimum, 4 Go conseillés).</li>
+            </ul>
+            <div class="plan-actions"><a class="btn btn-contour" href="https://linuxmint.com/download.php" target="_blank" rel="noopener noreferrer">⬇️ Site officiel</a><span class="logiciel-domaine">linuxmint.com</span></div>
+          </article>
+          <article class="carte distrib" id="d-bazzite">
+            <p class="distrib-badges"><span class="badge-teste">✅ Testé par Nicotch</span><span class="badge-os">Jeu vidéo</span></p>
+            <h3>Bazzite</h3>
+            <p>Le Linux fait pour jouer : Steam, les pilotes graphiques et les réglages pour le jeu sont déjà installés. Basé sur Fedora, il se met à jour tout seul et on peut revenir en arrière si une mise à jour pose problème.</p>
+            <ul class="distrib-points">
+              <li>Pour un PC gamer récent (AMD ou NVIDIA : choisis la bonne version au téléchargement).</li>
+              <li>Peut démarrer directement en mode « console » comme un Steam Deck.</li>
+            </ul>
+            <div class="plan-actions"><a class="btn btn-contour" href="https://bazzite.gg/" target="_blank" rel="noopener noreferrer">⬇️ Site officiel</a><span class="logiciel-domaine">bazzite.gg</span></div>
+          </article>
+          <article class="carte distrib" id="d-ubuntu">
+            <p class="distrib-badges"><span class="badge-os">Polyvalent</span></p>
+            <h3>Ubuntu</h3>
+            <p>Le Linux le plus connu, avec une énorme communauté (et beaucoup d'aide en français). Son bureau est un peu différent de Windows, mais très agréable une fois pris en main.</p>
+            <div class="plan-actions"><a class="btn btn-contour" href="https://ubuntu.com/download/desktop" target="_blank" rel="noopener noreferrer">⬇️ Site officiel</a><span class="logiciel-domaine">ubuntu.com</span></div>
+          </article>
+          <article class="carte distrib" id="d-fedora">
+            <p class="distrib-badges"><span class="badge-os">Apprendre</span></p>
+            <h3>Fedora</h3>
+            <p>Moderne et toujours à jour, très propre. Un excellent choix pour découvrir Linux en profondeur sur un PC assez récent.</p>
+            <div class="plan-actions"><a class="btn btn-contour" href="https://fedoraproject.org/fr/workstation/" target="_blank" rel="noopener noreferrer">⬇️ Site officiel</a><span class="logiciel-domaine">fedoraproject.org</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Installation -->
+    <section class="section" id="installer" aria-labelledby="t-install">
+      <div class="conteneur">
+        <h2 id="t-install">🔧 Installer Linux pas à pas</h2>
+        <ol class="linux-etapes">
+          <li><h3>Sauvegarde tes fichiers</h3><p>Copie tes documents, photos et sauvegardes de jeux sur un disque externe ou dans le cloud. Si tu installes Linux « à la place » de Windows, tout le disque est effacé.</p></li>
+          <li><h3>Télécharge le fichier ISO</h3><p>Sur le site officiel de la distribution choisie (liens ci-dessus). C'est un gros fichier de 3 à 8 Go.</p></li>
+          <li><h3>Prépare une clé USB</h3><p>Une clé de 8 Go minimum (elle sera effacée). Utilise <b>Ventoy</b> (tu copies l'ISO sur la clé, et tu peux en mettre plusieurs) ou <b>Rufus</b>. Les deux sont dans mes <a href="telechargements.html">Téléchargements</a>.</p></li>
+          <li><h3>Démarre sur la clé</h3><p>Redémarre le PC et appuie sur la touche du menu de démarrage dès l'allumage : souvent <kbd>F12</kbd>, <kbd>F11</kbd>, <kbd>F8</kbd> ou <kbd>Échap</kbd> selon la marque. Choisis la clé USB.</p></li>
+          <li><h3>Teste sans rien installer</h3><p>La clé lance Linux en mode « live » : vérifie que l'écran, le Wi-Fi, le son et le clavier fonctionnent. Rien n'est modifié sur ton PC tant que tu n'installes pas.</p></li>
+          <li><h3>Installe</h3><p>Lance l'icône « Installer » et suis l'assistant. Choisis <b>« installer à côté de Windows »</b> pour garder les deux (un menu te demandera lequel lancer au démarrage), ou <b>« effacer le disque »</b> pour un PC 100 % Linux.</p></li>
+        </ol>
+        <div class="bandeau-alerte bandeau-info"><strong>Astuce :</strong> si tu gardes Windows à côté, désactive son <b>« Démarrage rapide »</b> (Panneau de configuration → Options d'alimentation → Choisir l'action des boutons d'alimentation). Ça évite des soucis de disque partagé entre les deux systèmes.</div>
+      </div>
+    </section>
+
+    <!-- Jouer -->
+    <section class="section" id="jouer" aria-labelledby="t-jouer">
+      <div class="conteneur">
+        <h2 id="t-jouer">🎮 Jouer sous Linux</h2>
+        <div class="grille grille-3">
+          <div class="carte"><h3>🟦 Steam + Proton</h3><p>Proton fait tourner la plupart des jeux Windows sous Linux. Dans Steam : <b>Paramètres → Compatibilité</b>, puis active Steam Play pour tous les titres. Sur Bazzite, c'est déjà fait.</p></div>
+          <div class="carte"><h3>🔍 Vérifie avant d'acheter</h3><p>Le site <a href="https://www.protondb.com/" target="_blank" rel="noopener noreferrer">ProtonDB</a> indique, jeu par jeu, s'il fonctionne bien sous Linux (Platine, Or, Argent…), avec les astuces des joueurs.</p></div>
+          <div class="carte"><h3>🛍️ Epic, GOG, Battle.net</h3><p>Utilise <b>Heroic Games Launcher</b> pour Epic et GOG, et <b>Lutris</b> pour les autres lanceurs. Les deux s'installent depuis la logithèque.</p></div>
+        </div>
+        <div class="bandeau-alerte">⚠️ <strong>La limite :</strong> certains jeux en ligne avec un anti-triche très strict refusent Linux (par exemple Valorant, Fortnite ou plusieurs Call of Duty). Vérifie ton jeu sur <a href="https://areweanticheatyet.com/" target="_blank" rel="noopener noreferrer">AreWeAntiCheatYet</a> avant de quitter Windows.</div>
+      </div>
+    </section>
+
+    <!-- Dépannage -->
+    <section class="section" id="depannage" aria-labelledby="t-depan">
+      <div class="conteneur">
+        <h2 id="t-depan">🩺 Dépannage Linux</h2>
+        <div class="linux-pannes">
+          <details class="carte"><summary>La clé USB ne démarre pas</summary>
+            <p>Vérifie la touche du menu de démarrage (F12, F11, F8, Échap…). Si la clé n'apparaît pas, refais-la avec Ventoy ou Rufus. Si un message parle de sécurité, désactive temporairement le <b>Secure Boot</b> dans le BIOS, le temps de l'installation.</p></details>
+          <details class="carte"><summary>Écran noir après l'installation (carte NVIDIA)</summary>
+            <p>Au menu de démarrage, choisis le mode <b>« compatibility mode »</b> ou <b>« nomodeset »</b>. Une fois sur le bureau, installe le pilote NVIDIA : sous Linux Mint, ouvre le <b>Gestionnaire de pilotes</b> et choisis le pilote « recommandé ». Sous Bazzite, télécharge directement la version NVIDIA.</p></details>
+          <details class="carte"><summary>Pas de Wi-Fi</summary>
+            <p>Branche un câble Ethernet (ou partage la connexion de ton téléphone en USB), puis ouvre le <b>Gestionnaire de pilotes</b> : certaines cartes Wi-Fi ont besoin d'un pilote à installer.</p></details>
+          <details class="carte"><summary>Windows a disparu du menu de démarrage</summary>
+            <p>Ouvre un terminal et tape <code>sudo update-grub</code> (Linux Mint, Ubuntu) : le menu recherche à nouveau Windows. Vérifie aussi que le « Démarrage rapide » de Windows est bien désactivé.</p></details>
+          <details class="carte"><summary>Pas de son</summary>
+            <p>Clique sur l'icône du son et vérifie la <b>sortie</b> choisie : la carte graphique (HDMI) est souvent sélectionnée à la place des haut-parleurs ou du casque.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Commandes -->
+    <section class="section" id="commandes" aria-labelledby="t-cmd">
+      <div class="conteneur">
+        <h2 id="t-cmd">⌨️ 10 commandes utiles</h2>
+        <p class="texte-doux">À taper dans le <b>Terminal</b>. <code>sudo</code> demande ton mot de passe : rien ne s'affiche quand tu le tapes, c'est normal.</p>
+        <div class="linux-commandes">
+          <div class="cmd"><code>sudo apt update &amp;&amp; sudo apt upgrade</code><p>Met tout à jour (Linux Mint, Ubuntu).</p></div>
+          <div class="cmd"><code>ujust update</code><p>Met tout à jour (Bazzite).</p></div>
+          <div class="cmd"><code>inxi -Fxz</code><p>Résumé complet du PC : processeur, carte graphique, RAM, disques (déjà installé sur Mint).</p></div>
+          <div class="cmd"><code>df -h</code><p>Espace libre sur chaque disque.</p></div>
+          <div class="cmd"><code>free -h</code><p>RAM utilisée et disponible.</p></div>
+          <div class="cmd"><code>top</code><p>Les programmes qui utilisent le processeur (<kbd>Q</kbd> pour quitter). Le gestionnaire des tâches de Linux.</p></div>
+          <div class="cmd"><code>lsblk</code><p>Liste les disques et clés USB branchés.</p></div>
+          <div class="cmd"><code>lspci | grep -i vga</code><p>Affiche le modèle de la carte graphique.</p></div>
+          <div class="cmd"><code>ip a</code><p>Les cartes réseau et l'adresse IP du PC.</p></div>
+          <div class="cmd"><code>flatpak update</code><p>Met à jour les applications installées depuis Flathub.</p></div>
+        </div>
+        <p class="meta-rapport plan-note">Linux Mint, Bazzite, Ubuntu et Fedora appartiennent à leurs projets respectifs. Nicotch n'a aucun lien commercial avec eux.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="pied"></footer>
+</body>
+</html>
