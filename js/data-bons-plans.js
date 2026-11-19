@@ -66,7 +66,8 @@ window.ND_BONS_PLANS = {
       { id: "claviers", nom: "Claviers" },
       { id: "souris", nom: "Souris" },
       { id: "audio", nom: "Casques et audio" },
-      { id: "manettes", nom: "Manettes et accessoires console" }
+      { id: "manettes", nom: "Manettes et accessoires console" },
+      { id: "fauteuils", nom: "Fauteuils gaming" }
     ]}
   ],
   PRODUITS: [
@@ -122,9 +123,10 @@ window.ND_BONS_PLANS = {
       titre: "Royal Kludge C68FR HE — clavier à switchs magnétiques, AZERTY",
       categorie: "claviers",
       pourquoi: "Switchs magnétiques à effet Hall : on règle la profondeur d'activation de chaque touche, idéal pour les jeux compétitifs. Format compact (65 %) qui garde les flèches, et surtout en AZERTY français.",
-      lien: "https://link.amazon/B0aiv3lzy",
+      lien: "https://link.amazon/B04H3vM6r",
       icone: "⌨️",
-      date: "2026-11-10"
+      date: "2026-11-10",
+      promo: "2026-11-30"
     },
     {
       titre: "Geeky GK61 — clavier mécanique 60 %, hot-swap",
@@ -234,9 +236,10 @@ window.ND_BONS_PLANS = {
       titre: "Fanxiang S101Q 1 To — SSD 2,5\" SATA III",
       categorie: "stockage",
       pourquoi: "Le moyen le moins cher de redonner vie à un vieux PC ou portable : on remplace le disque dur par ce SSD, et Windows démarre en quelques secondes au lieu de plusieurs minutes.",
-      lien: "https://link.amazon/B09r6PFvu",
+      lien: "https://link.amazon/B0aqVjeGg",
       icone: "💾",
-      date: "2026-11-10"
+      date: "2026-11-10",
+      promo: "2026-11-30"
     },
     {
       titre: "Patriot Viper Venom DDR5 16 Go (2 × 8 Go) 5600 MHz CL40",
@@ -290,9 +293,10 @@ window.ND_BONS_PLANS = {
       titre: "NZXT H3 Flow — boîtier micro-ATX blanc",
       categorie: "boitiers",
       pourquoi: "Compact, façade en mesh pour une très bonne ventilation et un câble management soigné, typique de NZXT. Parfait pour un PC micro-ATX discret.",
-      lien: "https://link.amazon/B0132bRgX",
+      lien: "https://link.amazon/B09ACfE7k",
       icone: "🗄️",
-      date: "2026-11-11"
+      date: "2026-11-11",
+      promo: "2026-11-30"
     },
     {
       titre: "MSI MAG PANO M110R — boîtier micro-ATX panoramique",
@@ -306,9 +310,10 @@ window.ND_BONS_PLANS = {
       titre: "Ocypus Delta L24 ARGB V2 — watercooling AIO 240 mm",
       categorie: "refroidissement",
       pourquoi: "Un AIO 240 mm abordable avec éclairage ARGB, largement suffisant pour un Ryzen 5 ou un Ryzen 7 en jeu. Vérifiez que le boîtier accepte un radiateur de 240 mm.",
-      lien: "https://link.amazon/B0eXEKrFP",
+      lien: "https://link.amazon/B0gSoCXaW",
       icone: "❄️",
-      date: "2026-11-11"
+      date: "2026-11-11",
+      promo: "2026-11-30"
     },
     {
       titre: "Lenovo Legion 27Q-10 — 27 pouces QHD IPS 240 Hz",
@@ -362,21 +367,23 @@ window.ND_BONS_PLANS = {
       titre: "AMD Ryzen 5 9600X (AM5)",
       categorie: "cpu",
       pourquoi: "6 cœurs Zen 5, l'architecture la plus récente d'AMD : rapide en jeu et peu gourmand. Une base moderne pour un PC milieu de gamme.",
-      lien: "https://s.click.aliexpress.com/e/_c37AKDhh",
+      lien: "https://link.amazon/B05gJK1s4",
       marchand: "AliExpress",
       note: "Vendu sur AliExpress, souvent en version « tray » (sans boîte ni ventirad) : choisissez un vendeur bien noté et vérifiez la mention « neuf ».",
       icone: "🧠",
-      date: "2026-11-11"
+      date: "2026-11-11",
+      promo: "2026-11-30"
     },
     {
       titre: "AMD Ryzen 7 7800X3D (AM5)",
       categorie: "cpu",
       pourquoi: "8 cœurs avec le cache 3D V-Cache : l'un des meilleurs processeurs pour le jeu, encore très performant face aux modèles plus récents.",
-      lien: "https://s.click.aliexpress.com/e/_c4FadOp5",
+      lien: "https://link.amazon/B0gUZZA81",
       marchand: "AliExpress",
       note: "Vendu sur AliExpress, souvent en version « tray » (sans boîte ni ventirad) : choisissez un vendeur bien noté et vérifiez la mention « neuf ».",
       icone: "🧠",
-      date: "2026-11-11"
+      date: "2026-11-11",
+      promo: "2026-11-30"
     },
     {
       titre: "AMD Ryzen 7 9800X3D (AM5)",
@@ -402,21 +409,23 @@ window.ND_BONS_PLANS = {
       titre: "Netac DDR4 3200 MHz CL16 16 Go (2 × 8 Go), noir ou blanc",
       categorie: "ram",
       pourquoi: "Kit DDR4 2 × 8 Go d'une marque de stockage reconnue, pour un PC AM4 ou pour redonner du souffle à un ancien PC.",
-      lien: "https://s.click.aliexpress.com/e/_c3bLqmlV",
+      lien: "https://link.amazon/B0dwENgko",
       marchand: "AliExpress",
       note: "Vendu sur AliExpress : délais de livraison plus longs. Choisissez un vendeur bien noté, et l'entrepôt France ou Europe quand c'est proposé.",
       icone: "🧩",
-      date: "2026-11-11"
+      date: "2026-11-11",
+      promo: "2026-11-30"
     },
     {
       titre: "Rapoo VT7 Max — souris gaming sans fil",
       categorie: "souris",
       pourquoi: "Une souris gaming sans fil très légère, avec un capteur haut de gamme et plusieurs modes de connexion (sans fil 2,4 GHz, Bluetooth, câble). Un excellent rapport qualité-prix pour jouer.",
-      lien: "https://s.click.aliexpress.com/e/_c3jVBhPd",
+      lien: "https://link.amazon/B08ELh8ws",
       marchand: "AliExpress",
       note: "Vendu sur AliExpress : délais de livraison plus longs. Choisissez un vendeur bien noté, et l'entrepôt France ou Europe quand c'est proposé.",
       icone: "🖱️",
-      date: "2026-11-12"
+      date: "2026-11-12",
+      promo: "2026-11-30"
     },
     {
       titre: "Rapoo VT3 Max — souris gaming sans fil",
@@ -591,9 +600,10 @@ window.ND_BONS_PLANS = {
       titre: "Logitech G502 HERO — souris gaming filaire",
       categorie: "souris",
       pourquoi: "Un grand classique des souris gaming : capteur HERO très précis, 11 boutons programmables et poids réglable. Solide et confortable pour les grandes mains.",
-      lien: "https://link.amazon/B0gf1E9A2",
+      lien: "https://link.amazon/B0eWWKKFu",
       icone: "🖱️",
-      date: "2026-11-12"
+      date: "2026-11-12",
+      promo: "2026-11-30"
     },
     {
       titre: "Troisième main de soudure — loupe et 4 bras flexibles",
@@ -687,9 +697,10 @@ window.ND_BONS_PLANS = {
       titre: "ASUS ROG Strix B550-A Gaming — carte mère AM4 ATX",
       categorie: "cm",
       pourquoi: "Une carte AM4 haut de gamme au format ATX : étage d'alimentation solide, bon refroidissement et un look blanc et argent. Idéale pour un Ryzen 7 5700X ou un 5800X3D en DDR4.",
-      lien: "https://link.amazon/B04HGrv6h",
+      lien: "https://link.amazon/B00gnbsv0",
       icone: "🧩",
-      date: "2026-11-16"
+      date: "2026-11-16",
+      promo: "2026-11-30"
     },
     {
       titre: "Gigabyte B650M D3HP WiFi — carte mère AM5 micro-ATX",
@@ -735,17 +746,19 @@ window.ND_BONS_PLANS = {
       titre: "Corsair CX — 550, 650 ou 750 W, 80 PLUS Bronze",
       categorie: "alim",
       pourquoi: "Une alimentation de marque fiable pour un PC de jeu d'entrée ou de milieu de gamme. Choisissez la puissance sur la page : 550 W pour une RX 7600 ou une RTX 5060, 650 à 750 W pour une carte plus puissante.",
-      lien: "https://link.amazon/B0iHazrtn",
+      lien: "https://link.amazon/B0fyd5Rv0",
       icone: "⚡",
-      date: "2026-11-16"
+      date: "2026-11-16",
+      promo: "2026-11-30"
     },
     {
       titre: "Corsair RM850e — 850 W, 80 PLUS Gold, modulaire",
       categorie: "alim",
       pourquoi: "850 W certifiés Gold, entièrement modulaire, avec le câble 12V-2x6 pour les cartes graphiques récentes. Silencieuse et fiable, pour un PC haut de gamme (RTX 5070 Ti, RX 9070 XT).",
-      lien: "https://link.amazon/B030BxrGi",
+      lien: "https://link.amazon/B05LYn1QX",
       icone: "⚡",
-      date: "2026-11-16"
+      date: "2026-11-16",
+      promo: "2026-11-30"
     },
     {
       titre: "Corsair RM1000x — 1000 W, 80 PLUS Gold, modulaire",
@@ -871,17 +884,19 @@ window.ND_BONS_PLANS = {
       titre: "Cherry Xtrfy M64 Wireless — souris gaming sans fil, bleue",
       categorie: "souris",
       pourquoi: "Une souris sans fil légère et ergonomique, au capteur précis, signée Cherry Xtrfy, une marque reconnue chez les joueurs compétitifs.",
-      lien: "https://link.amazon/B0enyPU0K",
+      lien: "https://link.amazon/B0cSuNMZk",
       icone: "🖱️",
-      date: "2026-11-16"
+      date: "2026-11-16",
+      promo: "2026-11-30"
     },
     {
       titre: "Logitech G413 TKL — clavier mécanique sans pavé numérique",
       categorie: "claviers",
       pourquoi: "Un clavier mécanique solide et sobre, au format TKL (sans pavé numérique) pour laisser plus de place à la souris.",
-      lien: "https://link.amazon/B06welh0j",
+      lien: "https://link.amazon/B04pZNpUK",
       icone: "⌨️",
-      date: "2026-11-16"
+      date: "2026-11-16",
+      promo: "2026-11-30"
     },
     {
       titre: "Corsair Clipper Pro Mini 60 — clavier à switchs magnétiques (Hall)",
@@ -895,9 +910,10 @@ window.ND_BONS_PLANS = {
       titre: "Logitech G Pro X SE — casque gaming",
       categorie: "audio",
       pourquoi: "Le casque de la gamme Pro de Logitech, pensé pour l'esport : confortable sur de longues sessions, avec un son clair pour repérer les pas de l'adversaire.",
-      lien: "https://link.amazon/B05GF6ait",
+      lien: "https://link.amazon/B03M8soMf",
       icone: "🎧",
-      date: "2026-11-16"
+      date: "2026-11-16",
+      promo: "2026-11-30"
     },
     {
       titre: "Philips Fidelio X2 — casque hi-fi ouvert",
@@ -930,6 +946,330 @@ window.ND_BONS_PLANS = {
       lien: "https://link.amazon/B0frogBnk",
       icone: "❄️",
       date: "2026-11-18"
+    },
+    {
+      titre: "Gigabyte B850 EAGLE WiFi — carte mère AM5 ATX",
+      categorie: "cm",
+      pourquoi: "Chipset B850 récent, Wi-Fi intégré et DDR5 : une base solide et abordable pour un Ryzen 7000 ou 9000.",
+      lien: "https://link.amazon/B07oDuCha",
+      icone: "🧩",
+      date: "2026-11-19",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "Gigabyte AORUS B850 ELITE WiFi ICE — carte mère AM5 ATX, blanche",
+      categorie: "cm",
+      pourquoi: "La version blanche de la gamme AORUS : très bien équipée, avec un bon étage d'alimentation pour un Ryzen 7 9800X3D, idéale pour un PC tout blanc.",
+      lien: "https://link.amazon/B03LwRC6g",
+      icone: "🧩",
+      date: "2026-11-19",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "Netac DDR4 3200 MHz 32 Go (2 × 16 Go), blanc",
+      categorie: "ram",
+      pourquoi: "32 Go pour jouer et faire du multitâche sans manquer de mémoire, en DDR4 pour une carte mère AM4 ou Intel compatible. Version blanche.",
+      lien: "https://link.amazon/B06OK5db7",
+      icone: "🧠",
+      date: "2026-11-19",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "Barrette DDR5 SO-DIMM 24 Go 5600 MHz — pour PC portable",
+      categorie: "ram",
+      pourquoi: "Pour ajouter de la mémoire à un PC portable ou un mini-PC récent en DDR5. Vérifiez d'abord que votre modèle accepte la DDR5 SO-DIMM et cette capacité.",
+      lien: "https://link.amazon/B08zWFYmV",
+      icone: "🧠",
+      date: "2026-11-19",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "Adaptateur DDR5",
+      categorie: "ram",
+      pourquoi: "Un adaptateur pour barrette DDR5. Vérifiez sur la fiche Amazon qu'il correspond bien à votre usage avant de commander.",
+      lien: "https://link.amazon/B0cepbQUk",
+      icone: "🧠",
+      date: "2026-11-19",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "Biwin SSD SATA 2,5 pouces — 512 Go",
+      categorie: "stockage",
+      pourquoi: "Un SSD SATA à petit prix pour remplacer le disque dur d'un vieux PC ou d'un portable : Windows démarre en quelques secondes.",
+      lien: "https://link.amazon/B06pRsP0P",
+      icone: "💾",
+      date: "2026-11-19",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "Biwin SSD NVMe M.2 Gen3 — 1 To",
+      categorie: "stockage",
+      pourquoi: "Un SSD NVMe rapide et abordable pour le système et les jeux, compatible avec presque toutes les cartes mères ayant un port M.2.",
+      lien: "https://link.amazon/B06rQlzId",
+      icone: "💾",
+      date: "2026-11-19",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "Netac SSD NVMe M.2 Gen4 — 1 To",
+      categorie: "stockage",
+      pourquoi: "Un SSD PCIe 4.0 encore plus rapide pour des chargements de jeux très courts, sur une carte mère avec un port M.2 Gen4.",
+      lien: "https://link.amazon/B0jemG8tQ",
+      icone: "💾",
+      date: "2026-11-19",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "Acer SSD NVMe M.2 Gen4 — 1 To",
+      categorie: "stockage",
+      pourquoi: "Un SSD PCIe 4.0 de marque pour le système et les jeux. Pensez à un petit dissipateur si votre carte mère n'en a pas sur le port M.2.",
+      lien: "https://link.amazon/B0jbUaDvO",
+      icone: "💾",
+      date: "2026-11-19",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "SAMA G1000 — alimentation 1000 W",
+      categorie: "alim",
+      pourquoi: "1000 W pour une config haut de gamme avec une grosse carte graphique, et de la marge pour les évolutions futures.",
+      lien: "https://link.amazon/B0iTKZCBX",
+      icone: "⚡",
+      date: "2026-11-19",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "SAMA P1000 / P1200 — alimentation 1000 ou 1200 W",
+      categorie: "alim",
+      pourquoi: "Une alimentation très puissante pour les configs les plus gourmandes : choisissez la puissance sur la page.",
+      lien: "https://link.amazon/B0dpCbi2y",
+      icone: "⚡",
+      date: "2026-11-19",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "Corsair RM1000x SHIFT — 1000 W, modulaire, connecteurs sur le côté",
+      categorie: "alim",
+      pourquoi: "Les câbles se branchent sur le côté de l'alimentation : beaucoup plus simple à câbler proprement dans un boîtier double chambre.",
+      lien: "https://link.amazon/B00uvFueV",
+      icone: "⚡",
+      date: "2026-11-19",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "MSI MAG FORGE 112R — boîtier moyen tour ATX, ventilateurs ARGB",
+      categorie: "boitiers",
+      pourquoi: "Un boîtier vitré abordable, livré avec des ventilateurs ARGB : une bonne base lumineuse pour un premier montage.",
+      lien: "https://link.amazon/B0hjeESk4",
+      icone: "📦",
+      date: "2026-11-19",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "MSI MPG GUNGNIR 110R — boîtier moyen tour ATX, blanc",
+      categorie: "boitiers",
+      pourquoi: "Un boîtier blanc spacieux avec un très bon flux d'air et des ventilateurs ARGB inclus, pour un PC gamer tout blanc.",
+      lien: "https://link.amazon/B0ck50pI3",
+      icone: "📦",
+      date: "2026-11-19",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "Cooler Master NR200P MAX — boîtier Mini-ITX avec alimentation et watercooling",
+      categorie: "boitiers",
+      pourquoi: "Un PC compact tout-en-un : le boîtier Mini-ITX est livré avec son alimentation SFX 850 W et un watercooling 280 mm déjà installés. Pour un petit PC très puissant.",
+      lien: "https://link.amazon/B0gvyqEXq",
+      icone: "📦",
+      date: "2026-11-19",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "SAMA A60E — ventirad tour",
+      categorie: "refroidissement",
+      pourquoi: "Un ventirad tour abordable, bien plus silencieux que le ventirad d'origine.",
+      lien: "https://link.amazon/B0b0ih7bd",
+      icone: "❄️",
+      date: "2026-11-19",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "Thermalright Phantom Spirit 120 RGB — ventirad double tour",
+      categorie: "refroidissement",
+      pourquoi: "Un des ventirads les plus efficaces pour son prix, avec éclairage RGB : il tient tête à beaucoup de watercoolings 240 mm.",
+      lien: "https://link.amazon/B0fcxhYrY",
+      icone: "❄️",
+      date: "2026-11-19",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "Ocypus Delta L36 — watercooling AIO 360 mm",
+      categorie: "refroidissement",
+      pourquoi: "Le grand frère du L24 : radiateur 360 mm pour refroidir les processeurs les plus puissants en silence. Vérifiez que le boîtier accepte un radiateur 360 mm.",
+      lien: "https://link.amazon/B09Y5TTBJ",
+      icone: "❄️",
+      date: "2026-11-19",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "Ocypus Iota — watercooling AIO 240 ou 360 mm",
+      categorie: "refroidissement",
+      pourquoi: "Un watercooling abordable, en 240 ou 360 mm selon la place dans votre boîtier.",
+      lien: "https://link.amazon/B03qdO1fp",
+      icone: "❄️",
+      date: "2026-11-19",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "SAMA Q60 — watercooling AIO avec écran LCD",
+      categorie: "refroidissement",
+      pourquoi: "Un watercooling avec un écran LCD sur la pompe pour afficher la température ou une image.",
+      lien: "https://link.amazon/B0alclThh",
+      icone: "❄️",
+      date: "2026-11-19",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "Ocypus — contrôleur ventilateurs 10 ports aRGB",
+      categorie: "refroidissement",
+      pourquoi: "Pour brancher et piloter jusqu'à 10 ventilateurs et leurs éclairages depuis un seul connecteur de la carte mère.",
+      lien: "https://link.amazon/B0es1VafE",
+      icone: "❄️",
+      date: "2026-11-19",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "Ocypus — kit ventilateurs 360 mm",
+      categorie: "refroidissement",
+      pourquoi: "Un kit de ventilateurs au format 360 mm pour améliorer le flux d'air du boîtier ou d'un radiateur.",
+      lien: "https://link.amazon/B04RGfQrl",
+      icone: "❄️",
+      date: "2026-11-19",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "Ocypus — écran 5,5 pouces pour boîtier",
+      categorie: "refroidissement",
+      pourquoi: "Un petit écran à installer dans le boîtier pour afficher en direct les températures et l'usage du processeur et de la carte graphique.",
+      lien: "https://link.amazon/B02acfcd4",
+      icone: "❄️",
+      date: "2026-11-19",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "Philips — écran 24 pouces IPS 240 Hz, blanc",
+      categorie: "ecrans",
+      pourquoi: "Un écran rapide pour les jeux compétitifs, avec un design blanc pour un setup assorti.",
+      lien: "https://link.amazon/B0ccm2X1p",
+      icone: "🖥️",
+      date: "2026-11-19",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "AOC — écran 24 pouces IPS 240 Hz",
+      categorie: "ecrans",
+      pourquoi: "240 Hz et une dalle IPS aux couleurs fidèles : idéal pour les FPS en 1080p.",
+      lien: "https://link.amazon/B08jnzAMr",
+      icone: "🖥️",
+      date: "2026-11-19",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "MSI — écran 27 pouces QHD QD-OLED 280 Hz, blanc",
+      categorie: "ecrans",
+      pourquoi: "Noirs parfaits et couleurs éclatantes en 1440p à 280 Hz, dans une version blanche.",
+      lien: "https://link.amazon/B03nNSY7Z",
+      icone: "🖥️",
+      date: "2026-11-19",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "MSI FORGE GK320 — clavier gaming",
+      categorie: "claviers",
+      pourquoi: "Un clavier gaming d'entrée de gamme rétroéclairé, parfait pour débuter.",
+      lien: "https://link.amazon/B0gtZ544q",
+      icone: "⌨️",
+      date: "2026-11-19",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "MSI FORGE GK600 TKL — clavier gaming sans pavé numérique",
+      categorie: "claviers",
+      pourquoi: "Un clavier compact au format TKL : plus de place pour la souris sur le bureau.",
+      lien: "https://link.amazon/B03xkSl2o",
+      icone: "⌨️",
+      date: "2026-11-19",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "Razer Huntsman Mini — clavier 60 %, switchs optiques Clicky",
+      categorie: "claviers",
+      pourquoi: "Un clavier ultra-compact à switchs optiques très réactifs, avec un clic franc et sonore.",
+      lien: "https://link.amazon/B0iRzsDzY",
+      icone: "⌨️",
+      date: "2026-11-19",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "Corsair K65 PLUS Wireless — clavier compact sans fil",
+      categorie: "claviers",
+      pourquoi: "Un clavier compact sans fil, utilisable en 2,4 GHz pour jouer ou en Bluetooth, avec une grande autonomie.",
+      lien: "https://link.amazon/B0bxjzHj9",
+      icone: "⌨️",
+      date: "2026-11-19",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "Razer Viper V3 HyperSpeed — souris gaming sans fil",
+      categorie: "souris",
+      pourquoi: "Une souris sans fil légère, pensée pour les jeux compétitifs, avec un capteur très précis.",
+      lien: "https://link.amazon/B09NDt8Dx",
+      icone: "🖱️",
+      date: "2026-11-19",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "ASUS ROG Keris II Ace — souris gaming sans fil, blanche",
+      categorie: "souris",
+      pourquoi: "Une souris sans fil ultra-légère pour l'esport, en version blanche.",
+      lien: "https://link.amazon/B0had3dgR",
+      icone: "🖱️",
+      date: "2026-11-19",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "Cooler Master — tapis de souris XXL",
+      categorie: "souris",
+      pourquoi: "Un grand tapis qui accueille le clavier et la souris, pour une glisse régulière et un bureau protégé.",
+      lien: "https://link.amazon/B0cnhUkDW",
+      icone: "🖱️",
+      date: "2026-11-19",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "HyperX Cloud Alpha — casque gaming filaire",
+      categorie: "audio",
+      pourquoi: "Un classique réputé pour son son et son confort, avec un micro détachable. Compatible PC et consoles.",
+      lien: "https://link.amazon/B04GdgfxN",
+      icone: "🎧",
+      date: "2026-11-19",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "Corsair TC100 RELAXED — fauteuil gaming",
+      categorie: "fauteuils",
+      pourquoi: "Un fauteuil gaming d'entrée de gamme, avec une assise large et confortable pour les longues sessions.",
+      lien: "https://link.amazon/B0g0373W0",
+      icone: "🪑",
+      date: "2026-11-19",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "Corsair TC500 LUXE — fauteuil gaming",
+      categorie: "fauteuils",
+      pourquoi: "Un fauteuil haut de gamme avec de nombreux réglages, pour bien tenir le dos pendant les longues sessions de jeu ou de travail.",
+      lien: "https://link.amazon/B02xFMWRs",
+      icone: "🪑",
+      date: "2026-11-19",
+      promo: "2026-11-30"
     }
   ]
 };

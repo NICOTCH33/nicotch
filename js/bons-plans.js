@@ -17,6 +17,7 @@
     claviers: '<rect x="1.5" y="6" width="21" height="12" rx="1.5"/><path d="M5 9.5h1M8.5 9.5h1M12 9.5h1M15.5 9.5h1M19 9.5h0M5 12.5h1M8.5 12.5h1M12 12.5h1M15.5 12.5h1M19 12.5h0M7 15.5h10"/>',
     souris: '<rect x="6.5" y="2.5" width="11" height="19" rx="5.5"/><path d="M12 2.5v6M6.5 9h11"/>',
     audio: '<path d="M4 15v-3a8 8 0 0116 0v3"/><rect x="2.5" y="14" width="4" height="7" rx="1.5"/><rect x="17.5" y="14" width="4" height="7" rx="1.5"/>',
+    fauteuils: '<path d="M8 3h8a1 1 0 011 1v8H7V4a1 1 0 011-1z"/><path d="M5 12h14v3H5z"/><path d="M12 15v4M8 21l4-2 4 2M4 9v4M20 9v4"/>',
     manettes: '<path d="M7 7h10a5 5 0 014.8 6.4l-1 3.5a2.5 2.5 0 01-4.2 1L14.5 16h-5l-2.1 1.9a2.5 2.5 0 01-4.2-1l-1-3.5A5 5 0 017 7z"/><path d="M7 10.5v3M5.5 12h3"/><circle cx="16" cy="11" r=".8"/><circle cx="18" cy="13" r=".8"/>'
   };
   /* Illustration néon de la catégorie (assets/categories/<id>.webp),
