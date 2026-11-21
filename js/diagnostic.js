@@ -293,7 +293,7 @@
     document.getElementById("intro-diag").textContent = type === "console"
       ? "PlayStation, Xbox ou Nintendo Switch : répondez à quelques questions pour obtenir les causes possibles et les contrôles à faire, adaptés à votre modèle."
       : "Répondez à quelques questions simples pour obtenir les causes possibles de la panne et les contrôles à faire, du plus simple au plus technique.";
-    document.title = (type === "console" ? "Diagnostic console" : "Diagnostic PC") + " – Nicotch";
+    document.title = (type === "console" ? "Diagnostic console gratuit : trouve la panne pas à pas" : "Diagnostic PC gratuit : trouve la panne pas à pas") + " – Nicotch";
 
     btnRetour.addEventListener("click", retour);
     btnRecommencer.addEventListener("click", recommencer);
