@@ -133,10 +133,16 @@
           var n = String(d.count || "").replace(/\D/g, "");
           if (!n) return;
           var chiffres = ("000000" + n).slice(-Math.max(6, n.length));
+          // Effet « compteur kilométrique » : chaque chiffre est un rouleau 0-9 (deux tours)
+          var rouleau = "";
+          for (var k = 0; k < 20; k++) rouleau += "<span>" + (k % 10) + "</span>";
           compteur.innerHTML = '<span class="compteur-titre">🕹️ VISITEURS</span> ' +
-            chiffres.split("").map(function (c) { return '<span class="compteur-chiffre">' + c + "</span>"; }).join("");
+            chiffres.split("").map(function (c) {
+              return '<span class="compteur-chiffre" data-chiffre="' + c + '"><span class="compteur-rouleau" aria-hidden="true">' + rouleau + "</span></span>";
+            }).join("");
           compteur.setAttribute("aria-label", Number(n).toLocaleString("fr-FR") + " visites");
           compteur.classList.remove("cache");
+          lancerCompteur(compteur);
         })
         .catch(function () { /* compteur indisponible : on n'affiche rien */ });
     }
@@ -197,9 +203,49 @@
     } catch (e) { return iso; }
   };
 
+  /* ---------- Animations ---------- */
+  var MOINS_ANIM = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // Fait tourner les rouleaux du compteur quand le pied de page devient visible
+  function lancerCompteur(compteur) {
+    var chiffres = compteur.querySelectorAll(".compteur-chiffre");
+    function tourner() {
+      Array.prototype.forEach.call(chiffres, function (el, i) {
+        var d = Number(el.getAttribute("data-chiffre")) || 0;
+        var r = el.querySelector(".compteur-rouleau");
+        if (!MOINS_ANIM) r.style.transitionDelay = (i * 0.15) + "s";
+        r.style.transform = "translateY(" + (-(10 + d) * 36) + "px)";
+      });
+    }
+    if (MOINS_ANIM || !("IntersectionObserver" in window)) { compteur.classList.add("sans-anim"); tourner(); return; }
+    var obs = new IntersectionObserver(function (entrees) {
+      if (entrees[0].isIntersecting) { obs.disconnect(); requestAnimationFrame(function () { requestAnimationFrame(tourner); }); }
+    }, { threshold: 0.6 });
+    obs.observe(compteur);
+  }
+
+  // Les cartes de l'accueil apparaissent en montant, l'une après l'autre
+  function animerApparition() {
+    var cartes = document.querySelectorAll(".grille-espaces > .carte");
+    if (!cartes.length || MOINS_ANIM || !("IntersectionObserver" in window)) return;
+    var obs = new IntersectionObserver(function (entrees) {
+      var n = 0;
+      entrees.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        var c = e.target; obs.unobserve(c);
+        c.classList.add("revele-anim");
+        c.style.transitionDelay = (n++ * 0.09) + "s";
+        requestAnimationFrame(function () { c.classList.remove("revele-avant"); });
+        setTimeout(function () { c.classList.remove("revele-anim"); c.style.transitionDelay = ""; }, 1400);
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+    Array.prototype.forEach.call(cartes, function (c) { c.classList.add("revele-avant"); obs.observe(c); });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     construireEntete();
     construirePied();
+    animerApparition();
     // Ruban « Black Friday » sur la carte Bons plans de l'accueil
     var carteBP = document.querySelector('.grille-espaces a[href="bons-plans.html"]');
     if (carteBP && ND.evenementActif()) {
