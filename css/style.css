@@ -360,6 +360,7 @@ h3 { font-size: 1.2rem; }
 
 /* « Allumage » d'enseigne néon : grésillements puis lumière stable qui respire */
 .logo-allumage { animation: neon-allumage 1.8s linear both, neon-respire 5s ease-in-out 1.8s infinite; }
+.titre-logo .logo-allumage { animation: neon-allumage 1.8s linear both, neon-vie 9s ease-in-out 1.8s infinite; }
 @keyframes neon-allumage {
   0% { opacity: 0; } 8% { opacity: .85; } 11% { opacity: .1; } 17% { opacity: 1; }
   21% { opacity: .25; } 24% { opacity: .9; } 40% { opacity: .55; } 46%, 100% { opacity: 1; }
@@ -974,4 +975,37 @@ kbd { padding: 1px 6px; border-radius: 5px; border: 1px solid var(--bordure); ba
 @media (prefers-reduced-motion: reduce) {
   .grille-espaces > .carte, .grille-espaces .espace-logo > div, .compteur-rouleau { transition: none !important; }
   .grille-espaces > .carte:hover, .grille-espaces > .carte:hover .espace-logo > div { transform: none; }
+}
+
+/* ---------- Accueil : logo Nicotch vivant ---------- */
+/* Lévitation douce + reflet de lumière qui traverse les lettres + grésillement de temps en temps */
+.titre-logo .logo-anim { position: relative; display: inline-block; max-width: 100%; line-height: 0;
+  animation: logo-flotte 6s ease-in-out 1.8s infinite; }
+.titre-logo .logo-anim picture { display: inline-block; }
+.titre-logo .logo-anim img { display: block; max-width: 100%; height: auto; }
+.logo-reflet { position: absolute; inset: 0; pointer-events: none; mix-blend-mode: screen;
+  background: linear-gradient(105deg, transparent 44%, rgba(255, 255, 255, .85) 50%, transparent 56%) 160% 0 / 250% 100% no-repeat;
+  -webkit-mask: url("../assets/logos/nicotch-800.webp") center / 100% 100% no-repeat;
+          mask: url("../assets/logos/nicotch-800.webp") center / 100% 100% no-repeat;
+  animation: logo-reflet 7s ease-in-out 2.4s infinite; }
+@keyframes logo-flotte { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+@keyframes logo-reflet { 0% { background-position: 160% 0; } 22%, 100% { background-position: -60% 0; } }
+@keyframes neon-vie {
+  0%, 100% { filter: brightness(1); } 30% { filter: brightness(1.22) saturate(1.1); } 58% { filter: brightness(1); }
+  60% { filter: brightness(.45); } 61% { filter: brightness(1.15); } 62.5% { filter: brightness(.6); } 64% { filter: brightness(1); }
+}
+/* Survol : petit « glitch » rouge/cyan comme un écran qui décroche */
+@media (hover: hover) {
+  .titre-logo .logo-anim:hover picture { animation: logo-glitch .5s steps(2, end) 1; }
+}
+@keyframes logo-glitch {
+  0% { transform: translate(0); filter: none; }
+  20% { transform: translate(-3px, 1px); filter: drop-shadow(4px 0 0 rgba(255, 45, 85, .8)) drop-shadow(-4px 0 0 rgba(34, 227, 245, .8)); }
+  40% { transform: translate(3px, -1px); filter: drop-shadow(-3px 0 0 rgba(255, 45, 85, .8)) drop-shadow(3px 0 0 rgba(34, 227, 245, .8)); }
+  60% { transform: translate(-2px, 0); filter: drop-shadow(2px 0 0 rgba(255, 45, 85, .6)); }
+  100% { transform: translate(0); filter: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .titre-logo .logo-anim, .logo-reflet, .titre-logo .logo-anim:hover picture { animation: none !important; }
+  .logo-reflet { display: none; }
 }
