@@ -271,11 +271,28 @@
     Array.prototype.forEach.call(cartes, function (c) { c.classList.add("revele-avant"); obs.observe(c); });
   }
 
+  // Bouton « remonter en haut » : apparaît après un peu de défilement
+  function boutonHaut() {
+    if (/jouer\.html$/.test(location.pathname)) return;
+    var b = document.createElement("button");
+    b.type = "button"; b.className = "btn-haut"; b.setAttribute("aria-label", "Remonter en haut de la page");
+    b.innerHTML = '<svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>';
+    b.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: MOINS_ANIM ? "auto" : "smooth" });
+      var cible = document.getElementById("contenu"); if (cible) { cible.setAttribute("tabindex", "-1"); cible.focus({ preventScroll: true }); }
+    });
+    document.body.appendChild(b);
+    var vu = false;
+    function maj() { var v = window.scrollY > 700; if (v !== vu) { vu = v; b.classList.toggle("visible", v); } }
+    window.addEventListener("scroll", maj, { passive: true }); maj();
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     construireEntete();
     construirePied();
     animerApparition();
     remplirShorts();
+    boutonHaut();
     // Ruban « Black Friday » sur la carte Bons plans de l'accueil
     var carteBP = document.querySelector('.grille-espaces a[href="bons-plans.html"]');
     if (carteBP && ND.evenementActif()) {
