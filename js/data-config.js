@@ -57,7 +57,7 @@ window.ND_CONFIG = {
 
     "b550m-a-asus": { type: "cm", nom: "ASUS Prime B550M-A WiFi II", socket: "AM4", ddr: "DDR4", format: "mATX", lien: "https://link.amazon/B01LgPu1Q",
                    pourquoi: "Micro-ATX fiable avec Wi-Fi intégré : parfaite pour un Ryzen 5 5600 dans un boîtier compact." },
-    "b550-a-rog": { type: "cm", nom: "ASUS ROG Strix B550-A Gaming", socket: "AM4", ddr: "DDR4", format: "ATX", lien: "https://link.amazon/B04HGrv6h",
+    "b550-a-rog": { type: "cm", nom: "ASUS ROG Strix B550-A Gaming", socket: "AM4", ddr: "DDR4", format: "ATX", lien: "https://link.amazon/B01u590gp",
                    pourquoi: "Carte AM4 haut de gamme : étage d'alimentation solide, bien refroidi, et un look blanc et argent." },
     "b650m-d3hp": { type: "cm", nom: "Gigabyte B650M D3HP WiFi", socket: "AM5", ddr: "DDR5", format: "mATX", lien: "https://link.amazon/B0hWObA0t",
                    pourquoi: "L'entrée sur AM5 à petit prix : DDR5 et Wi-Fi, idéale pour un Ryzen 5 7500F." },
@@ -79,6 +79,8 @@ window.ND_CONFIG = {
                    pourquoi: "Kit DDR5 abordable en 2 barrettes (double canal) : le bon choix pour démarrer sur AM5 sans exploser le budget." },
     "ddr5-32":   { type: "ram", nom: "32 Go DDR5-6000 CL30 (2 × 16 Go) — ex. Kingston FURY Beast", ddr: "DDR5", go: 32, barrettes: 2, lien: "",
                    pourquoi: "La quantité et la vitesse idéales pour un PC de jeu AM5." },
+    "ddr5-32-juhor": { type: "ram", nom: "32 Go DDR5-6000 CL38 (2 × 16 Go) — Juhor", ddr: "DDR5", go: 32, barrettes: 2, lien: "https://s.click.aliexpress.com/e/_c4p7enR7", marchand: "AliExpress",
+                   pourquoi: "Kit 32 Go à 6000 MHz très abordable en 2 barrettes (double canal). Pensez à activer le profil EXPO dans le BIOS." },
 
     /* ---------- Cartes graphiques ---------- */
     "rx7600":    { type: "gpu", nom: "AMD Radeon RX 7600 8 Go — ex. ASUS Dual EVO OC", marque: "AMD", w: 165, fab: 550, longueur: 270, lien: "https://link.amazon/B07qMbb0p",
@@ -122,7 +124,7 @@ window.ND_CONFIG = {
     "alim-850":  { type: "alim", nom: "Alimentation 850 W 80 PLUS Gold — ex. Cooler Master Elite Gold 850", w: 850, lien: "https://link.amazon/B0izG685R",
                    pourquoi: "Assez de puissance même pour une RTX 5080. Idéalement en ATX 3.1 avec un câble 12V-2x6 ; sinon, on utilise l'adaptateur fourni avec la carte graphique." },
 
-    "alim-850-rme": { type: "alim", nom: "Corsair RM850e — 850 W 80 PLUS Gold, modulaire", w: 850, lien: "https://link.amazon/B030BxrGi",
+    "alim-850-rme": { type: "alim", nom: "Corsair RM850e — 850 W 80 PLUS Gold, modulaire", w: 850, lien: "https://link.amazon/B01QbguMS",
                    pourquoi: "Gold, entièrement modulaire, avec le câble 12V-2x6 des cartes graphiques récentes." },
     "alim-1000": { type: "alim", nom: "Corsair RM1000x — 1000 W 80 PLUS Gold, modulaire", w: 1000, lien: "https://link.amazon/B02uJW8KN",
                    pourquoi: "Une énorme marge pour une RTX 5080 et les futures évolutions du PC." },
@@ -182,19 +184,19 @@ window.ND_CONFIG = {
     { id: "milieu-bas", emoji: "🔵", nom: "Milieu bas", budget: "~1 100 €", prix: "1 100 €", perf: "1080p élevé ~85 fps",
       usage: "Jeu en 1080p en réglages élevés.",
       composants: {
-        cpu: ["r5-5600", "r5-7500f"], cm: ["b550-a-rog", "b650m-d3hp", "b550-gx", "b650-gp"], ram: ["ddr4-16", "ddr4-32", "ddr5-16-viper", "ddr5-32"],
+        cpu: ["r5-5600", "r5-7500f"], cm: ["b550-a-rog", "b650m-d3hp", "b550-gx", "b650-gp"], ram: ["ddr4-16", "ddr4-32", "ddr5-16-viper", "ddr5-32", "ddr5-32-juhor"],
         gpu: ["rx9060xt8", "rtx5060"], ssd: ["ssd-1to"], alim: ["alim-650-seasonic", "alim-650"], refroid: ["ventirad-ak120", "ventirad-tour"], boitier: ["air903base", "nn8"]
       } },
     { id: "milieu-haut", emoji: "🟣", nom: "Milieu haut", budget: "~1 700 €", prix: "1 700 €", perf: "1440p élevé ~100 fps",
       usage: "Jeu en 1440p, streaming.",
       composants: {
-        cpu: ["r5-9600x"], cm: ["b850-tuf-e", "b850m-tuf-w", "b850-gp"], ram: ["ddr5-32"], gpu: ["rx9070", "rtx5070"],
+        cpu: ["r5-9600x"], cm: ["b850-tuf-e", "b850m-tuf-w", "b850-gp"], ram: ["ddr5-32", "ddr5-32-juhor"], gpu: ["rx9070", "rtx5070"],
         ssd: ["ssd-2to"], alim: ["alim-750-nzxt", "alim-750"], refroid: ["aio-240-sama", "aio-240-sudokoo", "aio-240-v3"], boitier: ["pop2air", "4000d"]
       } },
     { id: "haut", emoji: "🔴", nom: "Haut de gamme", budget: "~2 800 € et plus", prix: "2 800 €", perf: "1440p ultra ~120 fps",
       usage: "Jeu en 1440p très élevé et en 4K, création vidéo.",
       composants: {
-        cpu: ["r7-9800x3d"], cm: ["x870-p", "b850-tuf-e", "b850-tom"], ram: ["ddr5-32"], gpu: ["rx9070xt", "rtx5070ti", "rtx5080"],
+        cpu: ["r7-9800x3d"], cm: ["x870-p", "b850-tuf-e", "b850-tom"], ram: ["ddr5-32", "ddr5-32-juhor"], gpu: ["rx9070xt", "rtx5070ti", "rtx5080"],
         ssd: ["ssd-2to-p"], alim: ["alim-850", "alim-850-rme", "alim-1000"], refroid: ["aio-360-nautilus", "aio-360-sama", "aio-240-fw", "aio-240-sama"], boitier: ["h7flow", "y6", "4000d"]
       } }
   ]

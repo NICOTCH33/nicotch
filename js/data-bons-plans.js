@@ -72,6 +72,47 @@ window.ND_BONS_PLANS = {
   ],
   PRODUITS: [
     {
+      titre: "ASUS Radeon RX 9070 GRE 12 Go",
+      categorie: "gpu",
+      pourquoi: "La petite sœur de la RX 9070 : 12 Go de mémoire et l'architecture RDNA 4 avec le FSR 4, pour jouer en 1440p dans de très bonnes conditions. Une alimentation de 650 W de qualité suffit.",
+      lien: "https://link.amazon/B066XbUHv",
+      note: "Vérifiez le modèle exact (Prime, TUF…) et sa longueur sur la fiche avant de commander.",
+      icone: "🎮",
+      date: "2026-11-25",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "AMD Ryzen 7 9850X3D (AM5)",
+      categorie: "cpu",
+      pourquoi: "Le successeur du 9800X3D : 8 cœurs Zen 5 avec 3D V-Cache, et une fréquence encore plus haute. Pour un PC de jeu haut de gamme sans compromis.",
+      lien: "https://link.amazon/B08NLQv2M",
+      note: "Livré sans ventirad : prévoyez un bon ventirad double tour ou un watercooling 240 mm.",
+      icone: "🧠",
+      date: "2026-11-25",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "Juhor DDR5 6000 MHz CL38 32 Go (2 × 16 Go)",
+      categorie: "ram",
+      pourquoi: "32 Go de DDR5 à 6000 MHz, la vitesse idéale pour les Ryzen AM5, en 2 barrettes pour profiter du double canal. Un kit très abordable pour un PC de jeu.",
+      lien: "https://s.click.aliexpress.com/e/_c4p7enR7",
+      marchand: "AliExpress",
+      note: "Activez le profil EXPO ou XMP dans le BIOS pour obtenir les 6000 MHz.",
+      icone: "🧠",
+      date: "2026-11-25",
+      promo: "2026-11-30"
+    },
+    {
+      titre: "Juhor DDR5 6000 MHz CL38 16 Go (1 × 16 Go)",
+      categorie: "ram",
+      pourquoi: "Une barrette DDR5 6000 MHz pour compléter une première barrette identique. Seule, elle fonctionne en simple canal : pour jouer, mieux vaut 2 barrettes.",
+      lien: "https://s.click.aliexpress.com/e/_c3aVmE65",
+      marchand: "AliExpress",
+      icone: "🧠",
+      date: "2026-11-25",
+      promo: "2026-11-30"
+    },
+    {
       titre: "D.RECT — bombe d'air sec 400 ml",
       categorie: "entretien",
       pourquoi: "La solution pas chère pour un dépoussiérage de temps en temps : clavier, ventilateurs, ports. Astuce : tenez la bombe bien droite et soufflez par petites pressions, sinon elle projette du gaz liquide glacé.",
@@ -515,9 +556,10 @@ window.ND_BONS_PLANS = {
       titre: "AMD Ryzen 5 9600X (AM5) — version boîte",
       categorie: "cpu",
       pourquoi: "Le même Ryzen 5 9600X, en version boîte vendue en France : la garantie constructeur et les retours sont plus simples qu'en import. Le bon choix si vous préférez la tranquillité.",
-      lien: "https://link.amazon/B03LGArrU",
+      lien: "https://link.amazon/B03K0zeiX",
       icone: "🧠",
-      date: "2026-11-12"
+      date: "2026-11-12",
+      promo: "2026-11-30"
     },
     {
       titre: "Juhor DDR4 3200 MHz 16 Go (2 × 8 Go), blanc",
@@ -697,7 +739,7 @@ window.ND_BONS_PLANS = {
       titre: "ASUS ROG Strix B550-A Gaming — carte mère AM4 ATX",
       categorie: "cm",
       pourquoi: "Une carte AM4 haut de gamme au format ATX : étage d'alimentation solide, bon refroidissement et un look blanc et argent. Idéale pour un Ryzen 7 5700X ou un 5800X3D en DDR4.",
-      lien: "https://link.amazon/B00gnbsv0",
+      lien: "https://link.amazon/B01u590gp",
       icone: "🧩",
       date: "2026-11-16",
       promo: "2026-11-30"
@@ -746,7 +788,7 @@ window.ND_BONS_PLANS = {
       titre: "Corsair CX — 550, 650 ou 750 W, 80 PLUS Bronze",
       categorie: "alim",
       pourquoi: "Une alimentation de marque fiable pour un PC de jeu d'entrée ou de milieu de gamme. Choisissez la puissance sur la page : 550 W pour une RX 7600 ou une RTX 5060, 650 à 750 W pour une carte plus puissante.",
-      lien: "https://link.amazon/B0fyd5Rv0",
+      lien: "https://link.amazon/B0bBLOEPX",
       icone: "⚡",
       date: "2026-11-16",
       promo: "2026-11-30"
@@ -755,7 +797,7 @@ window.ND_BONS_PLANS = {
       titre: "Corsair RM850e — 850 W, 80 PLUS Gold, modulaire",
       categorie: "alim",
       pourquoi: "850 W certifiés Gold, entièrement modulaire, avec le câble 12V-2x6 pour les cartes graphiques récentes. Silencieuse et fiable, pour un PC haut de gamme (RTX 5070 Ti, RX 9070 XT).",
-      lien: "https://link.amazon/B05LYn1QX",
+      lien: "https://link.amazon/B01QbguMS",
       icone: "⚡",
       date: "2026-11-16",
       promo: "2026-11-30"
@@ -969,7 +1011,7 @@ window.ND_BONS_PLANS = {
       titre: "Netac DDR4 3200 MHz 32 Go (2 × 16 Go), blanc",
       categorie: "ram",
       pourquoi: "32 Go pour jouer et faire du multitâche sans manquer de mémoire, en DDR4 pour une carte mère AM4 ou Intel compatible. Version blanche.",
-      lien: "https://link.amazon/B06OK5db7",
+      lien: "https://link.amazon/B07pShO1q",
       icone: "🧠",
       date: "2026-11-19",
       promo: "2026-11-30"
@@ -978,7 +1020,7 @@ window.ND_BONS_PLANS = {
       titre: "Barrette DDR5 SO-DIMM 24 Go 5600 MHz — pour PC portable",
       categorie: "ram",
       pourquoi: "Pour ajouter de la mémoire à un PC portable ou un mini-PC récent en DDR5. Vérifiez d'abord que votre modèle accepte la DDR5 SO-DIMM et cette capacité.",
-      lien: "https://link.amazon/B08zWFYmV",
+      lien: "https://link.amazon/B0iMkQkRq",
       icone: "🧠",
       date: "2026-11-19",
       promo: "2026-11-30"
@@ -1086,7 +1128,7 @@ window.ND_BONS_PLANS = {
       titre: "SAMA A60E — ventirad tour",
       categorie: "refroidissement",
       pourquoi: "Un ventirad tour abordable, bien plus silencieux que le ventirad d'origine.",
-      lien: "https://link.amazon/B0b0ih7bd",
+      lien: "https://link.amazon/B0dDnoi12",
       icone: "❄️",
       date: "2026-11-19",
       promo: "2026-11-30"
