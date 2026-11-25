@@ -39,6 +39,7 @@
       '<span class="ouvrir">Détails</span></summary>' +
       '<div class="fiche-corps">' +
       "<h4>🩺 Symptôme</h4><p>" + esc(f.symptome) + "</p>" +
+      (f.video && ND.htmlShort ? ND.htmlShort(f.video, "encart") : "") +
       "<h4>🔍 Causes fréquentes</h4><ul>" + f.causes.map(li).join("") + "</ul>" +
       "<h4>✅ Vérifications préalables</h4><ul>" + f.verifs.map(li).join("") + "</ul>" +
       "<h4>🔧 Étapes de résolution</h4><ol>" + f.etapes.map(li).join("") + "</ol>" +

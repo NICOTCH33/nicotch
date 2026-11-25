@@ -1009,3 +1009,39 @@ kbd { padding: 1px 6px; border-radius: 5px; border: 1px solid var(--bordure); ba
   .titre-logo .logo-anim, .logo-reflet, .titre-logo .logo-anim:hover picture { animation: none !important; }
   .logo-reflet { display: none; }
 }
+
+/* ---------- Shorts YouTube : vignettes légères ---------- */
+.shorts-entete { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 20px; margin-bottom: 18px; }
+.shorts-entete h2 { margin: 0; }
+.shorts-rangee { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; }
+.short-carte { display: flex; flex-direction: column; gap: 10px; color: inherit; text-decoration: none; min-width: 0; }
+.short-vignette { position: relative; display: block; border-radius: 14px; overflow: hidden; border: 1px solid rgba(255, 255, 255, .1);
+  aspect-ratio: 9 / 16; background: #05060a; transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+.short-vignette img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.short-play { position: absolute; right: 12px; bottom: 12px; width: 50px; height: 50px; border-radius: 50%;
+  display: grid; place-items: center; padding-left: 4px; font-size: 24px; color: #fff; background: rgba(230, 33, 23, .92);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, .45); opacity: .92; transition: transform .25s ease, opacity .25s ease; }
+.short-titre { font-weight: 600; font-size: .95rem; line-height: 1.35; }
+@media (hover: hover) {
+  .short-carte:hover .short-vignette, .short-encart:hover .short-vignette { transform: translateY(-4px); border-color: rgba(230, 33, 23, .7);
+    box-shadow: 0 10px 28px rgba(230, 33, 23, .22); }
+  .short-carte:hover .short-play, .short-encart:hover .short-play { transform: scale(1.12); opacity: 1; }
+}
+.short-carte:focus-visible .short-vignette, .short-encart:focus-visible { outline: 2px solid #E62117; outline-offset: 3px; }
+@media (max-width: 899px) {
+  .shorts-rangee { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; }
+  .short-carte { flex: 0 0 42%; scroll-snap-align: start; }
+}
+@media (max-width: 599px) { .short-carte { flex-basis: 62%; } }
+/* Encart « La vidéo en 30 secondes » (pages outils et fiches) */
+.short-zone { margin-top: 16px; }
+.short-encart { display: flex; align-items: center; gap: 16px; max-width: 520px; padding: 12px; border-radius: 14px; color: inherit; text-decoration: none;
+  background: rgba(230, 33, 23, .07); border: 1px solid rgba(230, 33, 23, .3); margin: 10px 0 6px; }
+.short-encart .short-vignette { flex: 0 0 86px; width: 86px; border-radius: 10px; }
+.short-encart .short-play { right: 6px; bottom: 6px; width: 28px; height: 28px; font-size: 12px; padding-left: 2px; }
+.shorts-entete .btn-youtube, .shorts-entete .btn-youtube:hover { color: #fff; }
+.short-texte { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.short-texte .surtitre { margin: 0; }
+.short-texte strong { line-height: 1.3; }
+.short-lien { color: #ff6b6b; font-weight: 600; font-size: .9rem; }
+@media (prefers-reduced-motion: reduce) { .short-vignette, .short-play { transition: none; } }

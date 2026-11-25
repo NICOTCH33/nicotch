@@ -46,7 +46,7 @@ window.ND_FICHES = [
     diag: { type: "pc", id: "pc-demarre-pas" }
   },
   {
-    id: "pc-bips-ram", titre: "Bips au démarrage et mémoire vive (RAM)", cats: ["alim"], icone: "🔔", niveau: 2,
+    id: "pc-bips-ram", video: "bips", titre: "Bips au démarrage et mémoire vive (RAM)", cats: ["alim"], icone: "🔔", niveau: 2,
     symptome: "Le PC émet des bips, affiche un voyant DRAM ou redémarre avant le logo.",
     causes: ["Barrette de RAM mal insérée", "Barrette défectueuse", "Réglage mémoire instable (XMP/EXPO)", "Emplacement incorrect"],
     verifs: ["Noter le nombre de bips ou le voyant allumé", "Consulter le manuel de la carte mère pour leur signification"],
@@ -181,7 +181,7 @@ window.ND_FICHES = [
 
   /* ---------- Température et ventilation ---------- */
   {
-    id: "temp-depoussierage", titre: "Dépoussiérer un PC en sécurité", cats: ["temp"], icone: "🌀", niveau: 2,
+    id: "temp-depoussierage", video: "chauffe", titre: "Dépoussiérer un PC en sécurité", cats: ["temp"], icone: "🌀", niveau: 2,
     symptome: "Ventilateurs bruyants, PC qui chauffe ou s'éteint en charge.",
     causes: ["Poussière dans les radiateurs, filtres et ventilateurs"],
     verifs: ["PC éteint, débranché, et si possible à l'extérieur ou près d'une fenêtre"],

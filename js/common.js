@@ -190,6 +190,35 @@
   };
 
   ND.NIVEAUX = { 1: "Facile", 2: "Intermédiaire", 3: "Avancé" };
+
+  /* ---------- Shorts YouTube (vignette légère, sans lecteur ni cookie : le clic ouvre YouTube) ---------- */
+  ND.SHORTS = {
+    "144hz":     { yt: "4HO9YCP5t_M", titre: "Ton écran 144 Hz tourne peut-être à 60 Hz" },
+    "chauffe":   { yt: "89yxLlYIa5w", titre: "Ton PC chauffe ? 3 signes qui ne trompent pas" },
+    "bips":      { yt: "Ih_jka8Zj9I", titre: "Ton PC bipe au démarrage ? Voici ce que ça veut dire" },
+    "alim":      { yt: "wUb1OGKmsvk", titre: "Quelle alim pour ta carte graphique ?" },
+    "logiciels": { yt: "DTJPeLcG-rw", titre: "5 logiciels gratuits pour ton PC" }
+  };
+  ND.ORDRE_SHORTS = ["144hz", "chauffe", "bips", "alim", "logiciels"];
+  ND.htmlShort = function (slug, style) {
+    var v = ND.SHORTS[slug]; if (!v) return "";
+    var url = "https://www.youtube.com/shorts/" + v.yt;
+    var img = '<span class="short-vignette"><img src="assets/shorts/' + slug + '.webp" width="360" height="640" alt="" loading="lazy" decoding="async"><span class="short-play" aria-hidden="true">▶</span></span>';
+    if (style === "encart") {
+      return '<a class="short-encart" href="' + url + '" target="_blank" rel="noopener">' + img +
+        '<span class="short-texte"><span class="surtitre">▶️ La vidéo en 30 secondes</span><strong>' + ND.esc(v.titre) + '</strong><span class="short-lien">Voir sur YouTube ↗</span></span></a>';
+    }
+    return '<a class="short-carte" href="' + url + '" target="_blank" rel="noopener" aria-label="' + ND.esc(v.titre) + ' (YouTube)">' + img +
+      '<span class="short-titre">' + ND.esc(v.titre) + "</span></a>";
+  };
+  function remplirShorts() {
+    Array.prototype.forEach.call(document.querySelectorAll("[data-short]"), function (el) {
+      el.innerHTML = ND.htmlShort(el.getAttribute("data-short"), "encart");
+    });
+    Array.prototype.forEach.call(document.querySelectorAll("[data-shorts]"), function (el) {
+      el.innerHTML = ND.ORDRE_SHORTS.map(function (s) { return ND.htmlShort(s); }).join("");
+    });
+  }
   ND.CLE_HISTO = "nicotch-diag-historique";
 
   ND.dateCourte = function (iso) {
@@ -246,6 +275,7 @@
     construireEntete();
     construirePied();
     animerApparition();
+    remplirShorts();
     // Ruban « Black Friday » sur la carte Bons plans de l'accueil
     var carteBP = document.querySelector('.grille-espaces a[href="bons-plans.html"]');
     if (carteBP && ND.evenementActif()) {
