@@ -184,6 +184,16 @@
     var d = new Date();
     return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
   };
+  // Petit texte qui change selon le jour (jour J, derniers jours, Cyber Monday)
+  ND.etapeEvenement = function () {
+    var j = ND.aujourdhui();
+    if (j === "2026-11-27") return { court: "🔥 Black Friday : c'est aujourd'hui !", long: "<strong>🔥 C'est le jour J : Black Friday aujourd'hui !</strong>" };
+    if (j === "2026-11-30") return { court: "⚡ Cyber Monday : dernier jour", long: "<strong>⚡ Cyber Monday : dernier jour des promos !</strong>" };
+    var fin = new Date(ND.EVENEMENT.fin + "T00:00:00"), auj = new Date(j + "T00:00:00");
+    var n = Math.round((fin - auj) / 86400000) + 1;
+    if (j > "2026-11-27" && n > 1) return { court: "⏳ Black Friday : plus que " + n + " jours", long: "<strong>⏳ Plus que " + n + " jours de promos</strong> (jusqu'au Cyber Monday, lundi 30)." };
+    return null;
+  };
   ND.evenementActif = function () {
     var e = ND.EVENEMENT, j = ND.aujourdhui();
     return !!(e && j >= e.debut && j <= e.fin);
@@ -299,7 +309,8 @@
       var carte = carteBP.closest(".espace");
       var ruban = document.createElement("span");
       ruban.className = "ruban-promo";
-      ruban.textContent = ND.EVENEMENT.emoji + " " + ND.EVENEMENT.nom;
+      var etape = ND.etapeEvenement();
+      ruban.textContent = etape ? etape.court : ND.EVENEMENT.emoji + " " + ND.EVENEMENT.nom;
       carte.classList.add("espace-promo");
       carte.insertBefore(ruban, carte.firstChild);
     }

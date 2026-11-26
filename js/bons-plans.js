@@ -96,9 +96,14 @@
       var html = "", total = 0, sommaire = "";
       if (famille === "promos") {
         var promos = produits.filter(enPromo);
-        liste.innerHTML = '<section class="plan-section ligne-rouge"><h2 class="plan-titre"><span>🔥 Promos du moment</span></h2>' +
+        var top = promos.filter(function (p) { return p.top; });
+        var reste = promos.filter(function (p) { return !p.top; });
+        liste.innerHTML = (top.length ? '<section class="plan-section ligne-bleue plan-top"><h2 class="plan-titre"><span>⭐ Ma sélection du Black Friday</span></h2>' +
+          '<p class="plan-outil">Les ' + top.length + " promos que je prendrais moi-même pour monter ou améliorer un PC de jeu.</p>" +
+          '<div class="grille grille-auto">' + top.map(carte).join("") + "</div></section>" : "") +
+          '<section class="plan-section ligne-rouge"><h2 class="plan-titre"><span>🔥 ' + (top.length ? "Toutes les promos" : "Promos du moment") + "</span></h2>" +
           '<p class="plan-outil">Produits en promotion au moment où je les ai ajoutés. Le prix réel est toujours celui affiché sur Amazon.</p>' +
-          '<div class="grille grille-auto">' + promos.map(carte).join("") + "</div></section>";
+          '<div class="grille grille-auto">' + reste.map(carte).join("") + "</div></section>";
         compteur.textContent = promos.length + (promos.length > 1 ? " promos" : " promo");
         return;
       }
@@ -133,7 +138,8 @@
     if (bandeau && window.ND.evenementActif()) {
       var ev = window.ND.EVENEMENT;
       var nb = produits.filter(enPromo).length;
-      bandeau.innerHTML = "<strong>" + esc(ev.emoji + " " + ev.nom) + "</strong> sur Amazon, " + esc(ev.texte) + ". " +
+      var etape = window.ND.etapeEvenement ? window.ND.etapeEvenement() : null;
+      bandeau.innerHTML = (etape ? etape.long + " " : "") + "<strong>" + esc(ev.emoji + " " + ev.nom) + "</strong> sur Amazon, " + esc(ev.texte) + ". " +
         (nb ? "Les produits marqués <strong>🔥 Promo</strong> étaient en promotion quand je les ai sélectionnés : vérifiez toujours le prix sur Amazon avant d'acheter."
             : "Je sélectionne les meilleures promos utiles : revenez bientôt !");
       bandeau.hidden = false;

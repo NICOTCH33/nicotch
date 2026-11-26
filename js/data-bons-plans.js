@@ -73,6 +73,7 @@ window.ND_BONS_PLANS = {
   PRODUITS: [
     {
       titre: "ASUS Radeon RX 9070 GRE 12 Go",
+      top: true,
       categorie: "gpu",
       pourquoi: "La petite sœur de la RX 9070 : 12 Go de mémoire et l'architecture RDNA 4 avec le FSR 4, pour jouer en 1440p dans de très bonnes conditions. Une alimentation de 650 W de qualité suffit.",
       lien: "https://link.amazon/B066XbUHv",
@@ -93,6 +94,7 @@ window.ND_BONS_PLANS = {
     },
     {
       titre: "Juhor DDR5 6000 MHz CL38 32 Go (2 × 16 Go)",
+      top: true,
       categorie: "ram",
       pourquoi: "32 Go de DDR5 à 6000 MHz, la vitesse idéale pour les Ryzen AM5, en 2 barrettes pour profiter du double canal. Un kit très abordable pour un PC de jeu.",
       lien: "https://s.click.aliexpress.com/e/_c4p7enR7",
@@ -417,6 +419,7 @@ window.ND_BONS_PLANS = {
     },
     {
       titre: "AMD Ryzen 7 7800X3D (AM5)",
+      top: true,
       categorie: "cpu",
       pourquoi: "8 cœurs avec le cache 3D V-Cache : l'un des meilleurs processeurs pour le jeu, encore très performant face aux modèles plus récents.",
       lien: "https://link.amazon/B0gUZZA81",
@@ -554,6 +557,7 @@ window.ND_BONS_PLANS = {
     },
     {
       titre: "AMD Ryzen 5 9600X (AM5) — version boîte",
+      top: true,
       categorie: "cpu",
       pourquoi: "Le même Ryzen 5 9600X, en version boîte vendue en France : la garantie constructeur et les retours sont plus simples qu'en import. Le bon choix si vous préférez la tranquillité.",
       lien: "https://link.amazon/B03K0zeiX",
@@ -795,6 +799,7 @@ window.ND_BONS_PLANS = {
     },
     {
       titre: "Corsair RM850e — 850 W, 80 PLUS Gold, modulaire",
+      top: true,
       categorie: "alim",
       pourquoi: "850 W certifiés Gold, entièrement modulaire, avec le câble 12V-2x6 pour les cartes graphiques récentes. Silencieuse et fiable, pour un PC haut de gamme (RTX 5070 Ti, RX 9070 XT).",
       lien: "https://link.amazon/B01QbguMS",
@@ -1054,6 +1059,7 @@ window.ND_BONS_PLANS = {
     },
     {
       titre: "Netac SSD NVMe M.2 Gen4 — 1 To",
+      top: true,
       categorie: "stockage",
       pourquoi: "Un SSD PCIe 4.0 encore plus rapide pour des chargements de jeux très courts, sur une carte mère avec un port M.2 Gen4.",
       lien: "https://link.amazon/B0jemG8tQ",
@@ -1135,6 +1141,7 @@ window.ND_BONS_PLANS = {
     },
     {
       titre: "Thermalright Phantom Spirit 120 RGB — ventirad double tour",
+      top: true,
       categorie: "refroidissement",
       pourquoi: "Un des ventirads les plus efficaces pour son prix, avec éclairage RGB : il tient tête à beaucoup de watercoolings 240 mm.",
       lien: "https://link.amazon/B0fcxhYrY",
@@ -1207,6 +1214,7 @@ window.ND_BONS_PLANS = {
     },
     {
       titre: "AOC — écran 24 pouces IPS 240 Hz",
+      top: true,
       categorie: "ecrans",
       pourquoi: "240 Hz et une dalle IPS aux couleurs fidèles : idéal pour les FPS en 1080p.",
       lien: "https://link.amazon/B08jnzAMr",

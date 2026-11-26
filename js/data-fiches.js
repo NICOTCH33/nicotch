@@ -141,6 +141,15 @@ window.ND_FICHES = [
     precautions: ["Si le disque fait des clics ou n'est plus reconnu, ne multipliez pas les tentatives : contactez un spécialiste de la récupération de données."]
   },
   {
+    id: "stock-pilote-ecritures", titre: "Pilote graphique qui écrit sans arrêt sur le SSD (bug NVIDIA et AMD, novembre 2026)", cats: ["stockage", "windows"], icone: "💾", niveau: 2,
+    symptome: "Le SSD écrit en continu alors que le PC ne fait rien : plusieurs Go par heure, ce qui use le SSD plus vite que prévu.",
+    causes: ["NVIDIA (pilotes 621.14 et 621.24) : NVDisplay.Container.exe réécrit en boucle le journal nvlog.nvlgstg dans C:\\ProgramData\\NVIDIA Corporation", "AMD (Adrenalin 26.10.1 et 26.10.2) : atieclxx.exe recopie un fichier environ une fois par seconde, soit environ 55 Go par jour"],
+    verifs: ["Fermer jeux et vidéos, taper « resmon » dans la recherche Windows (Moniteur de ressources)", "Onglet Disque, trier par « Écriture (o/s) » : repérer NVDisplay.Container.exe ou atieclxx.exe qui écrit plusieurs Mo par seconde au repos", "Noter la version du pilote : Panneau de configuration NVIDIA (Informations système) ou AMD Software (Système)"],
+    etapes: ["AMD : installer Adrenalin 26.11.1 ou plus récent (site d'AMD). Pour les Radeon RX 5000 et RX 6000, la 26.11.2 étend la correction.", "NVIDIA : installer le pilote correctif (hotfix) 621.35, à télécharger à la main sur le site d'assistance NVIDIA. Il ne s'installe pas tout seul par l'application NVIDIA.", "NVIDIA, si les écritures reviennent après plusieurs heures au repos : revenir au pilote 621.01 (site de NVIDIA, cocher « Effectuer une installation propre »), en attendant un pilote corrigé.", "Revérifier dans le Moniteur de ressources après quelques heures d'utilisation.", "Pour connaître l'usure réelle du SSD : CrystalDiskInfo ou l'outil du fabricant, ligne « Total des écritures »."],
+    precautions: ["Ces écritures n'abîment pas vos fichiers : elles consomment seulement l'endurance du SSD. Inutile de paniquer, mais corrigez-le.", "Téléchargez les pilotes uniquement sur les sites officiels de NVIDIA et d'AMD.", "Les numéros de version évoluent vite : un pilote plus récent peut corriger définitivement le problème."],
+    diag: { type: "pc", id: "pc-disque" }
+  },
+  {
     id: "stock-sante-disque", titre: "Vérifier la santé d'un SSD ou d'un disque dur", cats: ["stockage"], icone: "🩺", niveau: 2,
     symptome: "Lenteurs, écrans bleus, fichiers corrompus, bruits du disque.",
     causes: ["Usure normale", "Secteurs défectueux", "Surchauffe du SSD"],
